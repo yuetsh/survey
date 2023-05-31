@@ -133,7 +133,7 @@ function showAll() {
   }
 }
 
-function getRandom(n: number = 100) {
+function getRandom(n: number = 50) {
   data.value = []
   const cached = JSON.parse(window.localStorage.getItem(EXAM)!)
   if (n === 1) {
@@ -153,7 +153,7 @@ function getRandom(n: number = 100) {
 }
 
 function start() {
-  getRandom(100)
+  getRandom(50)
   window.localStorage.setItem(TEST_STATUS, TestStatus.IS_TESTING)
   window.localStorage.setItem(TEST, JSON.stringify(data.value))
   status.value = TestStatus.IS_TESTING
@@ -227,8 +227,8 @@ onMounted(() => {
             <n-button @click="getRandom(1)" :disabled="!data.length">
               随机 1 题
             </n-button>
-            <n-button @click="getRandom(100)" :disabled="!data.length">
-              随机 100 题
+            <n-button @click="getRandom(50)" :disabled="!data.length">
+              随机 50 题
             </n-button>
             <n-button @click="showAll" :disabled="!data.length">
               显示所有题
