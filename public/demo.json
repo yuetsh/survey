@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Which HTTP method is idempotent for resource updates?",
+    "A": "POST",
+    "B": "PUT",
+    "C": "PATCH",
+    "D": "OPTIONS",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Which database is a document-oriented NoSQL store?",
+    "A": "MySQL",
+    "B": "PostgreSQL",
+    "C": "MongoDB",
+    "D": "SQLite",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "What does CSS stand for?",
+    "A": "Cascading Style Sheets",
+    "B": "Computer Style Sheets",
+    "C": "Creative Styling Syntax",
+    "D": "Central Style System",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Which value of display creates a flex container?",
+    "A": "inline",
+    "B": "block",
+    "C": "flex",
+    "D": "grid",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Which git command creates a new branch named feature/x?",
+    "A": "git branch feature/x",
+    "B": "git checkout feature/x",
+    "C": "git init feature/x",
+    "D": "git add feature/x",
+    "answer": "A",
+    "select": ""
+  }
+]
