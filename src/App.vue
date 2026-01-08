@@ -13,9 +13,10 @@ import {
   NLayoutContent,
   NModal,
   NDivider,
+  NSwitch,
 } from "naive-ui"
 import type { UploadCustomRequestOptions, DataTableColumn } from "naive-ui"
-import { onMounted, ref, h, computed } from "vue"
+import { onMounted, ref, h, computed, watch } from "vue"
 import shuffle from "lodash/shuffle"
 import Option from "./Option.vue"
 
@@ -45,9 +46,10 @@ enum TestStatus {
 const EXAM = "exams"
 const TEST = "tests"
 const TEST_STATUS = "test_status"
+const optionLabels: Option[] = ["A", "B", "C", "D"]
 
 const columns = computed<DataTableColumn<Exam>[]>(() => {
-  const options: DataTableColumn<Exam>[] = ["A", "B", "C", "D"].map((op) => {
+  const options: DataTableColumn<Exam>[] = optionLabels.map((op) => {
     return {
       title: "选项" + op,
       key: op,
@@ -90,6 +92,12 @@ const status = ref(TestStatus.NO_TESTING)
 const wrongAnswers = ref<WrongAnswer[]>([])
 const showWrongAnswer = ref(false)
 const score = ref(0)
+const shuffleEnabled = ref(false)
+const originalData = ref<Exam[]>([])
+
+function cloneData(list: Exam[]) {
+  return JSON.parse(JSON.stringify(list)) as Exam[]
+}
 
 function upload({ file }: UploadCustomRequestOptions) {
   const reader = new FileReader()
@@ -98,6 +106,7 @@ function upload({ file }: UploadCustomRequestOptions) {
     const str = (event.target?.result as string) ?? ""
     data.value = JSON.parse(str)
     window.localStorage.setItem(EXAM, str)
+    originalData.value = cloneData(data.value)
   }
 }
 
@@ -109,6 +118,7 @@ function init() {
     if (!strings) return
     data.value = JSON.parse(strings)
   }
+  originalData.value = cloneData(data.value)
 }
 
 function search() {
@@ -131,6 +141,7 @@ function showAll() {
   if (status.value === TestStatus.IS_TESTING) {
     window.localStorage.setItem(TEST, window.localStorage.getItem(EXAM)!)
   }
+  originalData.value = cloneData(data.value)
 }
 
 function getRandom(n: number = 50) {
@@ -150,6 +161,40 @@ function getRandom(n: number = 50) {
   if (status.value === TestStatus.IS_TESTING) {
     window.localStorage.setItem(TEST, JSON.stringify(data.value))
   }
+  originalData.value = cloneData(data.value)
+}
+
+function shuffleOptions() {
+  if (!shuffleEnabled.value) return
+  if (!originalData.value.length) {
+    originalData.value = cloneData(data.value)
+  }
+  data.value = data.value.map((item) => {
+    const availableOptions = optionLabels
+      .map((key) => ({ key, text: item[key] }))
+      .filter((entry) => entry.text)
+    const shuffledOptions = shuffle(availableOptions)
+    const newItem: Exam = { ...item, A: "", B: "", C: "", D: "" }
+    let mappedAnswer: Option | undefined
+    let mappedSelect: Option | undefined
+
+    shuffledOptions.forEach((entry, idx) => {
+      const label = optionLabels[idx]
+      newItem[label] = entry.text as string
+      if (entry.key === item.answer) {
+        mappedAnswer = label
+      }
+      if (entry.key === item.select) {
+        mappedSelect = label
+      }
+    })
+
+    newItem.answer = mappedAnswer ?? item.answer
+    newItem.select = mappedSelect ?? item.select
+    return newItem
+  })
+  const storageKey = status.value === TestStatus.IS_TESTING ? TEST : EXAM
+  window.localStorage.setItem(storageKey, JSON.stringify(data.value))
 }
 
 function start() {
@@ -182,6 +227,7 @@ function finish() {
   window.localStorage.setItem(TEST_STATUS, TestStatus.NO_TESTING)
   window.localStorage.removeItem(TEST)
   init()
+  originalData.value = cloneData(data.value)
 }
 
 function clear() {
@@ -192,6 +238,7 @@ function clear() {
   showWrongAnswer.value = false
   wrongAnswers.value = []
   score.value = 0
+  originalData.value = []
 }
 
 onMounted(() => {
@@ -202,6 +249,14 @@ onMounted(() => {
     status.value = TestStatus.NO_TESTING
   }
   window.localStorage.setItem(TEST_STATUS, status.value)
+})
+
+watch(shuffleEnabled, (enabled) => {
+  if (!enabled && originalData.value.length) {
+    data.value = cloneData(originalData.value)
+    const storageKey = status.value === TestStatus.IS_TESTING ? TEST : EXAM
+    window.localStorage.setItem(storageKey, JSON.stringify(data.value))
+  }
 })
 </script>
 
@@ -233,6 +288,16 @@ onMounted(() => {
             <n-button @click="showAll" :disabled="!data.length">
               显示所有题
             </n-button>
+            <n-space align="center">
+              <span>选项乱序</span>
+              <n-switch size="small" v-model:value="shuffleEnabled" />
+            </n-space>
+            <n-button
+              @click="shuffleOptions"
+              :disabled="!data.length || !shuffleEnabled"
+            >
+              打乱
+            </n-button>
             <n-divider vertical />
             <n-button
               @click="start"
@@ -250,6 +315,7 @@ onMounted(() => {
           </n-space>
           <n-space>
             <n-input
+            style="width: 200px;"
               v-model:value="keyword"
               @update:value="search"
               placeholder="通过关键词搜索"
