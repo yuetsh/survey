@@ -25,6 +25,7 @@ const props = defineProps<Props>()
 
 <style scoped>
 .correct {
-  color: red;
+  color: blue;
+  font-weight: bold;
 }
 </style>
