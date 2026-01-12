@@ -658,5 +658,1045 @@
     "B": "错",
     "answer": "A",
     "select": ""
+  },
+  {
+    "title": "以下哪个是C#中的引用类型？",
+    "A": "int",
+    "B": "double",
+    "C": "class",
+    "D": "bool",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，using语句的主要作用是？",
+    "A": "引入命名空间",
+    "B": "创建对象",
+    "C": "定义变量",
+    "D": "循环控制",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下哪个集合允许存储键值对？",
+    "A": "List",
+    "B": "Array",
+    "C": "Dictionary",
+    "D": "Queue",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "CoAP协议主要应用于？",
+    "A": "Web服务器",
+    "B": "资源受限设备",
+    "C": "大型数据库",
+    "D": "桌面应用",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，delegate关键字用于定义？",
+    "A": "类",
+    "B": "委托",
+    "C": "接口",
+    "D": "枚举",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，StopBits表示？",
+    "A": "开始位",
+    "B": "停止位",
+    "C": "数据位",
+    "D": "校验位",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "WebSocket相比HTTP的主要优势是？",
+    "A": "更安全",
+    "B": "双向通信",
+    "C": "更简单",
+    "D": "速度慢",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个不是C#中的值类型？",
+    "A": "struct",
+    "B": "enum",
+    "C": "object",
+    "D": "char",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在物联网中，执行器的作用是？",
+    "A": "采集数据",
+    "B": "控制设备",
+    "C": "传输数据",
+    "D": "存储数据",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码的输出是？`Console.WriteLine(5 % 2);`",
+    "A": "2",
+    "B": "2.5",
+    "C": "1",
+    "D": "0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，Clean Session标志的作用是？",
+    "A": "清除历史消息",
+    "B": "控制会话状态",
+    "C": "清空主题",
+    "D": "重置连接",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，sealed关键字的作用是？",
+    "A": "密封类，不能被继承",
+    "B": "定义常量",
+    "C": "声明静态类",
+    "D": "创建对象",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下哪个方法可以将字符串转换为字节数组？",
+    "A": "Encoding.UTF8.GetBytes()",
+    "B": "String.ToBytes()",
+    "C": "Convert.ToBytes()",
+    "D": "Bytes.Parse()",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在传感器数据处理中，滑动窗口的作用是？",
+    "A": "数据加密",
+    "B": "数据平滑",
+    "C": "数据压缩",
+    "D": "数据排序",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP协议中，PUT方法用于？",
+    "A": "获取资源",
+    "B": "创建资源",
+    "C": "更新资源",
+    "D": "删除资源",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "以下关于接口的说法，正确的是？",
+    "A": "接口可以包含字段",
+    "B": "接口可以有构造函数",
+    "C": "接口成员默认是public",
+    "D": "接口可以实例化",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，Parity用于设置？",
+    "A": "波特率",
+    "B": "校验位",
+    "C": "数据位",
+    "D": "停止位",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，var关键字用于？",
+    "A": "声明常量",
+    "B": "隐式类型声明",
+    "C": "定义方法",
+    "D": "创建数组",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT的Keep Alive参数用于？",
+    "A": "保持消息",
+    "B": "心跳检测",
+    "C": "消息存储",
+    "D": "主题订阅",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个不是C#中的循环语句？",
+    "A": "for",
+    "B": "while",
+    "C": "do-while",
+    "D": "repeat",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在物联网网关中，主要功能是？",
+    "A": "数据采集",
+    "B": "协议转换",
+    "C": "数据显示",
+    "D": "用户交互",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码的输出是？`Console.WriteLine(\"abc\".ToUpper());`",
+    "A": "abc",
+    "B": "ABC",
+    "C": "Abc",
+    "D": "aBc",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，try-catch语句用于？",
+    "A": "循环控制",
+    "B": "异常处理",
+    "C": "条件判断",
+    "D": "方法定义",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是轻量级的序列化格式？",
+    "A": "XML",
+    "B": "JSON",
+    "C": "HTML",
+    "D": "CSV",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，ReadTimeout属性表示？",
+    "A": "写入超时",
+    "B": "读取超时",
+    "C": "连接超时",
+    "D": "关闭超时",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，abstract类的特点是？",
+    "A": "可以直接实例化",
+    "B": "不能有抽象方法",
+    "C": "不能实例化",
+    "D": "必须是静态类",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "MQTT的Last Will（遗嘱）消息用于？",
+    "A": "最后一条消息",
+    "B": "异常断线通知",
+    "C": "欢迎消息",
+    "D": "订阅确认",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个集合是先进先出（FIFO）？",
+    "A": "Stack",
+    "B": "Queue",
+    "C": "List",
+    "D": "Dictionary",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP状态码500表示？",
+    "A": "请求成功",
+    "B": "重定向",
+    "C": "客户端错误",
+    "D": "服务器错误",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在C#中，readonly关键字修饰的字段？",
+    "A": "可以随时修改",
+    "B": "只能在声明或构造函数中赋值",
+    "C": "必须是静态的",
+    "D": "不能有初始值",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下关于泛型的说法，正确的是？",
+    "A": "泛型只能用于类",
+    "B": "泛型可以提高类型安全",
+    "C": "泛型会降低性能",
+    "D": "泛型不能有约束",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在物联网中，边缘计算的优势是？",
+    "A": "降低延迟",
+    "B": "增加网络负担",
+    "C": "成本更高",
+    "D": "数据更不安全",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下代码的输出是？`Console.WriteLine(true && false);`",
+    "A": "true",
+    "B": "false",
+    "C": "True",
+    "D": "False",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，DataBits通常设置为？",
+    "A": "5",
+    "B": "6",
+    "C": "7",
+    "D": "8",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在C#中，namespace的作用是？",
+    "A": "组织代码",
+    "B": "定义类",
+    "C": "创建对象",
+    "D": "声明变量",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，通配符#表示？",
+    "A": "单层通配",
+    "B": "多层通配",
+    "C": "任意字符",
+    "D": "空主题",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个方法用于启动线程？",
+    "A": "Thread.Run()",
+    "B": "Thread.Start()",
+    "C": "Thread.Begin()",
+    "D": "Thread.Execute()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP协议中，DELETE方法用于？",
+    "A": "获取资源",
+    "B": "更新资源",
+    "C": "删除资源",
+    "D": "创建资源",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，params关键字用于？",
+    "A": "定义参数",
+    "B": "可变数量参数",
+    "C": "传递引用",
+    "D": "返回多个值",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个不是传感器的分类方式？",
+    "A": "按测量对象分类",
+    "B": "按工作原理分类",
+    "C": "按价格分类",
+    "D": "按输出信号分类",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，is关键字用于？",
+    "A": "类型转换",
+    "B": "类型检查",
+    "C": "比较值",
+    "D": "定义类型",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`int[] arr = new int[3]; Console.WriteLine(arr[0]);`",
+    "A": "null",
+    "B": "0",
+    "C": "3",
+    "D": "编译错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，通配符+表示？",
+    "A": "多层通配",
+    "B": "单层通配",
+    "C": "任意主题",
+    "D": "空层级",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，StringBuilder相比String的优势是？",
+    "A": "更安全",
+    "B": "更节省内存",
+    "C": "语法简单",
+    "D": "速度慢",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，Write方法用于？",
+    "A": "读取数据",
+    "B": "发送数据",
+    "C": "关闭端口",
+    "D": "打开端口",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是无连接协议？",
+    "A": "TCP",
+    "B": "HTTP",
+    "C": "UDP",
+    "D": "MQTT",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，event关键字用于？",
+    "A": "定义事件",
+    "B": "触发事件",
+    "C": "处理异常",
+    "D": "创建线程",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下关于多线程的说法，错误的是？",
+    "A": "可以提高程序效率",
+    "B": "需要处理同步问题",
+    "C": "线程共享内存",
+    "D": "不会有资源竞争",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "HTTP状态码301表示？",
+    "A": "临时重定向",
+    "B": "永久重定向",
+    "C": "请求成功",
+    "D": "资源未找到",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，Dispose方法通常用于？",
+    "A": "删除对象",
+    "B": "释放资源",
+    "C": "初始化对象",
+    "D": "复制对象",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个协议属于应用层？",
+    "A": "IP",
+    "B": "TCP",
+    "C": "MQTT",
+    "D": "Ethernet",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，as关键字用于？",
+    "A": "强制类型转换",
+    "B": "安全类型转换",
+    "C": "类型检查",
+    "D": "创建对象",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine(10 > 5 ? \"Yes\" : \"No\");`",
+    "A": "Yes",
+    "B": "No",
+    "C": "true",
+    "D": "false",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "物联网平台的核心功能不包括？",
+    "A": "设备管理",
+    "B": "数据存储",
+    "C": "硬件生产",
+    "D": "规则引擎",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，ref关键字用于？",
+    "A": "引用类型",
+    "B": "按引用传递参数",
+    "C": "定义引用",
+    "D": "返回引用",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT协议使用的传输层协议是？",
+    "A": "UDP",
+    "B": "TCP",
+    "C": "IP",
+    "D": "HTTP",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个集合是后进先出（LIFO）？",
+    "A": "Queue",
+    "B": "Stack",
+    "C": "List",
+    "D": "Array",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP协议中，HEAD方法的作用是？",
+    "A": "获取完整资源",
+    "B": "只获取响应头",
+    "C": "更新资源",
+    "D": "删除资源",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，out关键字的特点是？",
+    "A": "必须在方法内初始化",
+    "B": "可以不初始化",
+    "C": "只能用于返回值",
+    "D": "只能传递值类型",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下关于枚举的说法，正确的是？",
+    "A": "枚举是引用类型",
+    "B": "枚举可以包含方法",
+    "C": "枚举值默认从0开始",
+    "D": "枚举不能显式赋值",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，Handshake用于设置？",
+    "A": "数据位",
+    "B": "流控制",
+    "C": "波特率",
+    "D": "停止位",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，nullable类型使用什么符号？",
+    "A": "!",
+    "B": "?",
+    "C": "*",
+    "D": "&",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个不是RESTful API的HTTP方法？",
+    "A": "GET",
+    "B": "POST",
+    "C": "PUBLISH",
+    "D": "DELETE",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在物联网中，NB-IoT的特点是？",
+    "A": "高速率",
+    "B": "低功耗",
+    "C": "短距离",
+    "D": "高成本",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`string s = null; Console.WriteLine(s?.Length ?? 0);`",
+    "A": "null",
+    "B": "0",
+    "C": "异常",
+    "D": "空字符串",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，lock关键字用于？",
+    "A": "锁定文件",
+    "B": "线程同步",
+    "C": "异常处理",
+    "D": "内存管理",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT的Will QoS表示？",
+    "A": "遗嘱消息的服务质量",
+    "B": "普通消息质量",
+    "C": "连接质量",
+    "D": "订阅质量",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下哪个协议用于设备发现？",
+    "A": "HTTP",
+    "B": "MQTT",
+    "C": "mDNS",
+    "D": "FTP",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，yield关键字用于？",
+    "A": "返回迭代器",
+    "B": "线程控制",
+    "C": "异常处理",
+    "D": "定义方法",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "HTTP状态码403表示？",
+    "A": "未授权",
+    "B": "禁止访问",
+    "C": "资源未找到",
+    "D": "服务器错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，implicit和explicit用于定义？",
+    "A": "方法",
+    "B": "类型转换运算符",
+    "C": "属性",
+    "D": "事件",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下关于Modbus协议的说法，正确的是？",
+    "A": "仅用于无线通信",
+    "B": "是工业常用协议",
+    "C": "只支持TCP",
+    "D": "不支持串口",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在传感器网络中，Sink节点的作用是？",
+    "A": "采集数据",
+    "B": "汇聚数据",
+    "C": "转发数据",
+    "D": "过滤数据",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine($\"{10:D4}\");`",
+    "A": "10",
+    "B": "0010",
+    "C": "10.0000",
+    "D": "10D4",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，partial关键字的作用是？",
+    "A": "部分初始化",
+    "B": "分部类定义",
+    "C": "部分方法",
+    "D": "部分继承",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，Publish方法返回的通常是？",
+    "A": "消息ID",
+    "B": "布尔值",
+    "C": "字符串",
+    "D": "Task",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是同步通信协议？",
+    "A": "MQTT",
+    "B": "HTTP",
+    "C": "SPI",
+    "D": "WebSocket",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，Tuple的作用是？",
+    "A": "存储单个值",
+    "B": "存储多个不同类型的值",
+    "C": "存储键值对",
+    "D": "存储数组",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "物联网中，RFID技术主要用于？",
+    "A": "温度检测",
+    "B": "身份识别",
+    "C": "数据传输",
+    "D": "图像采集",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine(new string('A', 3));`",
+    "A": "A3",
+    "B": "AAA",
+    "C": "A",
+    "D": "编译错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，checked关键字用于？",
+    "A": "检查类型",
+    "B": "检查溢出",
+    "C": "检查null",
+    "D": "检查异常",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP协议中，OPTIONS方法用于？",
+    "A": "查询服务器支持的方法",
+    "B": "获取资源",
+    "C": "更新资源",
+    "D": "删除资源",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在串口通信中，RTS和CTS是什么类型的控制？",
+    "A": "软件流控",
+    "B": "硬件流控",
+    "C": "数据流控",
+    "D": "错误控制",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下关于Lambda表达式的说法，正确的是？",
+    "A": "只能有一个参数",
+    "B": "必须指定参数类型",
+    "C": "可以省略return关键字",
+    "D": "不能访问外部变量",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在物联网中，LoRa技术的特点是？",
+    "A": "短距离",
+    "B": "高功耗",
+    "C": "远距离低功耗",
+    "D": "高速率",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine(string.IsNullOrEmpty(\"\"));`",
+    "A": "false",
+    "B": "true",
+    "C": "null",
+    "D": "异常",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，Action和Func的区别是？",
+    "A": "参数数量不同",
+    "B": "Func有返回值",
+    "C": "Action是类",
+    "D": "没有区别",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，订阅操作返回的是？",
+    "A": "消息内容",
+    "B": "订阅结果",
+    "C": "主题列表",
+    "D": "连接状态",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP状态码304表示？",
+    "A": "永久移动",
+    "B": "临时移动",
+    "C": "未修改",
+    "D": "多重选择",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在C#中，dynamic类型的特点是？",
+    "A": "编译时检查类型",
+    "B": "运行时确定类型",
+    "C": "不能改变类型",
+    "D": "必须初始化",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是I2C总线的特点？",
+    "A": "需要4根线",
+    "B": "点对点通信",
+    "C": "两线制",
+    "D": "单工通信",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在传感器标定中，零点漂移指的是？",
+    "A": "输出不稳定",
+    "B": "零输入时的输出偏移",
+    "C": "满量程误差",
+    "D": "线性度误差",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine(DateTime.Now.Year);`",
+    "A": "当前月份",
+    "B": "当前年份",
+    "C": "当前日期",
+    "D": "当前时间",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，extern关键字的作用是？",
+    "A": "外部类",
+    "B": "声明外部实现的方法",
+    "C": "导入命名空间",
+    "D": "定义外部变量",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT中，Unsubscribe方法用于？",
+    "A": "发布消息",
+    "B": "取消订阅",
+    "C": "断开连接",
+    "D": "清除主题",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在物联网安全中，TLS/SSL主要用于？",
+    "A": "数据压缩",
+    "B": "数据加密",
+    "C": "数据路由",
+    "D": "数据存储",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下代码输出什么？`Console.WriteLine(Math.Pow(2, 3));`",
+    "A": "6",
+    "B": "8",
+    "C": "5",
+    "D": "9",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，nameof运算符返回什么？",
+    "A": "变量的值",
+    "B": "变量的类型",
+    "C": "变量的名称",
+    "D": "变量的地址",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，全双工通信的特点是？",
+    "A": "单向传输",
+    "B": "交替双向传输",
+    "C": "同时双向传输",
+    "D": "不能传输",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "以下关于DMA的说法，正确的是？",
+    "A": "需要CPU全程参与",
+    "B": "可以直接访问内存",
+    "C": "速度比CPU慢",
+    "D": "只用于显示",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "C#中，struct是值类型。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "MQTT的QoS 1保证消息恰好送达一次。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Dictionary集合中的键必须唯一。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "串口通信中，双方的数据位设置可以不同。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP是面向连接的协议。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，抽象方法必须在抽象类中定义。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Task.Run()方法会阻塞当前线程。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "JSON格式中，键必须用双引号包围。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "MQTT的Clean Session设为true时，会话不会被保存。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "接口可以包含字段定义。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "传感器的灵敏度越高越好。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "StringBuilder是线程安全的。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，const字段必须在声明时初始化。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "UDP协议保证数据包的顺序和可靠性。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "MQTT支持遗嘱消息机制。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "泛型可以减少装箱和拆箱操作。",
+    "A": "√",
+    "B": "×",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "物联网网关必须具有无线通信能力。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "C#中的string类型是可变的。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "HTTP状态码以5开头表示客户端错误。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在C#中，sealed方法可以被子类重写。",
+    "A": "√",
+    "B": "×",
+    "answer": "B",
+    "select": ""
   }
 ]
