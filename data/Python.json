@@ -1,0 +1,5795 @@
+[
+  {
+    "title": "Python语言是一种( )？",
+    "A": "编译型语言",
+    "B": "机器语言",
+    "C": "汇编语言",
+    "D": "解释型语言",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python程序文件的扩展名通常是什么？",
+    "A": ".txt",
+    "B": ".py",
+    "C": ".doc",
+    "D": ".exe",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，表示单行注释的符号是什么？",
+    "A": "#",
+    "B": "//",
+    "C": "/**",
+    "D": "--",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪个不是Python的合法标识符？",
+    "A": "my_variable",
+    "B": "_myVar",
+    "C": "2myVar",
+    "D": "myVar2",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中使用哪个关键字来定义一个函数？",
+    "A": "function",
+    "B": "sub",
+    "C": "proc",
+    "D": "def",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "input() 函数的返回值类型是什么？",
+    "A": "字符串 (str)",
+    "B": "整数 (int)",
+    "C": "浮点数 (float)",
+    "D": "列表 (list)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "print() 函数默认在输出内容的末尾添加什么？",
+    "A": "一个空格",
+    "B": "一个换行符",
+    "C": "一个制表符",
+    "D": "什么都不添加",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，x = 5 这条语句执行的是什么操作？",
+    "A": "赋值操作",
+    "B": "比较操作",
+    "C": "逻辑操作",
+    "D": "函数调用",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪个是Python中的算术运算符，用于计算幂运算？",
+    "A": "^",
+    "B": "%",
+    "C": "**",
+    "D": "//",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 10 // 3 的结果是什么？",
+    "A": "3.33",
+    "B": "3",
+    "C": "1",
+    "D": "0",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 10 % 3 的结果是什么？",
+    "A": "1",
+    "B": "3",
+    "C": "0",
+    "D": "3.33",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪个是Python中的逻辑运算符？",
+    "A": "&&",
+    "B": "||",
+    "C": "~",
+    "D": "and",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 > 3 and 2 < 1 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，x += 5 等同于下列哪个表达式？",
+    "A": "x = 5",
+    "B": "5 -= x",
+    "C": "x = x + 5",
+    "D": "x = x - 5",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "下列哪个运算符的优先级最高？",
+    "A": "** (幂)",
+    "B": "* (乘法)",
+    "C": "+ (加法)",
+    "D": "> (比较)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "流程图中的菱形框通常表示什么？",
+    "A": "输入/输出",
+    "B": "处理步骤",
+    "C": "判断",
+    "D": "起始/结束",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "下列哪个不是Python语言的主要应用领域？",
+    "A": "Web开发",
+    "B": "数据科学",
+    "C": "人工智能",
+    "D": "操作系统内核开发",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在Python中，如果要获取用户输入并将其作为整数使用，正确的做法是？",
+    "A": "num = input(\"请输入数字:\")",
+    "B": "num = integer(input())",
+    "C": "num = int(input())",
+    "D": "num = str_to_int(input())",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中的关键字不能用来做什么？",
+    "A": "作为标识符",
+    "B": "控制流程",
+    "C": "定义数据类型",
+    "D": "导入模块",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "描述算法的方法不包括下列哪一项？",
+    "A": "自然语言",
+    "B": "流程图",
+    "C": "伪代码",
+    "D": "机器语言",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python的标识符区分大小写吗？",
+    "A": "区分",
+    "B": "不区分",
+    "C": "有时区分",
+    "D": "取决于解释器版本",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "哪个运算符用于检查一个值是否存在于序列中？",
+    "A": "is",
+    "B": "“==”",
+    "C": "in",
+    "D": "exists",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(0.1 + 0.2 == 0.3) 的输出结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中表示整数的数据类型是？",
+    "A": "int",
+    "B": "float",
+    "C": "str",
+    "D": "bool",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中表示浮点数（带小数点的数）的数据类型是？",
+    "A": "int",
+    "B": "float",
+    "C": "str",
+    "D": "decimal",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如何查看一个变量的数据类型？",
+    "A": "typeof()",
+    "B": "isinstance()",
+    "C": "type()",
+    "D": "datatype()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Python\"，表达式 s[0] 的值是什么？",
+    "A": "\"P\"",
+    "B": "\"p\"",
+    "C": "\"Python\"",
+    "D": "Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Python\"，表达式 s[-1] 的值是什么？",
+    "A": "\"P\"",
+    "B": "\"o\"",
+    "C": "Error",
+    "D": "\"n\"",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Hello\"，表达式 s[1:4] 的结果是什么？",
+    "A": "\"ello\"",
+    "B": "\"Hel\"",
+    "C": "\"ell\"",
+    "D": "\"Hlo\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何获取字符串 s = \"Python Program\" 的长度？",
+    "A": "s.length()",
+    "B": "len(s)",
+    "C": "s.size()",
+    "D": "count(s)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "哪个方法可以将字符串转换为大写？",
+    "A": "upper()",
+    "B": "lower()",
+    "C": "capitalize()",
+    "D": "title()",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "哪个方法用于在字符串中查找子字符串首次出现的位置，如果找不到则返回-1？",
+    "A": "index()",
+    "B": "find()",
+    "C": "search()",
+    "D": "locate()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中列表的定义符号是什么？",
+    "A": "()",
+    "B": "{}",
+    "C": "[]",
+    "D": "<>",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "下列哪个是Python列表的特性？",
+    "A": "不可变",
+    "B": "有序但不可重复",
+    "C": "无序",
+    "D": "可变",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3]，如何向列表末尾添加元素 4？",
+    "A": "L.append(4)",
+    "B": "L.insert(4)",
+    "C": "L.extend(4)",
+    "D": "L.add(4)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3, 2]，L.count(2) 的结果是什么？",
+    "A": "1",
+    "B": "3",
+    "C": "2",
+    "D": "Error",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何将字符串 \"123\" 转换为整数？",
+    "A": "str(\"123\")",
+    "B": "int(\"123\")",
+    "C": "float(\"123\")",
+    "D": "list(\"123\")",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如何将整数 123 转换为字符串？",
+    "A": "str(123)",
+    "B": "int(123)",
+    "C": "char(123)",
+    "D": "string(123)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中元组的定义符号是什么？",
+    "A": "()",
+    "B": "{}",
+    "C": "[]",
+    "D": "<>",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪个是元组的特性？",
+    "A": "不可变",
+    "B": "可变",
+    "C": "无序",
+    "D": "元素必须是相同类型",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中字典的元素由什么组成？",
+    "A": "仅键 (keys only)",
+    "B": "仅值 (values only)",
+    "C": "索引和值 (index and value)",
+    "D": "键和值 (key and value)",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "字符串连接使用哪个运算符？",
+    "A": "&",
+    "B": "join",
+    "C": "+",
+    "D": "*",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"abc\"，s * 3 的结果是什么？",
+    "A": "\"abcabc\"",
+    "B": "\"aaabbbccc\"",
+    "C": "Error",
+    "D": "\"abcabcabc\"",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python中，if 语句的下一行代码块是如何表示的？",
+    "A": "使用花括号 {}",
+    "B": "使用缩进",
+    "C": "使用圆括号 ()",
+    "D": "使用 end if",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "if x > 0: print(\"Positive\")，如果 x 的值为 -1，会发生什么？",
+    "A": "输出 \"Positive\"",
+    "B": "程序报错",
+    "C": "输出 \"Negative\"",
+    "D": "什么都不输出",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "if-elif-else 结构中，else 分支在什么情况下执行？",
+    "A": "当 if 条件为 True",
+    "B": "当任意 elif 条件为 True",
+    "C": "当所有前面的条件都为 False",
+    "D": "总会执行",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "while 循环的条件为 False 时会发生什么？",
+    "A": "循环体不执行",
+    "B": "循环体执行一次",
+    "C": "程序报错",
+    "D": "无限循环",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "range(1, 5) 生成的整数序列是什么？",
+    "A": "1, 2, 3, 4, 5",
+    "B": "0,1, 2, 3, 4,5",
+    "C": "1, 2, 3, 4",
+    "D": "0, 1, 2, 3, 4",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在循环中，break 语句的作用是什么？",
+    "A": "立即终止并跳出当前循环",
+    "B": "跳过当前循环的剩余部分",
+    "C": "暂停循环",
+    "D": "重新开始循环",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在循环中，continue 语句的作用是什么？",
+    "A": "立即终止并跳出当前循环",
+    "B": "跳过当前循环的剩余部分",
+    "C": "结束整个程序",
+    "D": "什么都不做",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "pass 语句的作用是什么？",
+    "A": "退出程序",
+    "B": "打印 \"pass\"",
+    "C": "空操作，什么也不做",
+    "D": "引发一个错误",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何在Python中导入一个名为 math 的模块？",
+    "A": "import math",
+    "B": "load math",
+    "C": "include math",
+    "D": "use math",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "turtle 模块主要用于什么？",
+    "A": "数学计算",
+    "B": "文件操作",
+    "C": "图形绘制",
+    "D": "网络通信",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "random.randint(a, b) 函数的作用是什么？",
+    "A": "生成一个0到1之间的随机浮点数",
+    "B": "生成一个[a, b]范围内的随机整数",
+    "C": "从序列中随机选择一个元素",
+    "D": "打乱一个序列的顺序",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "math.sqrt(16) 的结果是什么？",
+    "A": "2",
+    "B": "8",
+    "C": "256",
+    "D": "4",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "time.sleep(n) 函数的作用是什么？",
+    "A": "程序暂停n秒",
+    "B": "获取当前时间戳",
+    "C": "格式化时间",
+    "D": "计算时间差",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 'hello', 3.14]，type(L[1]) 的结果是什么？",
+    "A": "int",
+    "B": "float",
+    "C": "str",
+    "D": "list",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何删除列表 L = ['a', 'b', 'c'] 中索引为 1 的元素？",
+    "A": "L.remove(1)",
+    "B": "L.pop(1)",
+    "C": "L.delete(1)",
+    "D": "L.clear(1)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L1 = [1, 2]，L2 = [3, 4]，L1 + L2 的结果是什么？",
+    "A": "[1,\" \",2,\" \",3,\" \",4]",
+    "B": "[[1,\" \",2],\" \",[3,\" \",4]]",
+    "C": "[1,\" \",2,\" \",[3,\" \",4]]",
+    "D": "Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [3, 1, 2]，执行 L.sort() 后，L 的值是什么？",
+    "A": "[3, 1, 2] (不变)",
+    "B": "[1,\" \",2]",
+    "C": "None",
+    "D": "[1,\" \",2,\" \",3]",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python中，集合（Set）的主要特点是什么？",
+    "A": "有序且元素唯一",
+    "B": "无序且元素唯一",
+    "C": "有序但元素可重复",
+    "D": "无序但元素可重复",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个空字典？",
+    "A": "d = {}",
+    "B": "d = []",
+    "C": "d = ()",
+    "D": "d = dict.empty()",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字典 d = {'name': 'Alice', 'age': 20}，如何获取键 'name' 对应的值？",
+    "A": "d.value('name')",
+    "B": "d.fetch('name')",
+    "C": "d['name']",
+    "D": "d.key('name')",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 float(\"3.14\") 的结果是什么？",
+    "A": "3.14 (浮点数)",
+    "B": "\"3.14\" (字符串)",
+    "C": "3 (整数)",
+    "D": "Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "将其他序列（如字符串、元组）转换为列表，应使用哪个函数？",
+    "A": "convert_to_list()",
+    "B": "make_list()",
+    "C": "tolist()",
+    "D": "list()",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"apple\"，s.replace('p', 'P') 的结果是什么？",
+    "A": "\"aPPle\"",
+    "B": "\"aPPle\" (新字符串)",
+    "C": "\"aPple\"",
+    "D": "原字符串s不变，返回\"aPPle\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 data = \"name,age,city\"，如何使用逗号将其分割成列表？",
+    "A": "data.split(',')",
+    "B": "data.join(',')",
+    "C": "data.divide(',')",
+    "D": "list(data, ',')",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 words = ['hello', 'world']，如何将它们连接成一个字符串，并用空格分隔？",
+    "A": "words.concat(' ')",
+    "B": "str.connect(words, ' ')",
+    "C": "\" \".join(words)",
+    "D": "words.split(' ')",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "abs(-5) 的结果是什么？",
+    "A": "-5",
+    "B": "5",
+    "C": "0",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "max(1, 5, 2, 8, 3) 的结果是什么？",
+    "A": "1",
+    "B": "3",
+    "C": "5",
+    "D": "8",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "格式化字符串 \"{}: {}岁\".format(\"张三\", 20) 的结果是什么？",
+    "A": "\"张三: 20岁\"",
+    "B": "\"张三, 20岁\"",
+    "C": "\"{张三}: {20}岁\"",
+    "D": "Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪个循环会无限执行（假设没有break或其他中断）？",
+    "A": "for i in range(0):",
+    "B": "while False:",
+    "C": "x = 5; while x < 5:",
+    "D": "while True:",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "range(5, 0, -1) 生成的序列是什么？",
+    "A": "5, 4, 3, 2, 1, 0",
+    "B": "5, 4, 3, 2, 1",
+    "C": "0, 1, 2, 3, 4, 5",
+    "D": "空序列",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在嵌套循环中，内层循环的 break 语句会影响哪个循环？",
+    "A": "只跳出内层循环",
+    "B": "跳出内层和外层循环",
+    "C": "跳出外层循环",
+    "D": "程序报错",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如果需要在满足某个条件时提前结束 for 循环，应该使用哪个语句？",
+    "A": "break",
+    "B": "continue",
+    "C": "pass",
+    "D": "exit",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "\"程序按照语句的先后顺序依次执行的结构\" 指的是什么结构？",
+    "A": "顺序结构",
+    "B": "选择结构",
+    "C": "循环结构",
+    "D": "分支结构",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "if condition1: ... elif condition2: ... else: ... 中，elif 最多可以有几个？",
+    "A": "0个",
+    "B": "1个",
+    "C": "2个",
+    "D": "任意多个",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "while 循环至少执行一次其循环体的条件是什么（不考虑break等）？",
+    "A": "条件一开始为True",
+    "B": "条件一开始为False",
+    "C": "循环体内有continue",
+    "D": "Python中没有直接保证至少执行一次的while",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "for i in range(2, 7, 2)，i 会依次取哪些值？",
+    "A": "2, 3, 4, 5, 6",
+    "B": "2, 4",
+    "C": "2, 4, 6",
+    "D": "2, 7",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，哪个语句通常用于占位，表示“什么都不做”？",
+    "A": "None",
+    "B": "pass",
+    "C": "continue",
+    "D": "break",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，else子句可以配合哪个循环语句使用，表示循环正常结束时执行的代码块？",
+    "A": "只有if语句",
+    "B": "只有for循环",
+    "C": "for循环和while循环",
+    "D": "只有while循环",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "要实现一个当用户输入特定字符（如'q'）时才退出的循环，最适合用哪种结构？",
+    "A": "while True 循环加 break",
+    "B": "for 循环固定次数",
+    "C": "单纯的 if-else 结构",
+    "D": "try-except 结构",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python的if语句条件表达式的值不为False或0或None或空序列时，条件被认为是？",
+    "A": "语法错误",
+    "B": "不确定",
+    "C": "Y",
+    "D": "N",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "哪个流程控制结构最适合处理一系列预定义次数的重复操作？",
+    "A": "if-elif-else",
+    "B": "for 循环",
+    "C": "while 循环",
+    "D": "try-except",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python语言的作者是谁？",
+    "A": "丹尼斯·里奇",
+    "B": "吉多·范罗苏姆",
+    "C": "比尔·盖茨",
+    "D": "林纳斯·托瓦兹",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，如果一行代码过长，推荐使用什么符号进行换行？",
+    "A": "& (与号)",
+    "B": "(分号)",
+    "C": "\\ (反斜杠)",
+    "D": "# (井号)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "\"\"\"这是一个多行注释\"\"\" 这种注释方式在Python中主要用于什么？",
+    "A": "函数或模块的文档字符串/多行注释",
+    "B": "单行代码的详细解释",
+    "C": "标记代码为待删除",
+    "D": "临时禁用一小段代码",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python解释器执行 .py 文件时，通常是从哪里开始执行的？",
+    "A": "文件的第一行",
+    "B": "main()函数（如果显式定义并调用）",
+    "C": "文件的最后一行",
+    "D": "任意位置",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "print(\"值是:\", 10, sep='-') 这条语句的输出结果是什么？",
+    "A": "值是: 10",
+    "B": "值是:10",
+    "C": "值是:-10",
+    "D": "值是 10",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "获取用户输入 name = input(\"请输入姓名：\") 后，name变量存储的信息是什么性质的？",
+    "A": "整数",
+    "B": "浮点数",
+    "C": "自动判断类型",
+    "D": "字符串",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 * (2 + 3) 的计算顺序是怎样的？",
+    "A": "先加法后乘法",
+    "B": "先乘法后加法",
+    "C": "从左到右依次计算",
+    "D": "从右到左依次计算",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "运算符 // 和 / 的主要区别是什么？",
+    "A": "//只能用于整数，/都可以",
+    "B": "//结果取整，/结果为浮点数",
+    "C": "//速度快，/速度慢",
+    "D": "没有区别",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "x = 10; y = 3; print(x ** y) 输出结果是？",
+    "A": "30",
+    "B": "1",
+    "C": "13",
+    "D": "1000",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "逻辑表达式 not (5 > 10) 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "0",
+    "D": "1",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "a = True; b = False; print(a or b) 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "赋值语句 x, y = 10, 20 在Python中被称为？",
+    "A": "条件赋值",
+    "B": "链式赋值",
+    "C": "多元赋值 (或序列解包)",
+    "D": "间接赋值",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "流程图中，平行四边形通常代表什么操作？",
+    "A": "输入/输出",
+    "B": "处理/运算",
+    "C": "判断/决策",
+    "D": "连接点",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "\"算法是解决特定问题的有限步骤序列\"，其中“有限性”指的是？",
+    "A": "步骤数量必须很少",
+    "B": "每一步都必须简单",
+    "C": "算法必须在有限步骤后终止",
+    "D": "算法只能解决简单问题",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python作为一种高级语言，其代码与机器语言相比，主要特点是？",
+    "A": "执行效率更高",
+    "B": "计算机可以直接理解",
+    "C": "占用内存更少",
+    "D": "更易于人类阅读和编写",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python的关键字（如if, for, while等）是否可以被重新赋值？",
+    "A": "可以，但不推荐",
+    "B": "不可以，会导致语法错误",
+    "C": "可以，但会失去原有功能",
+    "D": "取决于Python版本",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print(10 / 4) 和 print(10 // 4) 的输出结果分别是？",
+    "A": "2.5 和 2",
+    "B": "2 和 2.5",
+    "C": "2.0 和 2",
+    "D": "2.5 和 2.0",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 3 < 5 < 2 的结果是什么？ (提示：Python支持链式比较)",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "my_list = [1, 2, 3]; print(4 not in my_list) 的输出结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "1",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，如果希望打印出 % 符号本身，应该如何处理？(例如，打印 \"50%\")",
+    "A": "print(\"50\\%\")",
+    "B": "print(\"50%%\")",
+    "C": "print(\"50 percent\")",
+    "D": "print(\"50%\")",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python代码对缩进的要求是？",
+    "A": "可选的，为了美观",
+    "B": "强制的，用于表示代码块结构",
+    "C": "只在循环和函数中强制",
+    "D": "可以用Tab或空格，数量不限",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print(bool(0)) 和 print(bool(\"\")) 的输出结果分别是什么？",
+    "A": "True 和 True",
+    "B": "False 和 True",
+    "C": "True 和 False",
+    "D": "False 和 False",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "result = 1 + 2 * 3 ** 2，result 的值是多少？",
+    "A": "27",
+    "B": "36",
+    "C": "19",
+    "D": "7",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，复数 3 + 4j 的实部和虚部分别是什么？",
+    "A": "实部3.0, 虚部4.0",
+    "B": "实部3, 虚部4",
+    "C": "实部4.0, 虚部3.0",
+    "D": "无法直接获取",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "my_tuple = (1, 2, 3, 2)，my_tuple.index(2) 的结果是什么？",
+    "A": "0",
+    "B": "1",
+    "C": "3",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "尝试修改元组 my_tuple = (1, 2, 3) 的第一个元素为 0 会发生什么？",
+    "A": "元组变为 (0, 2, 3)",
+    "B": "引发 TypeError",
+    "C": "元组变为 (0,)",
+    "D": "什么也不发生",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, [2, 3], 4]，L[1][0] 的值是什么？",
+    "A": "1",
+    "B": "2",
+    "C": "[2,\" \",3]",
+    "D": "4",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "bool(None) 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3, 4, 5]，L[1:4:2] 的切片结果是什么？",
+    "A": "[2,\" \",3,\" \",4]",
+    "B": "[2,\" \",4,\" \",5]",
+    "C": "[2,\" \",4]",
+    "D": "[1,\" \",3,\" \",5]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "字符串 \"{1} love {0}\".format(\"Python\", \"I\") 的输出结果是什么？",
+    "A": "\"Python love I\"",
+    "B": "\"{Python} love {I} \"",
+    "C": "\"{I} love {Python}\"",
+    "D": "\"I love Python\"",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "list(\"hello\") 的结果是什么？",
+    "A": "[\"\"\",\"hello\"\"]",
+    "B": "(\"h\", \"e\", \"l\", \"l\", \"o\")",
+    "C": "[\"h\",\" \",\"e\",\" \",\"l\",\" \",\"l\",\" \",\"o\"]",
+    "D": "Error",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "pow(2, 3, 5) 的结果是什么？ (提示: pow(x, y, z) 等于 (x**y) % z)",
+    "A": "8",
+    "B": "3",
+    "C": "2",
+    "D": "6",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"abcde\"，s.find(\"cd\") 的返回值是什么？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "round(3.14159, 2) 的结果是什么？",
+    "A": "3.14",
+    "B": "3.1",
+    "C": "3.142",
+    "D": "3",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \" Python \"，s.strip() 的结果是什么？",
+    "A": "\" Python \" (不变)",
+    "B": "\"Python\"",
+    "C": "\"Python \"",
+    "D": "\" Python\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2]，执行 L.extend([3, 4]) 后，L 的值是什么？",
+    "A": "[1,\" \",2,\" \",[3,\" \",4]]",
+    "B": "[[1,\" \",2],\" \",[3,\" \",4]]",
+    "C": "[1, 2, 3, 4, None]",
+    "D": "[1,\" \",2,\" \",3,\" \",4]",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "如何将一个包含重复元素的列表 [1, 2, 2, 3, 1] 转换为不含重复元素的列表（顺序不要求）？",
+    "A": "使用unique()函数",
+    "B": "遍历并手动删除",
+    "C": "直接赋值给新列表",
+    "D": "list(set(my_list))",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "int(True) 和 int(False) 的结果分别是什么？",
+    "A": "1 和 0",
+    "B": "0 和 1",
+    "C": "True 和 False",
+    "D": "Error 和 Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 a = [1, 2], b = a, b.append(3) 后，列表 a 的内容是什么？",
+    "A": "[1,\" \",2]",
+    "B": "[3]",
+    "C": "[1,\" \",2,\" \",3]",
+    "D": "[1,\" \",2,\" \",[3]]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "sum([1, 2, 3, 4]) 的结果是什么？",
+    "A": "0",
+    "B": "4",
+    "C": "Error",
+    "D": "10",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "哪个方法可以清空一个列表 L 的所有元素？",
+    "A": "L.delete_all()",
+    "B": "L.clear()",
+    "C": "L = None",
+    "D": "L.empty()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 name = \"Alice\"，尝试 name[0] = 'a' 会发生什么？",
+    "A": "name 变为 \"alice\"",
+    "B": "程序继续，但name不变",
+    "C": "引发 TypeError",
+    "D": "name 变为 ['a', 'l', ...]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "(10 > 5) + 1 的结果是什么？ (提示：布尔值可以参与算术运算)",
+    "A": "Y",
+    "B": "2",
+    "C": "Error",
+    "D": "N",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，动态类型语言的含义是什么？",
+    "A": "变量类型在运行时确定，无需预声明",
+    "B": "变量类型一旦确定不可改变",
+    "C": "所有变量都是同一类型",
+    "D": "代码必须先编译才能确定类型",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "if x = 5: 这行代码存在什么问题？ (假设意图是比较)",
+    "A": "应该使用 == 进行比较",
+    "B": "变量 x 未定义",
+    "C": "数字5不能用于条件",
+    "D": "if 后面必须有括号",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，实现“当型循环”通常使用哪个关键字？",
+    "A": "while",
+    "B": "for",
+    "C": "if",
+    "D": "do (Python无此关键字)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "import math as m; print(m.pi) 这段代码中 as m 的作用是什么？",
+    "A": "导入math模块的一部分",
+    "B": "给math模块指定别名m",
+    "C": "创建一个名为m的新模块",
+    "D": "检查math模块是否存在",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.circle(50) 命令的作用是绘制一个？",
+    "A": "半径为50的圆",
+    "B": "直径为50的圆",
+    "C": "边长为50的正方形",
+    "D": "移动50个单位",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "random.choice(['a', 'b', 'c']) 可能返回的结果不包括哪个？",
+    "A": "\"a\"",
+    "B": "\"b\"",
+    "C": "\"c\"",
+    "D": "\"d\"",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "math.floor(3.9) 的结果是什么？",
+    "A": "4",
+    "B": "3.0（一位小数）",
+    "C": "3",
+    "D": "4.0（一位小数）",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python的 '''三重引号''' 主要用于定义什么？",
+    "A": "多行字符串",
+    "B": "单行注释",
+    "C": "整数类型",
+    "D": "浮点数类型",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "哪个选项描述了Python语言“解释型”的特点？",
+    "A": "代码执行速度非常快",
+    "B": "必须先编译再执行",
+    "C": "错误在编译阶段就能发现",
+    "D": "代码逐行解释执行，无需预编译",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "x = y = z = 10 这种赋值方式执行后，y 的值是多少？",
+    "A": "10",
+    "B": "Error",
+    "C": "None",
+    "D": "无法确定",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 10 // -3 的结果是多少？",
+    "A": "-3",
+    "B": "-4",
+    "C": "3",
+    "D": "4",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果要在 print() 函数输出的末尾不加换行符，而是加上 \"--\"，应该怎么写？",
+    "A": "print(\"text\", nonewline=True)",
+    "B": "print(\"text\" + \"--\")",
+    "C": "print(\"text\", end=\"--\")",
+    "D": "print(\"text --\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python标识符不能以什么开头？",
+    "A": "下划线 _",
+    "B": "数字",
+    "C": "大写字母",
+    "D": "小写字母",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 int(9.8) - float(9) 的结果是什么？",
+    "A": "0",
+    "B": "1",
+    "C": "0.8",
+    "D": "0.0(一位小数)",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "\"算法具有确定性\"指的是？",
+    "A": "算法的每一步都有确切含义",
+    "B": "算法必须有输入",
+    "C": "算法必须有输出",
+    "D": "算法是有限的步骤",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "语句 x = input() 执行后，如果用户输入 123，则 type(x) 的结果是？",
+    "A": "<class 'int'>",
+    "B": "<class 'float'>",
+    "C": "<class 'str'>",
+    "D": "<class 'NoneType'>",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(0 or \"\" or None or 1) 的输出结果是什么？",
+    "A": "0",
+    "B": "\"\"",
+    "C": "None",
+    "D": "1",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [10, [20, 30], 40]，L[1] 的类型是什么？",
+    "A": "<class 'list'>",
+    "B": "<class 'int'>",
+    "C": "<class 'tuple'>",
+    "D": "<class 'str'>",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如何将列表 L = [3, 1, 2] 进行降序排序并修改原列表？",
+    "A": "sorted(L, reverse=False)",
+    "B": "L.reverse() 后 L.sort()",
+    "C": "L.sort(reverse=True)",
+    "D": "L = sorted(L)[::-1]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，如果希望创建一个内容固定不变的序列，应优先考虑使用哪种数据类型？",
+    "A": "列表 (list)",
+    "B": "集合 (set)",
+    "C": "元组 (tuple)",
+    "D": "字典 (dict)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "my_list = [[1],[2],[3]]，len(my_list) 的结果是什么？",
+    "A": "1",
+    "B": "6",
+    "C": "3",
+    "D": "0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "str(True) 的结果是什么？",
+    "A": "\"True\"",
+    "B": "\"1\"",
+    "C": "\"False\"",
+    "D": "Error",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"python\"，s.upper().lower() 的结果是什么？",
+    "A": "\"PYTHON\"",
+    "B": "\"python\"",
+    "C": "\"Python\"",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "max(\"apple\", \"apply\", \"apricot\") 的结果是什么？",
+    "A": "\"apple\"",
+    "B": "\"apricot\"",
+    "C": "\"apply\"",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "random.uniform(1, 10) 可能生成哪个数？",
+    "A": "10.0 (严格大于等于1，小于10)",
+    "B": "5.5",
+    "C": "0.5",
+    "D": "11",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print(\"Hello\", end=' ') 和 print(\"World\") 两条语句会如何输出？",
+    "A": "Hello<br>World",
+    "B": "HelloWorld<br>",
+    "C": "Hello World<br>",
+    "D": "Hello <br>World",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "下列哪个不是Python的算术运算符？",
+    "A": "+ (加)",
+    "B": "** (幂)",
+    "C": "% (取余)",
+    "D": "& (按位与)",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "表达式 (100 > 99) == True 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中，一行代码可以包含多个语句吗？如果可以，通常用什么分隔？",
+    "A": "不可以",
+    "B": "可以，用分号 (;) 分隔",
+    "C": "可以，用逗号 (,) 分隔",
+    "D": "可以，用冒号 (:) 分隔",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "a = 10; b = a; a = 5; print(b) 会输出什么？",
+    "A": "5",
+    "B": "Error",
+    "C": "10",
+    "D": "None",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "流程图中的“处理框”通常是什么形状？",
+    "A": "矩形",
+    "B": "菱形",
+    "C": "平行四边形",
+    "D": "圆角矩形",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "input() 函数读取用户输入时，如果用户直接按回车键没有输入任何字符，函数返回什么？",
+    "A": "None",
+    "B": "引发错误",
+    "C": "一个空格",
+    "D": "空字符串 \"\"",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "print(1, 2, 3, sep='*') 的输出是什么？",
+    "A": "1 2 2003",
+    "B": "1*2*3",
+    "C": "1,2,3,*",
+    "D": "123*",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，使用三个单引号 ''' 或三个双引号 \"\"\" 创建的字符串有什么特殊用途？",
+    "A": "只能用于注释",
+    "B": "只能用于包含变量的字符串",
+    "C": "可以跨越多行，常用于文档字符串",
+    "D": "只能包含ASCII字符",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 != 5.0 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3]，L.insert(1, 99) 操作后 L 变为？",
+    "A": "[99,\" \",1,\" \",2,\" \",3]",
+    "B": "[1,\" \",2,\" \",3,\" \",99]",
+    "C": "[1,\" \",99,\" \",2,\" \",3]",
+    "D": "[1,\" \",2,\" \",99,\" \",3]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 t = [10, 20, 30, 20]，t.count(20) 的结果是多少？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "0",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 num_str = \" 123 \"，要得到整数 123，以下哪个操作组合最合适？",
+    "A": "int(num_str)",
+    "B": "num_str.trim().to_int()",
+    "C": "str(int(num_str.strip()))",
+    "D": "int(num_str.strip())",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "my_list = [1, 2, 3] * 2，my_list 的内容是什么？",
+    "A": "[2,\" \",4,\" \",6]",
+    "B": "[1,\" \",2,\" \",3,\" \",1,\" \",2,\" \",3]",
+    "C": "[[1,2,3],\" \",[1,2,3]]",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print(type(1/2)) 的输出结果是什么？",
+    "A": "<class 'int'>",
+    "B": "<class 'number'>",
+    "C": "<class 'float'>",
+    "D": "<class 'double'>",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "result = [i*i for i in range(3)]，result 的值是什么？",
+    "A": "[0,\" \",1,\" \",2]",
+    "B": "[0,\" \",1,\" \",4]",
+    "C": "[1,\" \",4,\" \",9]",
+    "D": "[0,\" \",0,\" \",0]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "math.ceil(3.1) 和 math.floor(3.9) 的结果分别是？",
+    "A": "3 和 3",
+    "B": "4 和 3",
+    "C": "3 和 4",
+    "D": "4 和 4",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.pencolor(\"red\") 这条命令的作用是什么？",
+    "A": "设置画布背景色为红色",
+    "B": "填充颜色为红色",
+    "C": "设置画笔颜色为红色",
+    "D": "绘制一个红色的点",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python语言在哪一年首次公开发布？",
+    "A": "1985",
+    "B": "2000",
+    "C": "1995",
+    "D": "1991",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python中，is 运算符和 == 运算符的主要区别是什么？",
+    "A": "没有区别",
+    "B": "is 用于数字, == 用于字符串",
+    "C": "is 比较对象身份, == 比较值",
+    "D": "is 效率低, == 效率高",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(\"Python\"[::-1]) 的输出结果是什么？",
+    "A": "\"Python\"",
+    "B": "\"nohtyP\"",
+    "C": "\"P\"",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "尝试将一个数字和字符串直接用 + 相加会发生什么？例如 1 + \"2\"",
+    "A": "引发 TypeError",
+    "B": "结果为 \"12\" (字符串)",
+    "C": "结果为 3 (整数)",
+    "D": "结果为 None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "print(\"A\", \"B\", \"C\", sep=\"-\", end=\"!\") 的输出结果是什么？",
+    "A": "\"A B C-\"",
+    "B": "\"A-B-C\"",
+    "C": "\"A-B-C!\"",
+    "D": "\"ABC-!\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "x = (5 > 3) and (10 < 20)，变量 x 的最终类型是什么？",
+    "A": "int",
+    "B": "str",
+    "C": "float",
+    "D": "bool",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 'a', None, True]，其中有多少个元素在布尔上下文中被认为是 False？",
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "3",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 path = \"/usr/local/bin\"; path.split('/') 结果列表的第一个元素是什么？",
+    "A": "\"usr\"",
+    "B": "\"/\"",
+    "C": "\"local\"",
+    "D": "\"\" (空字符串)",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "list_a = [1,2]; list_b = [3,4]; list_a.append(list_b); len(list_a) 是多少？",
+    "A": "2",
+    "B": "4",
+    "C": "3",
+    "D": "5",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何将字符串 s = \"42\" 转换为浮点数 42.0？",
+    "A": "s.to_float()",
+    "B": "float(s)",
+    "C": "convert_float(s)",
+    "D": "s.float()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "s=\"1,2,3\"; L=s.split(','); print(type(L[0])) 输出什么？",
+    "A": "<class 'int'>",
+    "B": "<class 'list'>",
+    "C": "<class 'float'>",
+    "D": "<class 'str'>",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "\"{city} is in {country}\".format(country=\"China\", city=\"Beijing\") 输出是？",
+    "A": "\"Beijing is in China\"",
+    "B": "\"China is in Beijing\"",
+    "C": "Error",
+    "D": "\"{city} is in {country}\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "x = \"python\"; print(x[0] == x[-6]) 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "turtle.bgcolor(\"lightblue\") 这条命令最可能的作用是什么？",
+    "A": "设置画笔颜色为浅蓝色",
+    "B": "设置画布背景颜色为浅蓝色",
+    "C": "填充形状为浅蓝色",
+    "D": "绘制一个浅蓝色的海龟",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.shape(\"turtle\") 这条命令最可能的作用是什么？",
+    "A": "改变画布形状为乌龟",
+    "B": "绘制一个乌龟形状的图案",
+    "C": "填充颜色为乌龟的颜色",
+    "D": "设置海龟光标的形状为乌龟",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "eval(\"2 + 3 * 4\") 的结果是什么？",
+    "A": "\"2 + 3 * 4\"",
+    "B": "20",
+    "C": "14",
+    "D": "Error",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，# -*- coding: utf-8 -*- 这行注释通常出现在文件的哪个位置及其作用？",
+    "A": "文件开头，声明编码格式",
+    "B": "文件末尾，总结代码",
+    "C": "任意位置，普通注释",
+    "D": "用于导入模块",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，pass 关键字最恰当的描述是？",
+    "A": "空操作占位符",
+    "B": "结束循环",
+    "C": "跳过当前迭代",
+    "D": "引发一个异常",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中，id() 函数返回的是什么？",
+    "A": "对象的值",
+    "B": "对象的类型",
+    "C": "对象的唯一标识符(内存地址)",
+    "D": "对象的大小",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，哪个是定义“块”或“代码组”的主要方式？",
+    "A": "花括号 {}",
+    "B": "圆括号 ()",
+    "C": "缩进",
+    "D": "begin...end 关键字",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "help('keywords') 在Python解释器中执行会显示什么？",
+    "A": "Python版本信息",
+    "B": "\"keywords\"的帮助文档",
+    "C": "一个错误信息",
+    "D": "Python的关键字列表",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "s = \"apple\"; s.replace('p', 'P', 1) 的结果是什么？",
+    "A": "\"aPPle\"",
+    "B": "\"aPple\"",
+    "C": "\"apple\"",
+    "D": "\"aPPLe\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "L = [1,2,3]; L[1:2] = [8,9]; L 的值是？",
+    "A": "[1,\" \",[8,9],\" \",3]",
+    "B": "[1,\" \",8,\" \",9]",
+    "C": "[1,\" \",8,\" \",9,\" \",3]",
+    "D": "Error",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "bool(\"False\") 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "s = \"Python\"; print(s.find('o', 5))",
+    "A": "4",
+    "B": "Error",
+    "C": "0",
+    "D": "-1",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"你好\"，len(s) 是多少？",
+    "A": "2",
+    "B": "4",
+    "C": "6",
+    "D": "取决于操作系统",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "L = [1,2,3]; L.insert(0, L.pop()) 执行后 L 的值是？",
+    "A": "[1,2,3]",
+    "B": "[3,2,1]",
+    "C": "[3,1,2]",
+    "D": "[1,3,2]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "s = \"Python\"; s[1:1] = \"X\" 这条语句会发生什么？",
+    "A": "s 变为 \"PXython\"",
+    "B": "s 变为 \"PythonX\"",
+    "C": "引发 TypeError",
+    "D": "s 不变",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "\"Py\"* 3 == \"PyPyPy\"的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "Error",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "f\"{3.14159:.2f}\" 这个f-string表达式的结果是什么？",
+    "A": "\"3.14\"",
+    "B": "\"3.1416\"",
+    "C": "\"3.1\"",
+    "D": "\" 3.14\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "要遍历一个列表 my_list 中的所有元素，以下哪个 for 循环是正确的？",
+    "A": "for i in range(my_list): print(i)",
+    "B": "for element in my_list: print(element)",
+    "C": "for i in my_list.length(): print(my_list[i])",
+    "D": "for each my_list: print(each)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果 x = 10，y = 20，条件表达式 x > 5 and y < 15 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "10",
+    "D": "20",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果 x = 0，条件表达式 x > 0 or x == 0 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "0",
+    "D": "None",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中，import math 这条语句的作用是什么？",
+    "A": "定义一个名为math的函数",
+    "B": "创建一个名为math的变量",
+    "C": "导入标准库中的math模块",
+    "D": "从互联网下载math模块",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "要使用 math 模块中的 sqrt 函数计算平方根，正确的调用方式是（假设已导入math模块）？",
+    "A": "sqrt(16)",
+    "B": "math.sqrt(16)",
+    "C": "math->sqrt(16)",
+    "D": "16.sqrt()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle图形库中，turtle.forward(100) 的作用是什么？",
+    "A": "海龟向后移动100个单位",
+    "B": "海龟向左转100度",
+    "C": "海龟向前移动100个单位",
+    "D": "海龟向右转100度",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python脚本文件的常见扩展名是？",
+    "A": ".java",
+    "B": ".py",
+    "C": ".c",
+    "D": ".html",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个不是Python的关键字？",
+    "A": "if",
+    "B": "for",
+    "C": "main",
+    "D": "while",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在Python中，None代表什么？",
+    "A": "字符串\"None\"",
+    "B": "整数0",
+    "C": "一个特殊的空值对象",
+    "D": "布尔值False",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "浮点数类型在Python中用哪个关键字表示？",
+    "A": "integer",
+    "B": "double",
+    "C": "float",
+    "D": "real",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 2 ** 3 的结果是什么？",
+    "A": "5",
+    "B": "6",
+    "C": "8",
+    "D": "9",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "运算符 != 的含义是？",
+    "A": "等于",
+    "B": "小于或等于",
+    "C": "不等于",
+    "D": "大于或等于",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 True or False 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "1",
+    "D": "0",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 not True 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "0",
+    "D": "-1",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "input(\"请输入您的年龄: \") 函数的返回值是什么类型？",
+    "A": "int",
+    "B": "float",
+    "C": "str",
+    "D": "bool",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(\"Hello\", \"World\", sep=\"-\") 的输出是什么？",
+    "A": "Hello World",
+    "B": "Hello-World",
+    "C": "HelloWorld",
+    "D": "\"Hello\"-\"World\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，多行注释可以使用什么符号包围？",
+    "A": "// ... //",
+    "B": "/* ... */",
+    "C": "''' ... ''' 或 \"\"\" ... \"\"\"",
+    "D": "# ... #",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "关于Python的缩进，以下说法正确的是？",
+    "A": "缩进是非强制的，只为了美观",
+    "B": "缩进必须使用Tab键",
+    "C": "缩进用于定义代码块，通常为4个空格",
+    "D": "缩进只在函数定义时需要",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 int(10.8) 的结果是什么？",
+    "A": "10",
+    "B": "11",
+    "C": "10.8",
+    "D": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中，哪个关键字用于定义一个函数？",
+    "A": "func",
+    "B": "def",
+    "C": "function",
+    "D": "define",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，#符号后的内容被称为什么？",
+    "A": "字符串",
+    "B": "变量",
+    "C": "注释",
+    "D": "表达式",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "以下哪个选项可以正确打印变量x的值？",
+    "A": "print x",
+    "B": "Print(x)",
+    "C": "print(x)",
+    "D": "Console.Log(x)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，哪个运算符用于检查一个值是否在序列中？",
+    "A": "is",
+    "B": "in",
+    "C": "exists",
+    "D": "contains",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，如何表示一个空字符串？",
+    "A": "None",
+    "B": "\"\"或''",
+    "C": "String.Empty",
+    "D": "\"null\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Python\"，s[-2] 的值是什么？",
+    "A": "\"P\"",
+    "B": "\"o\"",
+    "C": "\"n\"",
+    "D": "\"y\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串切片 s = \"abcdef\"; s[1:4] 的结果是什么？",
+    "A": "\"abc\"",
+    "B": "\"bcd\"",
+    "C": "\"bce\"",
+    "D": "\"abcd\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Hello\"，表达式 s * 3 的结果是什么？",
+    "A": "\"HelloHelloHello\"",
+    "B": "\"HHHeeellllllooo\"",
+    "C": "错误",
+    "D": "\"Hello3\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "哪个字符串方法可以将字符串分割成一个列表？",
+    "A": "join()",
+    "B": "split()",
+    "C": "replace()",
+    "D": "find()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串方法 \" python \".strip() 的返回值是什么？",
+    "A": "\"python\"",
+    "B": "\" python \"",
+    "C": "\"python \"",
+    "D": "\" python\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"abcde\"，s[::-1] 的结果是什么？",
+    "A": "\"abcde\"",
+    "B": "\"edcba\"",
+    "C": "\"a\"",
+    "D": "\"e\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串方法 \"banana\".count(\"na\") 的返回值是什么？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "0",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 % 操作符进行字符串格式化，\"Name: %s Age: %d\" % (\"Alice\", 30) 的结果是什么？",
+    "A": "\"Name: Alice Age: 30\"",
+    "B": "\"Name: %s Age: %d\"",
+    "C": "错误",
+    "D": "(\"Name: Alice\", \"Age: 30\")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个空列表？",
+    "A": "list = ()",
+    "B": "list = {}",
+    "C": "list = [] 或 list = list()",
+    "D": "list = null",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 eval(\"2 + 3 * 4\") 的结果是什么？",
+    "A": "\"2 + 3 * 4\"",
+    "B": "20",
+    "C": "14",
+    "D": "错误",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "len(\"Python\") 的结果是什么？",
+    "A": "5",
+    "B": "6",
+    "C": "7",
+    "D": "P",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "max([1, 5, 2, 8, 3]) 的结果是什么？",
+    "A": "1",
+    "B": "8",
+    "C": "5",
+    "D": "[1,\" \",5,\" \",2,\" \",8,\" \",3]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "min(\"apple\") 的结果是什么？",
+    "A": "\"a\"",
+    "B": "\"e\"",
+    "C": "\"p\"",
+    "D": "\"l\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "sum([1, 2, 3, 4, 5]) 的结果是什么？",
+    "A": "5",
+    "B": "15",
+    "C": "120",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "下列哪个选项不是Python语言的特点？",
+    "A": "简洁易学",
+    "B": "开源免费",
+    "C": "执行效率极高，堪比C语言",
+    "D": "可移植性强",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python通常不用于以下哪个应用领域？",
+    "A": "Web开发",
+    "B": "操作系统内核开发",
+    "C": "数据科学",
+    "D": "人工智能",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是Python中合法的变量名？",
+    "A": "2myVar",
+    "B": "my-var",
+    "C": "_myVar",
+    "D": "my var",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在Python中，为一个变量赋值时使用的符号是？",
+    "A": "==",
+    "B": ":=",
+    "C": "=",
+    "D": "===",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，整型数据类型通常表示为什么？",
+    "A": "str",
+    "B": "float",
+    "C": "int",
+    "D": "bool",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中，布尔类型（bool）的值有哪些？",
+    "A": "True, False",
+    "B": "Yes, No",
+    "C": "1, 0",
+    "D": "T, F",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "算术运算符 ‘//’ 在Python中表示什么？",
+    "A": "浮点数除法",
+    "B": "取模运算",
+    "C": "整数除法（向下取整）",
+    "D": "幂运算",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 20 % 3 的结果是什么？",
+    "A": "2",
+    "B": "3",
+    "C": "3.33",
+    "D": "0",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中，比较两个值是否相等的运算符是？",
+    "A": "=",
+    "B": "!=",
+    "C": "==",
+    "D": "<>",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "逻辑运算符 and，当 a and b 为 True 时，意味着什么？",
+    "A": "a为True，b为False",
+    "B": "a为False，b为True",
+    "C": "a和b都为True",
+    "D": "a和b都为False",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python中获取用户输入的函数是？",
+    "A": "print()",
+    "B": "input()",
+    "C": "get()",
+    "D": "read()",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print()函数的作用是什么？",
+    "A": "获取用户输入",
+    "B": "在控制台输出信息",
+    "C": "执行数学运算",
+    "D": "定义一个函数",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，单行注释以什么符号开头？",
+    "A": "//",
+    "B": "/*",
+    "C": "#",
+    "D": "--",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python代码块的结构是通过什么来定义的？",
+    "A": "大括号 {}",
+    "B": "分号",
+    "C": "缩进",
+    "D": "begin/end关键字",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "以下哪个print语句会导致语法错误？",
+    "A": "print(\"Hello\")",
+    "B": "print(Hello)",
+    "C": "print(\"Hello\" ,\"World\")",
+    "D": "x=10; print(x)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 + 3 * 2 的结果是什么？",
+    "A": "16",
+    "B": "11",
+    "C": "13",
+    "D": "10",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个包含字符串 \"Python\" 的变量 s？",
+    "A": "s = Python",
+    "B": "s = \"Python\"",
+    "C": "string s = \"Python\"",
+    "D": "s := \"Python\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对于字符串 s = \"hello\"，s[1] 的值是什么？",
+    "A": "\"h\"",
+    "B": "\"e\"",
+    "C": "\"l\"",
+    "D": "\"o\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对于字符串 s = \"Python Programming\"，s[7:18] 的结果是什么？",
+    "A": "\"Programming\"",
+    "B": "\"Programmin\"",
+    "C": "\" Programming\"",
+    "D": "\"rogramming\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串方法 \"Hello World\".upper() 的返回值是什么？",
+    "A": "\"hello world\"",
+    "B": "\"HELLO WORLD\"",
+    "C": "\"Hello World\"",
+    "D": "\"hELLO wORLD\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如何使用f-string格式化字符串，将变量 name 和 age 插入到 \"My name is ... and I am ... years old.\" 中？",
+    "A": "\"My name is {name} and I am {age} years old.\"",
+    "B": "f\"My name is {name} and I am {age} years old.\"",
+    "C": "\"My name is %s and I am %d years old.\" % (name, age)",
+    "D": "\"My name is \" + name + \" and I am \" + str(age) + \" years old.\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是创建Python列表的正确方式？",
+    "A": "my_list = (1, 2, 3)",
+    "B": "my_list = {1, 2, 3}",
+    "C": "my_list = [1, 2, 3]",
+    "D": "my_list = <1, 2, 3>",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对于列表 L = [10, 20, 30, 40, 50]，L[-1] 的值是什么？",
+    "A": "10",
+    "B": "50",
+    "C": "40",
+    "D": "错误，索引不能为负",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "哪个列表方法用于在列表末尾添加一个元素？",
+    "A": "insert()",
+    "B": "extend()",
+    "C": "append()",
+    "D": "add()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表方法 L.pop(1) 对列表 L = ['a', 'b', 'c'] 执行后，L 变为？",
+    "A": "[\"a\",\" \",\"c\"]",
+    "B": "[\"b\",\" \",\"c\"]",
+    "C": "[\"a\",\" \",\"b\"]",
+    "D": "[\"a\",\" \",\"b\",\" \",\"c\"]",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下关于Python元组的说法，哪个是正确的？",
+    "A": "元组是可变的",
+    "B": "元组使用方括号定义",
+    "C": "元组一旦创建，其元素不能被修改",
+    "D": "元组的元素必须是相同类型",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个包含元素1, 2, 3的元组？",
+    "A": "t = [1, 2, 3]",
+    "B": "t = {1, 2, 3}",
+    "C": "t = (1, 2, 3)",
+    "D": "t = tuple(1, 2, 3)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对于元组 T = (10, 20, 30)，T[0] 的值是什么？",
+    "A": "10",
+    "B": "20",
+    "C": "30",
+    "D": "错误，元组不支持索引",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下哪个是创建Python字典的正确方式？",
+    "A": "d = {\"name\": \"Alice\", \"age\": 30}",
+    "B": "d = [\"name\": \"Alice\", \"age\": 30]",
+    "C": "d = (\"name\": \"Alice\", \"age\": 30)",
+    "D": "d = <\"name\"=\"Alice\", \"age\"=30>",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下关于Python集合的说法，哪个是错误的？",
+    "A": "集合中的元素是无序的",
+    "B": "集合中可以包含重复的元素",
+    "C": "集合使用花括号定义，或者set()函数",
+    "D": "集合可以用于去重",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 set([1, 2, 2, 3, 4, 4, 4]) 的结果是什么？",
+    "A": "[1,\" \",2,\" \",2,\" \",3,\" \",4,\" \",4,\" \",4]",
+    "B": "{1, 2, 3, 4}",
+    "C": "(1, 2, 3, 4)",
+    "D": "{[1, 2, 3, 4]}",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "将字符串 \"123\" 转换为整数，应使用哪个函数？",
+    "A": "float(\"123\")",
+    "B": "str(123)",
+    "C": "int(\"123\")",
+    "D": "list(\"123\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3]，L[1] = 10 操作后，L 变为？",
+    "A": "[1,\" \",2,\" \",3,\" \",10]",
+    "B": "[1,\" \",10,\" \",3]",
+    "C": "[10,\" \",2,\" \",3]",
+    "D": "错误，列表元素不能修改",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表方法 L.insert(1, 'new') 对列表 L = ['a', 'b'] 执行后，L 变为？",
+    "A": "[\"a\",\" \",\"new\",\" \",\"b\"]",
+    "B": "[\"new\",\" \",\"a\",\" \",\"b\"]",
+    "C": "[\"a\",\" \",\"b\",\" \",\"new\"]",
+    "D": "[\"a\",\" \",\"b\"]",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表方法 L.remove('b') 对列表 L = ['a', 'b', 'c', 'b'] 执行后，L 变为？",
+    "A": "[\"a\",\" \",\"c\",\" \",\"b\"]",
+    "B": "[\"a\",\" \",\"c\"]",
+    "C": "[\"a\",\" \",\"b\",\" \",\"c\"]",
+    "D": "错误，remove参数应为索引",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 L1 = [1, 2]，L2 = [3, 4]，L1 + L2 的结果是什么？",
+    "A": "[[1,\" \",2],\" \",[3,\" \",4]]",
+    "B": "[1,\" \",2,\" \",3,\" \",4]",
+    "C": "[4,\" \",6]",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = ['x']，L * 3 的结果是什么？",
+    "A": "[\"x\",\" \",\"x\",\" \",\"x\"]",
+    "B": "[\"xxx\"]",
+    "C": "错误",
+    "D": "[\"x3\"]",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如何检查值 5 是否在列表 nums = [1, 5, 10] 中？",
+    "A": "nums.contains(5)",
+    "B": "5 in nums",
+    "C": "nums.find(5)",
+    "D": "exists(5, nums)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表方法 L.index(30) 对列表 L = [10, 20, 30, 20] 返回什么？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "错误，30不在列表中",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表方法 L.sort() 对列表 L = [3, 1, 2] 执行后，L 变为？",
+    "A": "[1,\" \",2,\" \",3]",
+    "B": "[3,\" \",1,\" \",2]",
+    "C": "None",
+    "D": "[3,\" \",2,\" \",1]",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个空字典？",
+    "A": "d = []",
+    "B": "d = ()",
+    "C": "d = {} 或 d = dict()",
+    "D": "d = None",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "如何创建一个空集合？",
+    "A": "s = {}",
+    "B": "s = []",
+    "C": "s = set()",
+    "D": "s = ()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "将整数 10 转换为字符串，应使用哪个函数？",
+    "A": "str(10)",
+    "B": "int(\"10\")",
+    "C": "char(10)",
+    "D": "string(10)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 float(\"3.14\") 的结果是什么？",
+    "A": "\"3.14\"",
+    "B": "3.14",
+    "C": "3",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "将元组 ('a', 'b') 转换为列表，应使用哪个函数？",
+    "A": "list(('a', 'b'))",
+    "B": "tuple(['a', 'b'])",
+    "C": "set(('a', 'b'))",
+    "D": "str(('a', 'b'))",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 bool(\"\")（空字符串）的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "\"\"",
+    "D": "None",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 bool([1, 2])（非空列表）的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "[1,\" \",2]",
+    "D": "1",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Python is fun\"，s.split() 的默认分隔符是什么？",
+    "A": "逗号",
+    "B": "空格",
+    "C": "换行符",
+    "D": "无分隔符",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，if x: 语句的条件 x 在什么情况下被视为假（False）？",
+    "A": "x 为 0, 空字符串, 空列表, None",
+    "B": "x 仅为 False",
+    "C": "x 为负数",
+    "D": "x 为非空字符串",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "range(5) 生成的序列不包含哪个数？",
+    "A": "0",
+    "B": "2",
+    "C": "4",
+    "D": "5",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "range(2, 5) 生成的序列是什么？",
+    "A": "[2,\" \",3,\" \",4,\" \",5]",
+    "B": "[2,\" \",3,\" \",4]",
+    "C": "[2,\" \",5]",
+    "D": "[3,\" \",4,\" \",5]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在嵌套循环中，内层循环的 break 语句会影响哪个循环？",
+    "A": "只影响内层循环",
+    "B": "只影响外层循环",
+    "C": "同时影响内外两层循环",
+    "D": "不影响任何循环",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下哪个模块不是Python的标准库模块？",
+    "A": "math",
+    "B": "random",
+    "C": "numpy",
+    "D": "turtle",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "from math import sqrt 后，如何调用平方根函数？",
+    "A": "math.sqrt(4)",
+    "B": "sqrt(4)",
+    "C": "math->sqrt(4)",
+    "D": "from math.sqrt(4)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "import math as m 后，如何调用 pi 常量？",
+    "A": "math.pi",
+    "B": "m.pi",
+    "C": "pi",
+    "D": "m->pi",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "math.floor(3.9) 的结果是什么？",
+    "A": "3.0",
+    "B": "4",
+    "C": "3",
+    "D": "3.9",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "math.pow(2, 3) 的结果是什么？",
+    "A": "6",
+    "B": "6.0",
+    "C": "8.0",
+    "D": "8",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "math.pi 的近似值是？",
+    "A": "3.14",
+    "B": "3.14159",
+    "C": "由math模块提供的一个高精度π值",
+    "D": "45860",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.left(90) 的作用是什么？",
+    "A": "海龟向左移动90个单位",
+    "B": "海龟向左旋转90度",
+    "C": "海龟向右移动90个单位",
+    "D": "海龟向右旋转90度",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.penup() 的作用是什么？",
+    "A": "抬起画笔，移动时不绘图",
+    "B": "放下画笔，移动时绘图",
+    "C": "清除画布",
+    "D": "隐藏海龟",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.color(\"red\") 的作用是什么？",
+    "A": "设置画布背景色为红色",
+    "B": "设置画笔颜色和填充颜色都为红色",
+    "C": "只设置画笔颜色为红色",
+    "D": "只设置填充颜色为红色",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，要画一个红色的实心圆，正确的命令组合可能涉及？",
+    "A": "turtle.fillcolor(\"red\"); turtle.begin_fill(); turtle.circle(50); turtle.end_fill()",
+    "B": "turtle.color(\"red\"); turtle.circle(50, fill=True)",
+    "C": "turtle.pencolor(\"red\"); turtle.dot(50)",
+    "D": "turtle.setfill(\"red\"); turtle.draw_circle(50)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.speed(0) 的作用是什么？",
+    "A": "最慢速度",
+    "B": "最快速度",
+    "C": "中等速度",
+    "D": "隐藏动画过程",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.hideturtle() 的作用是什么？",
+    "A": "隐藏画笔轨迹",
+    "B": "隐藏海龟图标",
+    "C": "清空画布内容",
+    "D": "使海龟停止移动",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，turtle.goto(0, 0) 的作用是什么？",
+    "A": "海龟回到画布中心并朝向右方",
+    "B": "海龟移动到坐标(0,0)",
+    "C": "海龟画一个点在(0,0)",
+    "D": "将画布原点设为(0,0)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "import random; random.random() 可能返回哪个值？",
+    "A": "0.5",
+    "B": "1",
+    "C": "-0.5",
+    "D": "10",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "import random; random.randint(1, 5) 不可能返回哪个值？",
+    "A": "1",
+    "B": "3",
+    "C": "5",
+    "D": "6",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "math.sqrt(9) (假设已导入 math) 的结果是？",
+    "A": "3",
+    "B": "3.0",
+    "C": "81",
+    "D": "9",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.pencolor(\"blue\") (假设已导入 turtle) 的作用是？",
+    "A": "设置海龟颜色为蓝色",
+    "B": "设置背景颜色为蓝色",
+    "C": "设置画笔颜色为蓝色",
+    "D": "画一个蓝色的点",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "x = input(\"你叫什么名字？\") 执行后，变量x的类型通常是什么？",
+    "A": "整数",
+    "B": "浮点数",
+    "C": "字符串",
+    "D": "布尔型",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 - 2 的结果是？",
+    "A": "3",
+    "B": "-3",
+    "C": "7",
+    "D": "\"5-2\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python 中，如何表示一个浮点数（例如 3.14）？",
+    "A": "\"3.14\"",
+    "B": "3 14",
+    "C": "3.14",
+    "D": "Float(3.14)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "import random random.randint(1, 2) 可能产生哪个数字？",
+    "A": "只有 1",
+    "B": "只有 2",
+    "C": "1 或者 2",
+    "D": "0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "turtle.circle(50) (假设已导入 turtle) 会画一个半径为多少的圆？",
+    "A": "25",
+    "B": "50",
+    "C": "100",
+    "D": "由海龟大小决定",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，\"abc\" == \"ABC\" 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "部分正确",
+    "D": "无法比较",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "x = \"5\"，y = int(x)，变量 y 的值是？",
+    "A": "\"5\"",
+    "B": "5",
+    "C": "5.0",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "a = [1, 2]，b = [3, 4]，a + b 的结果是？",
+    "A": "[[1,2],[3,4]]",
+    "B": "[1,2,3,4]",
+    "C": "[4,6]",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，哪个符号用来表示除法的余数？",
+    "A": "/",
+    "B": "//",
+    "C": "%",
+    "D": "*",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(\"Python\"[1]) 的输出是？",
+    "A": "P",
+    "B": "y",
+    "C": "n",
+    "D": "o",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "import math print(int(math.sqrt(10))) 的输出是？",
+    "A": "3.16",
+    "B": "3.0",
+    "C": "3",
+    "D": "10",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "turtle.shape(\"circle\") (假设已导入 turtle) 的作用是？",
+    "A": "画一个圆",
+    "B": "把海龟的形状变成圆形",
+    "C": "把背景变成圆形",
+    "D": "清除圆形区域",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，True 和 1 在某些情况下可以互换使用，例如 True == 1 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "错误",
+    "D": "不确定",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "x = \"apple\"[2]，变量 x 的值是？",
+    "A": "\"a\"",
+    "B": "\"p\"",
+    "C": "\"l\"",
+    "D": "\"e\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "turtle.pensize(3) (假设已导入 turtle) 的作用是？",
+    "A": "海龟前进 3 步",
+    "B": "海龟转 3 度",
+    "C": "设置画笔的粗细为 3",
+    "D": "画 3 个点",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python 中，\"Python\".upper() 的结果是？",
+    "A": "\"python\"",
+    "B": "\"PYTHON\"",
+    "C": "\"Python\"",
+    "D": "\"pYTHON\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "x = 10; y = str(x)，变量 y 的类型是？",
+    "A": "int",
+    "B": "float",
+    "C": "str",
+    "D": "bool",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1,2,3,2,1]，L.count(2) 的结果是？",
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "3",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "range(2, 5) 包含数字 5 吗？",
+    "A": "包含",
+    "B": "不包含",
+    "C": "有时包含",
+    "D": "只包含 5",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.pencolor(\"red\") 和 turtle.color(\"red\") (假设已导入 turtle) 的效果？",
+    "A": "前者设置画笔，后者设置填充",
+    "B": "前者设置画笔，后者同时设置画笔和填充",
+    "C": "两者都只设置画笔颜色",
+    "D": "两者都同时设置画笔和填充",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中的 input() 函数主要用来做什么？",
+    "A": "输出信息到屏幕",
+    "B": "从键盘读取用户输入",
+    "C": "执行数学计算",
+    "D": "打开一个文件",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Test\"，s.lower() 的结果是？",
+    "A": "\"Test\"",
+    "B": "\"test\"",
+    "C": "\"TEST\"",
+    "D": "\"tEST\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "import turtle; turtle.done() 的作用通常是什么？",
+    "A": "清空绘图",
+    "B": "让绘图窗口保持显示，直到手动关闭",
+    "C": "保存图像",
+    "D": "海龟回到原点",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，\"hello\" * 2 的结果是？",
+    "A": "\"hellohello\"",
+    "B": "\"hello2\"",
+    "C": "\"hheelloo\"",
+    "D": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "x = float(\"10.5\")，x 的值是？",
+    "A": "\"10.5\"",
+    "B": "10",
+    "C": "10.5",
+    "D": "错误",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1,2,3]，3 in L 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "0",
+    "D": "1",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "range(3) 不包含哪个数字？",
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "3",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "turtle.backward(100) (假设已导入 turtle) 使海龟？",
+    "A": "前进 100",
+    "B": "后退 100",
+    "C": "左转 100",
+    "D": "右转 100",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，# 开头的行表示什么？",
+    "A": "字符串",
+    "B": "变量定义",
+    "C": "注释",
+    "D": "函数调用",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print(100) 这句代码会做什么？",
+    "A": "将 100 存入变量",
+    "B": "在屏幕上显示数字 100",
+    "C": "检查 100 是否为真",
+    "D": "什么也不做",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 \"world\"[4] 的值是？",
+    "A": "w",
+    "B": "o",
+    "C": "r",
+    "D": "d",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "Python 中，\"10\" + \"5\" 的结果是？",
+    "A": "15",
+    "B": "\"15\"",
+    "C": "\"105\"",
+    "D": "错误",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [True, False]，False in L 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "0",
+    "D": "1",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "range(1, 3) 生成的数字是？",
+    "A": "1, 2, 3",
+    "B": "1, 2",
+    "C": "0, 1, 2",
+    "D": "3, 2, 1",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "turtle.hideturtle() (假设已导入 turtle) 的作用是？",
+    "A": "隐藏画笔",
+    "B": "隐藏海龟图标",
+    "C": "清空屏幕",
+    "D": "加快绘图",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "print(1, 2, 3, sep=':', end='.') 的输出是？",
+    "A": "1:2:3.",
+    "B": "1 2 3.",
+    "C": "0.0430902777777778",
+    "D": "1.2.3.",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python 中 //= 是什么运算符？",
+    "A": "浮点除赋值",
+    "B": "整数除赋值",
+    "C": "取模赋值",
+    "D": "幂赋值",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "**= 是什么运算符？",
+    "A": "乘赋值",
+    "B": "幂赋值",
+    "C": "异或赋值",
+    "D": "根号赋值",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "' '.join(['1','2','3']) 的结果是？",
+    "A": "' 1 2 3'",
+    "B": "'1 2 3'",
+    "C": "' 123 '",
+    "D": "'123'",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "x = 'apple'; y = 'apply'; x > y 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "0",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "变量名 my_age 在 Python 中是合法的吗？",
+    "A": "合法",
+    "B": "不合法，因为有下划线",
+    "C": "不合法，因为太长",
+    "D": "不合法，必须大写开头",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python 中，x = 5 这行代码做了什么？",
+    "A": "比较 x 和 5 是否相等",
+    "B": "将数值 5 赋值给变量 x",
+    "C": "声明一个名为 x 的常量",
+    "D": "打印变量 x 的值",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 10 + 20 的结果是什么？",
+    "A": "\"1020\"",
+    "B": "30",
+    "C": "1020",
+    "D": "200",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 5 * 3 的结果是什么？",
+    "A": "53",
+    "B": "8",
+    "C": "15",
+    "D": "2",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python 中，# 号后面的内容表示什么？",
+    "A": "代码的一部分，会被执行",
+    "B": "错误信息",
+    "C": "注释，会被解释器忽略",
+    "D": "特殊指令",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "print (\"你好，世界\") 这句代码的作用是？",
+    "A": "从用户那里读取输入",
+    "B": "在屏幕上显示 \"你好，世界\"",
+    "C": "计算字符串的长度",
+    "D": "创建一个名为 print 的变量",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果想让 Python 程序暂停一下，等待用户按回车键输入信息，应该使用哪个函数？",
+    "A": "stop()",
+    "B": "wait()",
+    "C": "input()",
+    "D": "pause()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python 中，表示 “不等于” 的运算符是？",
+    "A": "==",
+    "B": "!=",
+    "C": "<>",
+    "D": "notin",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在 Python 中，False 是一个什么类型的值？",
+    "A": "字符串",
+    "B": "整数",
+    "C": "浮点数",
+    "D": "布尔值",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "x = 10，y = 20，表达式 x < y 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "10",
+    "D": "20",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "表达式 not True 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "None",
+    "D": "Error",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 中，字符串可以用什么符号括起来？",
+    "A": "只能用双引号 \"\"",
+    "B": "只能用单引号 ''",
+    "C": "可以用单引号 '' 或双引号 \"\"",
+    "D": "只能用括号 ()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"abc\"，s [0] 的值是？",
+    "A": "\"a\"",
+    "B": "\"b\"",
+    "C": "\"c\"",
+    "D": "\"abc\"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"hello\"，len (s) 的结果是？",
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "7",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s1 = \"hello\"，s2 = \"world\"，s1 + s2 的结果是？",
+    "A": "\"helloworld\"",
+    "B": "\"hello world\"",
+    "C": "\"worldhello\"",
+    "D": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"Python\"，\"th\" in s 的结果是？",
+    "A": "Y",
+    "B": "N",
+    "C": "P",
+    "D": "T",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "创建一个空列表的正确方式是？",
+    "A": "my_list = {}",
+    "B": "my_list = ()",
+    "C": "my_list = []",
+    "D": "my_list = None",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [1, 2, 3]，L [1] 的值是？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "[1,2,3]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = [10, 20, 30]，len (L) 的结果是？",
+    "A": "2",
+    "B": "3",
+    "C": "4",
+    "D": "10",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "向列表 L = [1, 2] 末尾添加元素 3，应使用哪个方法？",
+    "A": "L.add(3)",
+    "B": "L.insert(3)",
+    "C": "L.append(3)",
+    "D": "L.push(3)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "从列表 L = ['a', 'b', 'c'] 中移除元素 'b'，应使用哪个方法？",
+    "A": "L.delete('b')",
+    "B": "L.remove('b')",
+    "C": "L.pop('b')",
+    "D": "L.discard('b')",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "if 10 > 5 这行代码后面通常跟什么？",
+    "A": "一个数字",
+    "B": "一个字符串",
+    "C": "一个冒号和换行后缩进的代码块",
+    "D": "一个分号",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "turtle.forward (50) (假设已导入 turtle) 命令海龟做什么？",
+    "A": "左转 50 度",
+    "B": "右转 50 度",
+    "C": "前进 50 个单位",
+    "D": "后退 50 个单位",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "turtle.left (90) (假设已导入 turtle) 命令海龟做什么？",
+    "A": "前进 90 步",
+    "B": "后退 90 步",
+    "C": "左转 90 度",
+    "D": "右转 90 度",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "Python 中，float () 函数可以用来做什么？",
+    "A": "把整数变成字符串",
+    "B": "把字符串或整数变成浮点数 (小数)",
+    "C": "让程序浮动",
+    "D": "清除屏幕",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "表达式 10 // 3 的结果是什么？",
+    "A": "3.333",
+    "B": "3",
+    "C": "1",
+    "D": "0.333",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "x = 5，表达式 x == 5 的结果是什么？",
+    "A": "Y",
+    "B": "N",
+    "C": "5",
+    "D": "x",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "变量名可以以数字开头吗？",
+    "A": "可以",
+    "B": "不可以",
+    "C": "有时可以",
+    "D": "只有一位数字可以",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python 对大小写敏感吗？例如 myVar 和 myvar 是同一个变量吗？",
+    "A": "不敏感，它们是同一个变量",
+    "B": "敏感，它们是不同的变量",
+    "C": "只对函数名敏感",
+    "D": "只对关键字敏感",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "a = \"10\"，b = \"20\"，a + b 的结果是？",
+    "A": "30",
+    "B": "\"30\"",
+    "C": "\"1020\"",
+    "D": "错误",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "len ([1, 2, 3, 4]) 的结果是？",
+    "A": "1",
+    "B": "3",
+    "C": "4",
+    "D": "10",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "import random; L = [1,2,3]; random.shuffle(L) 后，L 可能是什么？",
+    "A": "[1,2,3]",
+    "B": "[3,1,2]",
+    "C": "None",
+    "D": "A和B都有可能",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "import random; random.choice(['a', 'b', 'c']) 的返回值类型是？",
+    "A": "列表",
+    "B": "元组",
+    "C": "字符串",
+    "D": "集合",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "math.sqrt(16) 的结果是什么？",
+    "A": "4",
+    "B": "4.0",
+    "C": "8",
+    "D": "8.0",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中，abs(-10) 的结果是什么？",
+    "A": "10",
+    "B": "-10",
+    "C": "10.0",
+    "D": "-10.0",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python Turtle中，turtle.done() 的主要作用是？",
+    "A": "清除画布",
+    "B": "结束绘图并关闭窗口",
+    "C": "保持绘图窗口打开直到手动关闭",
+    "D": "保存绘图结果",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "若要生成一个0到9之间的随机整数（包含0和9），应使用？",
+    "A": "random.uniform(10)",
+    "B": "random.randint(0, 10)",
+    "C": "random.random() * 10",
+    "D": "random.choice(range(10))",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在Python Turtle中，设置画笔粗细为5像素的命令是？",
+    "A": "turtle.pensize(5)",
+    "B": "turtle.width(5)",
+    "C": "turtle.thickness(5)",
+    "D": "A和B都可以",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "print(f\"Pi is approximately {math.pi:.2f}\") (假设math已导入) 的输出是什么？",
+    "A": "Pi is approximately 3.14159",
+    "B": "Pi is approximately 3.14",
+    "C": "Pi is approximately pi",
+    "D": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 L = list(range(2, 7, 2))，L 的内容是什么？",
+    "A": "[2,\" \",4,\" \",6,\" \",8]",
+    "B": "[2,\" \",4,\" \",6]",
+    "C": "[2,\" \",3,\" \",4,\" \",5,\" \",6]",
+    "D": "[2,\" \",7,\" \",2]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 s = \"abc\"，s.find(\"b\") 的返回值是什么？",
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "-1",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "哪个关键字用于Python中的条件判断？",
+    "A": "for",
+    "B": "while",
+    "C": "if",
+    "D": "switch",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在 if-elif-else 结构中，else 分支在什么情况下执行？",
+    "A": "if 条件为真",
+    "B": "所有 elif 条件都为真",
+    "C": "if 和所有 elif 条件都为假",
+    "D": "至少一个 elif 条件为真",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "while 循环的循环体至少会执行多少次？",
+    "A": "0次",
+    "B": "1次",
+    "C": "2次",
+    "D": "取决于循环条件",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在循环中，break 语句的作用是什么？",
+    "A": "跳过当前迭代的剩余部分，进入下一次迭代",
+    "B": "立即终止整个循环",
+    "C": "暂停循环的执行",
+    "D": "引发一个错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在循环中，continue 语句的作用是什么？",
+    "A": "立即终止整个循环",
+    "B": "跳过当前迭代的剩余部分，进入下一次迭代",
+    "C": "结束整个程序的运行",
+    "D": "什么也不做",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在双分支if-else语句中，以下哪些情况会执行else分支的代码？",
+    "A": "条件为True",
+    "B": "条件为False",
+    "C": "条件为0",
+    "D": "条件为None",
+    "answer": "BCD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些说法关于多分支if-elif-else语句是正确的？",
+    "A": "如果if分支的条件为True，则不会执行任何elif或else分支",
+    "B": "如果所有分支的条件都为False，则一定会执行else分支",
+    "C": "可以有多个elif分支，但只能有一个else分支",
+    "D": "else分支是必须的",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些是if语句中条件表达式的有效形式？",
+    "A": "x > 0",
+    "B": "x = 0",
+    "C": "x is None",
+    "D": "x in list",
+    "answer": "ACD",
+    "select": ""
+  },
+  {
+    "title": "以下关于if语句的嵌套说法，哪些是正确的？",
+    "A": "if语句可以嵌套在另一个if语句中",
+    "B": "if语句可以嵌套在elif语句中",
+    "C": "if语句可以嵌套在else语句中",
+    "D": "嵌套的if语句必须与外层的if语句条件相同",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些是Python中for循环的正确用法？",
+    "A": "for i in range(5): print(i)",
+    "B": "for i in [1, 2, 3]: print(i)",
+    "C": "for i in \"hello\": print(i)",
+    "D": "for i = range(5): print(i)",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "在for循环中，以下哪些语句可以用来跳出循环？",
+    "A": "break",
+    "B": "continue",
+    "C": "exit()",
+    "D": "return",
+    "answer": "AB",
+    "select": ""
+  },
+  {
+    "title": "以下哪些是for循环中range函数的正确用法？",
+    "A": "for i in range(5): print(i)",
+    "B": "for i in range(1, 5): print(i)",
+    "C": "for i in range(0, 10, 2): print(i)",
+    "D": "for i in range(5, 1): print(i)",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "在for循环中，以下哪些操作是允许的？",
+    "A": "修改循环变量",
+    "B": "删除循环变量",
+    "C": "添加新的元素到正在遍历的列表",
+    "D": "删除正在遍历的列表中的元素",
+    "answer": "ABD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些是for循环中正确的循环体？",
+    "A": "单个语句",
+    "B": "语句块（多个语句）",
+    "C": "空循环体（不执行任何操作）",
+    "D": "只有注释",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "在while循环中，以下哪些语句可以用来跳出循环？",
+    "A": "break",
+    "B": "continue",
+    "C": "pass",
+    "D": "return",
+    "answer": "ABD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些情况会导致while循环变成无限循环？",
+    "A": "循环条件始终为True",
+    "B": "循环体内没有改变循环条件的语句",
+    "C": "使用了continue语句但未改变循环条件",
+    "D": "循环体内有break语句",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些情况会导致while循环提前结束？",
+    "A": "循环体内遇到break语句",
+    "B": "循环体内遇到return语句",
+    "C": "循环条件变为False",
+    "D": "循环体内所有语句执行完毕",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些关于while循环的描述是正确的？",
+    "A": "while循环可以没有else子句",
+    "B": "while循环必须有一个循环体，即使它是空的",
+    "C": "while循环的条件可以是任何布尔表达式",
+    "D": "while循环只能用于整数计数",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些场景适合使用while循环？",
+    "A": "需要计算1到100的累加和",
+    "B": "需要遍历一个固定长度的列表",
+    "C": "需要持续读取用户输入直到输入正确密码",
+    "D": "需要执行固定次数的重复操作",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些代码片段使用了while循环来实现无限循环？",
+    "A": "while True: print(\"Hello\")",
+    "B": "while False: print(\"World\")",
+    "C": "while 1: print(\"Python\")",
+    "D": "while x < 10: x += 1",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些应用实例中，while循环能够有效解决问题？",
+    "A": "读取文件直到文件结束",
+    "B": "计算斐波那契数列的前10项",
+    "C": "实现用户登录验证程序",
+    "D": "模拟投掷骰子直到出现6",
+    "answer": "ACD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些场景中，while循环可能陷入死循环？",
+    "A": "循环体内未修改循环变量",
+    "B": "循环条件始终为True",
+    "C": "使用了continue但未改变循环条件",
+    "D": "循环体内有break语句",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些代码片段使用了while循环实现累加计算？",
+    "A": "sum = 0 i = 1 while i <= 10: sum += i i += 1",
+    "B": "for i in range(1, 11): sum += i",
+    "C": "sum = 0 while True: sum += 1 if sum > 10: break",
+    "D": "sum = 0 i = 1 while i <= 10: sum += i",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些场景适合使用嵌套while循环？",
+    "A": "实现九九乘法表",
+    "B": "计算两个数字的最大公约数",
+    "C": "模拟二维网格上的路径搜索",
+    "D": "计算1到100的累加和",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数是turtle库中用于设置画笔颜色的？",
+    "A": "turtle.pencolor(\"red\")",
+    "B": "turtle.fillcolor(\"blue\")",
+    "C": "turtle.bgcolor(\"green\")",
+    "D": "turtle.color(\"black\")",
+    "answer": "AD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数可以控制turtle的移动方向？",
+    "A": "turtle.forward(100)",
+    "B": "turtle.right(90)",
+    "C": "turtle.left(45)",
+    "D": "turtle.backward(50)",
+    "answer": "BC",
+    "select": ""
+  },
+  {
+    "title": "在turtle库中，以下哪些函数可以用于绘制图形？",
+    "A": "turtle.circle(50)",
+    "B": "turtle.square(100)",
+    "C": "turtle.rectangle(80, 60)",
+    "D": "turtle.goto(100, 100)",
+    "answer": "AD",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数可以控制turtle画笔的状态？",
+    "A": "turtle.penup()",
+    "B": "turtle.pendown()",
+    "C": "turtle.pensize(5)",
+    "D": "turtle.showturtle()",
+    "answer": "ABC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数是random库中用于生成随机浮点数的？",
+    "A": "random.random()",
+    "B": "random.uniform(a, b)",
+    "C": "random.randint(a, b)",
+    "D": "random.choice(sequence)",
+    "answer": "AB",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数可以生成指定范围内的随机整数？",
+    "A": "random.randint(a, b)",
+    "B": "random.uniform(a, b)",
+    "C": "random.randrange(start, stop, step)",
+    "D": "random.getrandbits(k)",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数用于从序列中随机选择元素？",
+    "A": "random.choice(sequence)",
+    "B": "random.shuffle(sequence)",
+    "C": "random.sample(sequence, k)",
+    "D": "random.randint(a, b)",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数是time库中用于获取当前时间的？",
+    "A": "time.time()",
+    "B": "time.localtime()",
+    "C": "time.strftime()",
+    "D": "time.sleep()",
+    "answer": "AB",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数可以用于将时间戳转换为可读的时间格式？",
+    "A": "time.strftime()",
+    "B": "time.strptime()",
+    "C": "time.localtime()",
+    "D": "time.mktime()",
+    "answer": "AC",
+    "select": ""
+  },
+  {
+    "title": "以下哪些函数是math库中用于计算幂和指数的？",
+    "A": "math.pow(x, y)",
+    "B": "math.exp(x)",
+    "C": "math.log(x)",
+    "D": "math.factorial(x)",
+    "answer": "AB",
+    "select": ""
+  },
+  {
+    "title": "Python是一种跨平台、开源、免费的高级动态编程语言。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python 3.x完全兼容Python 2.x。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，变量名可以以数字开头。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串 'Hello' 和 'hello' 在Python中相等。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中的整数类型没有大小限制。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，True和False是字符串类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "浮点数可以精确表示所有小数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，None表示空值，等同于0。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表和元组都是不可变的数据类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，if语句可以没有else部分。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "elif语句必须跟在if语句后面，不能单独使用。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "while循环至少执行一次循环体，即使条件一开始就不满足。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "for循环只能用于遍历序列类型，如列表、元组、字符串等。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "break语句可以跳出当前层的循环。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "continue语句可以跳过当前循环的剩余部分，进入下一轮循环。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，pass语句没有任何作用。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "range(5)生成的序列包括数字5。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，函数定义必须使用def关键字。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "函数的参数可以有默认值，但必须放在参数列表的最后。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，函数可以嵌套定义。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "return语句可以返回多个值。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "import语句可以导入模块，但必须在文件开头使用。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "math模块中的sqrt()函数用于计算平方根。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "random模块中的randint(a, b)函数返回[a, b]范围内的整数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串是不可变的数据类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表的索引可以是负数，表示从列表末尾开始计数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "in运算符可以检查元素是否在列表中。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "len()函数可以返回列表或字符串的长度。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表的append()方法用于在列表末尾添加一个元素，并返回新列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串的split()方法默认按空格分割字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表的sort()方法会对列表进行排序，并返回一个新列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用open()函数打开文件时，默认模式是只读。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "使用open()函数以'w'模式打开文件时，文件指针默认指向文件尾。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "try-except语句用于处理异常。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "finally子句无论是否发生异常都会执行。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，可以使用is运算符比较两个对象的值是否相等。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在Python中，单行注释使用//符号。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python是大小写敏感的语言。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python使用花括号{}来定义代码块。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中的基本输入函数是input()。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的基本输出函数是print()。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python允许使用分号;来结束一行代码。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的变量不需要声明类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的字符串可以使用单引号''或双引号\"\"定义。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的列表是可变的，意味着可以修改列表中的元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的字典使用键值对来存储数据，键必须是唯一的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，整数类型（int）和浮点数类型（float）是相同的数据类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中的字符串（str）数据类型是可变的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "布尔类型（bool）是Python中的基本数据类型之一。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的列表（list）数据类型是可变的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "元组（tuple）数据类型在Python中是不可变的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "集合（set）数据类型在Python中允许存储重复的元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字典（dict）数据类型在Python中是通过键值对来存储数据的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，复数（complex）数据类型用于表示实数部分和虚数部分的数值。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中的None数据类型表示一个空值或无值。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，所有基本数据类型的变量都必须在使用前声明其类型。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "Python中字符串只能用单引号(')或双引号(\")括起来。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，可以使用加号(+)来连接字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，可以使用乘号(*)来重复字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中字符串的索引从0开始。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中字符串可以使用负索引。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中字符串的切片操作会返回一个新的字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在Python中，可以使用in操作符来检查一个字符串是否包含在另一个字符串中。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的find()方法返回子字符串第一次出现的索引，如果找不到则返回-1。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的replace()方法可以修改字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的upper()方法将字符串转换为全部小写。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串的lower()方法将字符串转换为全部大写。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用字符串的strip()方法可以去除字符串两端的空白字符。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的split()方法将字符串分割为列表，默认以空格为分隔符。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的join()方法将列表中的字符串连接起来，比如用“，”串联字符串s使用“s.join(',')”。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串的count()方法返回子字符串在字符串中出现的次数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的isalpha()方法检查字符串是否只包含字母。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串的format()方法用于字符串格式化。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "Python中字符串的索引从1开始。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串切片操作会返回原始字符串的一个子集。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片的语法格式是：字符串[开始索引:结束索引:步长值]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片操作会修改原始字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在字符串切片中，结束索引的字符包括在返回的子字符串中。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串切片可以省略开始索引或结束索引。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "当省略字符串切片的开始索引时，默认从字符串的末尾开始切片。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "当省略字符串切片的结束索引时，默认切片到字符串的末尾。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片的步长必须为正数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串切片可以使用负数作为步长，以实现反向切片。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "s[::-1]会返回字符串s的反转。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[1:5:2]会返回从索引1到索引5（不包括），步长为2的子字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[::2]会返回从开始到结束，步长为2的子字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[5:1:-2]会返回从索引5到索引1（不包括），步长为-2的子字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "s[-1]会返回字符串s的最后一个字符。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[-1:-3]会返回一个空字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[-3:-1]会返回倒数第三个和倒数第二个字符组成的子字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字符串切片字s[1.5:4.5]是有效的，并且会返回从索引1到索引4的子字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "字符串切片s[True:False]是有效的，并且会返回一个空字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "len() 函数可以用来获取列表的长度。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "max() 函数可以用来获取列表中的最大值。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "min() 函数可以用来获取列表中的最小值。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "sum() 函数可以用来计算列表中所有数值的总和。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "sorted() 函数可以对列表进行排序，并返回一个新的列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "reverse() 函数可以反转列表，并返回一个新的列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "list() 函数可以将其他迭代器转换为列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "extend() 方法可以将另一个列表的元素添加到当前列表的末尾。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "insert() 方法只能在列表的最后位置插入一个元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "remove() 方法可以删除列表中的第一个匹配元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "pop() 方法可以删除并返回列表的最后一个元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "pop() 方法可以删除并返回列表的指定位置的元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "clear() 方法可以删除列表中的所有元素，所以可以用clear()删除列表。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "index() 方法可以返回列表中第一个匹配元素的索引。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "count() 方法可以返回列表中指定元素出现的次数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "对于列表 fruits = ['apple', 'banana', 'cherry']，fruits[0] 的值是 'banana'。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 numbers = [1, 2, 3, 4, 5] 中，numbers[-1] 的值是 5。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在列表 letters = ['a', 'b', 'c', 'd'] 中，letters[1:3] 的结果是 ['b', 'c']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 colors = ['red', 'green', 'blue'] 中，colors[0:2] 的结果是 ['red', 'green', 'blue']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对于列表 words = ['hello', 'world']，words[0][1] 的值是 'e'。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 data = [10, 20, 30, 40] 中，data[1:4:2] 的结果是 [20, 40]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在列表 numbers = [1, 2, 3, 4, 5] 中，numbers[::2] 的结果是 [1, 3, 5]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 fruits = ['apple', 'banana', 'cherry'] 中，fruits[::-1] 的结果是 ['cherry', 'banana', 'apple']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "对于列表 list1 = [1, 2, 3, 4, 5]，list1[5] 的值是 5。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 words = ['python', 'java', 'c++'] 中，words[1:3] 的结果是 ['java', 'c++']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 data = [10, 20, 30, 40] 中，data[3:1:-1] 的结果是 [40, 30]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在列表 letters = ['a', 'b', 'c', 'd'] 中，letters[1:4:2] 的结果是 ['b', 'd']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 colors = ['red', 'green', 'blue'] 中，colors[0:3:2] 的结果是 ['red', 'blue']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "对于列表 list1 = [1, 2, 3, 4, 5]，list1[-1] 的值是 1。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "列表 fruits = ['apple', 'banana', 'cherry'] 中，fruits[0:2] 的结果是 ['apple', 'banana']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在列表 numbers = [1, 2, 3, 4, 5] 中，numbers[1:5:2] 的结果是 [2, 4]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 words = ['hello', 'world'] 中，words[0:1] 的结果是 ['hello', 'world']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对于列表 data = [10, 20, 30, 40]，data[1:4:1] 的结果是 [20, 30, 40]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "列表 list1 = [1, 2, 3, 4, 5] 中，list1[4:0:-1] 的结果是 [5, 4, 3, 2, 1]。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在列表 letters = ['a', 'b', 'c', 'd'] 中，letters[::] 的结果是 ['a', 'b', 'c', 'd']。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "元组中的元素一旦创建后可以被修改。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "可以使用索引来访问元组中的元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "元组只能包含同类型的元素,且定义后不能改变其内容。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "可以使用切片操作来获取元组的一部分。如：t = (1, 2, 3, 4, 5)，t[1:4]=(2,3,4)。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "元组之间可以使用加号进行拼接，如：t1 = (1, 2, 3)，t2 = (4, 5, 6)，则t1+t2=(1,2,3,4,5,6)。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字典中的值是按key来排序的，可以使用字典的key来访问对应的value。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "可以使用 del 关键字来删除字典中的某个键值对。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "字典的key可以是任何不可变的数据类型，如整数、浮点数、字符串和元组。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "集合中的元素可以是任何类型，包括列表和字典。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "集合可以使用 add() 方法添加单个元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "集合中的元素是按照插入顺序存储的。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 import math 后，可以直接调用 sqrt() 函数计算平方根。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "import random 后，可以使用 random.randint(a, b) 生成指定范围内的随机整数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "math 模块中的 ceil() 函数返回小于或等于参数的最小整数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "random 模块的 uniform(a, b) 函数可以生成 [a, b] 范围内的随机浮点数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "from math import * 可以导入 math 模块中的所有函数和常量。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "random 模块的 shuffle() 函数可以原地打乱列表的顺序。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "random 模块的 choice() 函数可以从列表中随机选择一个元素。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "time.time() 函数返回当前时间的时间戳。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "time.localtime() 函数只能返回当前时间的结构化时间对象。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "time.sleep(seconds) 函数用于暂停程序，其参数seconds为指定秒数，只能是整数。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "time.strftime() 函数用于将时间戳转换为格式化的时间字符串。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "for循环内可以嵌套while循环，但是while循环内不能嵌套for循环。",
+    "A": "正确",
+    "B": "错误",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "设计一个程序，接收用户输入的一个数字，然后进行一些简单的判断和操作。 程序首先提示用户\"请输入一个整数:\"，并将用户输入的内容赋值到变量 num_str。以下哪个语句是正确的？",
+    "A": "num_str = input(\"请输入一个整数: \")",
+    "B": "num_str = print(\"请输入一个整数: \")",
+    "C": "input(num_str, \"请输入一个整数: \")",
+    "D": "num_str <= \"请输入一个整数: \"",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "设计一个程序，接收用户输入的一个数字，然后进行一些简单的判断和操作。 用户输入的 num_str 是一个字符串。为了进行数学运算，需要将其转换为整数，存入变量 num_int。正确的转换语句是？",
+    "A": "num_int = integer(num_str)",
+    "B": "num_int = num_str.to_int()",
+    "C": "num_int = int(num_str)",
+    "D": "num_int = convert.to_integer(num_str)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "设计一个程序，接收用户输入的一个数字，然后进行一些简单的判断和操作。 判断用户输入的数字 num_int 是否为正数。以下哪个条件是正确的？",
+    "A": "if num_int > 0:",
+    "B": "if num_int >= 0:",
+    "C": "if num_int positive:",
+    "D": "if is_positive(num_int):",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "设计一个程序，接收用户输入的一个数字，然后进行一些简单的判断和操作。 如果用户输入的数字 num_int 是偶数，则打印 \"这是一个偶数\"。判断偶数的条件是？",
+    "A": "num_int % 2 == 1",
+    "B": "num_int // 2 == 0",
+    "C": "num_int % 2 == 0",
+    "D": "num_int / 2 == 0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "设计一个程序，接收用户输入的一个数字，然后进行一些简单的判断和操作。 计算该数字 num_int 的平方，并将结果赋值给squared_num。",
+    "A": "squared_num = num_int * 2",
+    "B": "squared_num = num_int ^ 2",
+    "C": "squared_num = num_int ** 2",
+    "D": "squared_num = num_int * num_int * num_int",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个包含若干水果名称的列表，并进行增、删、查操作。 创建一个包含 \"苹果\", \"香蕉\", \"橙子\" 的列表，名为 fruits。",
+    "A": "fruits = (\"苹果\", \"香蕉\", \"橙子\")",
+    "B": "fruits = {\"苹果\", \"香蕉\", \"橙子\"}",
+    "C": "fruits = [\"苹果\", \"香蕉\", \"橙子\"]",
+    "D": "fruits = \"苹果,香蕉,橙子\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个包含若干水果名称的列表，并进行增、删、查操作。 向 fruits 列表的末尾添加一个新的水果 \"葡萄\"。应使用哪个列表方法？",
+    "A": "fruits.add(\"葡萄\")",
+    "B": "fruits.insert_last(\"葡萄\")",
+    "C": "fruits.append(\"葡萄\")",
+    "D": "fruits.extend(\"葡萄\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个包含若干水果名称的列表，并进行增、删、查操作。 检查 \"香蕉\" 是否在 fruits 列表中。如果存在，打印 \"香蕉在列表中\"，以下哪个代码是正确的？",
+    "A": "if \"香蕉\" in fruits: print(\"香蕉在列表中\")",
+    "B": "if fruits.contains(\"香蕉\"): print(\"香蕉在列表中\")",
+    "C": "if find(\"香蕉\", fruits): print(\"香蕉在列表中\")",
+    "D": "if \"香蕉\" == fruits: print(\"香蕉在列表中\")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "创建一个包含若干水果名称的列表，并进行增、删、查操作。 从 fruits 列表中移除 \"橙子\"。",
+    "A": "fruits.delete(\"橙子\")",
+    "B": "fruits.pop(\"橙子\")",
+    "C": "fruits.remove(\"橙子\")",
+    "D": "del fruits[\"橙子\"]",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个包含若干水果名称的列表，并进行增、删、查操作。 获取 fruits 列表中元素的数量。",
+    "A": "count = fruits.count()",
+    "B": "count = size(fruits)",
+    "C": "count = len(fruits)",
+    "D": "count = fruits.length",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "用户输入圆的半径，程序计算并输出圆的面积和周长。需要使用 math 模块中的 pi。 首先，需要让用户输入圆的半径（一个数值）。",
+    "A": "radius = float(input(\"请输入圆的半径: \"))",
+    "B": "radius = str(input(\"请输入圆的半径: \"))",
+    "C": "radius = int(input(\"请输入圆的半径: \"))",
+    "D": "input(radius, \"请输入圆的半径: \")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入圆的半径，程序计算并输出圆的面积和周长。需要使用 math 模块中的 pi。 为了使用圆周率 pi，需要导入 math 模块。正确的导入语句是？",
+    "A": "load math",
+    "B": "include math",
+    "C": "import math",
+    "D": "using math",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "用户输入圆的半径，程序计算并输出圆的面积和周长。需要使用 math 模块中的 pi。 圆的面积公式是 Area=π×radius2。如果半径是 radius，使用 math.pi，正确的面积计算表达式是？",
+    "A": "area = math.pi * radius * 2",
+    "B": "area = math.pi * (radius ** 2)",
+    "C": "area = math.pi * radius / 2",
+    "D": "area = pi * radius * radius (如果pi未定义会报错)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入圆的半径，程序计算并输出圆的面积和周长。需要使用 math 模块中的 pi。 圆的周长公式是 Circumference=2×π×radius。正确的周长计算表达式是？",
+    "A": "circumference = 2 * math.pi * radius",
+    "B": "circumference = math.pi * (radius ** 2)",
+    "C": "circumference = math.pi * radius",
+    "D": "circumference = 2 * pi / radius",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入圆的半径，程序计算并输出圆的面积和周长。需要使用 math 模块中的 pi。 程序需要将计算出的面积 area 和周长 circumference 打印出来。例如，打印 \"面积是: XXX, 周长是: YYY\"。",
+    "A": "print(\"面积是: \", area, \", 周长是: \", circumference)",
+    "B": "print(\"面积是: \" + str(area) + \", 周长是: \" + str(circumference))",
+    "C": "print(f\"面积是: {area}, 周长是: {circumference}\")",
+    "D": "A 、B、 C 都可以",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "根据用户输入的年龄，判断其是否为未成年人（小于18岁）。 获取用户输入的年龄字符串，并将其转换为整数，存入变量 age。",
+    "A": "age = input_int(\"请输入您的年龄: \")",
+    "B": "age = int(input(\"请输入您的年龄: \"))",
+    "C": "age = to_integer(input(\"请输入您的年龄: \"))",
+    "D": "age = integer.parse(input(\"请输入您的年龄: \"))",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "根据用户输入的年龄，判断其是否为未成年人（小于18岁）。 判断该年龄 age 是否小于18岁。",
+    "A": "if age < 18:",
+    "B": "if age <= 18:",
+    "C": "if age > 18:",
+    "D": "if age == 18:",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "根据用户输入的年龄，判断其是否为未成年人（小于18岁）。 如果年龄小于18岁，则输出 \"您是未成年人。\" 缺失的代码是？",
+    "A": "output(\"您是未成年人。\")",
+    "B": "display(\"您是未成年人。\")",
+    "C": "print(\"您是未成年人。\")",
+    "D": "return \"您是未成年人。\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "根据用户输入的年龄，判断其是否为未成年人（小于18岁）。 在上述代码的前提下，如果年龄不小于18岁（即大于或等于18岁），则输出 \"您已成年。\" 这部分逻辑下列正确的代码是？",
+    "A": "elif age >= 18: print(\"您已成年。\")",
+    "B": "else: print(\"您已成年。\")",
+    "C": "作为一个新的 if age >= 18: print(\"您已成年。\")",
+    "D": "A、B、C 都可以，但B更符合二选一逻辑",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "根据用户输入的年龄，判断其是否为未成年人（小于18岁）。 在Python中，# 符号用于表示什么？",
+    "A": "多行注释的开始",
+    "B": "单行注释",
+    "C": "字符串的开始",
+    "D": "一个特殊的运算符",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个数字，程序比较它们的大小。 获取用户输入的第一个数字字符串，转换为浮点数，赋值给 num1。",
+    "A": "num1 = float(input(\"输入第一个数字: \"))",
+    "B": "num1 = to_float(input(\"输入第一个数字: \"))",
+    "C": "num1 = double(input(\"输入第一个数字: \"))",
+    "D": "num1 = input_float(\"输入第一个数字: \")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个数字，程序比较它们的大小。 获取用户输入的第二个数字字符串，转换为浮点数，赋值给 num2。",
+    "A": "num2 = str_to_float(input(\"输入第二个数字: \"))",
+    "B": "num2 = float(input(\"输入第二个数字: \"))",
+    "C": "num2 = input(\"输入第二个数字: \").float()",
+    "D": "num2 = parse_float(input(\"输入第二个数字: \"))",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个数字，程序比较它们的大小。 判断 num1 是否大于 num2。",
+    "A": "if num1 > num2:",
+    "B": "if num1 greater num2:",
+    "C": "if num1 >> num2:",
+    "D": "if is_greater(num1, num2):",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个数字，程序比较它们的大小。 如果 num1 大于 num2，输出 \"第一个数字大\"。如果 num1 小于 num2，输出 \"第二个数字大\"。如果相等，输出 \"两个数字相等\"。以下哪个 if-elif-else 结构正确？",
+    "A": "if num1 > num2: print(\"第一个数字大\") elif num1 < num2: print(\"第二个数字大\") else: print(\"两个数字相等\")",
+    "B": "if num1 > num2: print(\"第一个数字大\") if num1 < num2: print(\"第二个数字大\") if num1 == num2: print(\"两个数字相等\")",
+    "C": "if num1 > num2: print(\"第一个数字大\") else num1 < num2: print(\"第二个数字大\") else: print(\"两个数字相等\")",
+    "D": "check num1 > num2: print(\"第一个数字大\") or num1 < num2: print(\"第二个数字大\") else: print(\"两个数字相等\")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个数字，程序比较它们的大小。 Python中的比较运算符 != 表示什么？",
+    "A": "等于",
+    "B": "不等于",
+    "C": "大于或等于",
+    "D": "小于或等于",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用循环打印从1到用户指定数字N的序列。 获取用户输入的一个正整数N。",
+    "A": "N = int(input(\"请输入一个正整数N: \"))",
+    "B": "N = input_positive_int(\"请输入一个正整数N: \")",
+    "C": "N = str(input(\"请输入一个正整数N: \"))",
+    "D": "N.input_int(\"请输入一个正整数N: \")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "使用循环打印从1到用户指定数字N的序列。 使用 for 循环和 range() 函数来生成从1到N（包含N）的数字序列。range() 函数应该如何写？",
+    "A": "range(N) (生成 0 到 N-1)",
+    "B": "range(1, N) (生成 1 到 N-1)",
+    "C": "range(1, N + 1)",
+    "D": "range(0, N + 1)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "使用循环打印从1到用户指定数字N的序列。 在循环内部，将当前数字打印出来。缺失的代码是？",
+    "A": "display(i)",
+    "B": "show(i)",
+    "C": "print(i)",
+    "D": "return i",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "使用循环打印从1到用户指定数字N的序列。 如果想在打印每个数字后都加上一个空格，而不是换行，print 函数可以怎么用？",
+    "A": "print(i, end=\" \")",
+    "B": "print(i, sep=\" \")",
+    "C": "print(i, no_newline=True)",
+    "D": "print(i + \" \") (如果i是数字，会类型错误)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "使用循环打印从1到用户指定数字N的序列。 range(3, 7) 生成的数字序列是？",
+    "A": "3, 4, 5, 6, 7",
+    "B": "3, 4, 5, 6",
+    "C": "4, 5, 6",
+    "D": "3, 7",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块从起点画一条指定长度的直线。 导入 turtle 模块。",
+    "A": "using turtle",
+    "B": "import turtle",
+    "C": "turtle.load()",
+    "D": "require \"turtle\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块从起点画一条指定长度的直线。 让海龟向前移动150个单位长度。",
+    "A": "turtle.move(150)",
+    "B": "turtle.go(150)",
+    "C": "turtle.forward(150)",
+    "D": "turtle.walk(150)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块从起点画一条指定长度的直线。 在画线之前，如果想改变画笔的颜色为红色。",
+    "A": "turtle.set_color(\"red\")",
+    "B": "turtle.pen_color = \"red\"",
+    "C": "turtle.color(\"red\")",
+    "D": "turtle.brush(\"red\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块从起点画一条指定长度的直线。 如果想让海龟右转45度。",
+    "A": "turtle.turn_right(45)",
+    "B": "turtle.right(45)",
+    "C": "turtle.rotate(45, \"right\")",
+    "D": "turtle.steer_right(45)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块从起点画一条指定长度的直线。 绘制完成后，为了防止窗口立即关闭，应在脚本末尾添加什么命令？",
+    "A": "turtle.finish()",
+    "B": "turtle.wait_close()",
+    "C": "turtle.done()",
+    "D": "turtle.end_drawing()",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "判断两个逻辑条件是否同时成立。 假设有两个布尔变量，is_sunny = True 表示天气晴朗，is_warm = True 表示天气温暖，下列说法正确的是：",
+    "A": "is_sunny 和 is_warm 必须用0或1表示。",
+    "B": "True 和 False 是Python中的关键字，代表布尔值。",
+    "C": "布尔变量名不能包含下划线。",
+    "D": "布尔值首字母必须小写 (如 true)。",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "判断两个逻辑条件是否同时成立。 我们想判断是否\"天气晴朗\"并且\"天气温暖\"。应该使用哪个逻辑运算符连接 is_sunny 和 is_warm？",
+    "A": "or",
+    "B": "and",
+    "C": "not",
+    "D": "xor",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "判断两个逻辑条件是否同时成立。 如果 is_sunny = True 且 is_warm = False，那么 is_sunny and is_warm 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "None",
+    "D": "报错",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "判断两个逻辑条件是否同时成立。 如果 is_weekend = True 表示是周末，has_homework = False 表示没有作业。我们想判断是否\"是周末\"或者\"没有作业\"。",
+    "A": "is_weekend and has_homework",
+    "B": "is_weekend or has_homework",
+    "C": "not is_weekend and not has_homework",
+    "D": "is_weekend nand has_homework",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "判断两个逻辑条件是否同时成立。 表达式 not True 的结果是什么？",
+    "A": "True",
+    "B": "False",
+    "C": "0",
+    "D": "1",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "从一个包含多个选项的列表中随机选择一个。 有一个选项列表 options = [\"石头\", \"剪刀\", \"布\"]，以下说法正确的是：",
+    "A": "这是一个字符串列表。",
+    "B": "这是一个元组。",
+    "C": "这是一个集合。",
+    "D": "这是一个字典。",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "从一个包含多个选项的列表中随机选择一个。 为了从 options 列表中随机选择一个元素，需要使用哪个模块？",
+    "A": "math",
+    "B": "time",
+    "C": "random",
+    "D": "sys",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "从一个包含多个选项的列表中随机选择一个。 导入 random 模块后，使用哪个函数可以从 options 列表中随机选择一个元素？",
+    "A": "random.randint(options)",
+    "B": "random.select(options)",
+    "C": "random.choice(options)",
+    "D": "random.pick(options)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "从一个包含多个选项的列表中随机选择一个。 如果执行上述函数从 options 列表中随机选择一个元素后，该元素的数据类型是什么？",
+    "A": "列表 (List)",
+    "B": "元组 (Tuple)",
+    "C": "字符串 (String)",
+    "D": "整数 (Integer)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "从一个包含多个选项的列表中随机选择一个。 random.randint(a, b) 函数用于生成一个随机整数，其范围是？",
+    "A": "a <= N < b",
+    "B": "a < N <= b",
+    "C": "a <= N <= b",
+    "D": "a < N < b",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个整数，程序计算它们的商和余数。 获取用户输入的被除数（整数），存入 dividend。",
+    "A": "dividend = int(input(\"输入被除数: \"))",
+    "B": "dividend = float(input(\"输入被除数: \"))",
+    "C": "dividend = string_to_int(input(\"输入被除数: \"))",
+    "D": "dividend = parse.int(input(\"输入被除数: \"))",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个整数，程序计算它们的商和余数。 获取用户输入的除数（整数），存入 divisor。",
+    "A": "divisor = int(input(\"输入除数: \"))",
+    "B": "divisor = input_int(\"输入除数: \")",
+    "C": "divisor = integer(input(\"输入除数: \"))",
+    "D": "divisor = to_int(input(\"输入除数: \"))",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个整数，程序计算它们的商和余数。 计算 dividend 除以 divisor 的整数商，应该使用哪个运算符？",
+    "A": "/",
+    "B": "//",
+    "C": "%",
+    "D": "div",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个整数，程序计算它们的商和余数。 计算 dividend 除以 divisor 的余数。使用哪个运算符？",
+    "A": "/",
+    "B": "//",
+    "C": "%",
+    "D": "mod",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "用户输入两个整数，程序计算它们的商和余数。 如果 dividend = 10 且 divisor = 3，那么 10 // 3 的结果是 3，10 % 3 的结果是 1。如何用一条 print 语句输出 \"商是: 3, 余数是: 1\"？",
+    "A": "print(f\"商是: {10 // 3}, 余数是: {10 % 3}\")",
+    "B": "print(\"商是: \", 10 // 3, \", 余数是: \", 10 % 3)",
+    "C": "print(\"商是: \" + str(10 // 3) + \", 余数是: \" + str(10 % 3))",
+    "D": "以上都对",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在一个给定的列表中查找是否存在某个特定元素，并找出其位置。 给定一个列表 my_data = [\"apple\", \"banana\", \"cherry\", \"date\", \"banana\"]。要检查 \"cherry\" 是否在该列表中，最直接的方法是？",
+    "A": "\"cherry\" in my_data",
+    "B": "my_data.contains(\"cherry\")",
+    "C": "my_data.has(\"cherry\")",
+    "D": "find(\"cherry\", my_data)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在一个给定的列表中查找是否存在某个特定元素，并找出其位置。 如果元素存在，我们想找到它第一次出现的索引。查找 \"banana\" 在 my_data 中的索引。",
+    "A": "index = my_data.find(\"banana\")",
+    "B": "index = my_data.search(\"banana\")",
+    "C": "index = my_data.index(\"banana\")",
+    "D": "index = pos(my_data, \"banana\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在一个给定的列表中查找是否存在某个特定元素，并找出其位置。 如果尝试使用 my_data.index(\"grape\") 来查找一个不存在于列表中的元素 \"grape\"，程序会发生什么？",
+    "A": "返回 -1",
+    "B": "返回 None",
+    "C": "抛出异常",
+    "D": "返回 0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在一个给定的列表中查找是否存在某个特定元素，并找出其位置。 如果想统计元素 \"banana\" 在列表 my_data 中出现了多少次。",
+    "A": "count = my_data.count(\"banana\")",
+    "B": "count = len(my_data, \"banana\")",
+    "C": "count = frequency(my_data, \"banana\")",
+    "D": "count = my_data.occurrences(\"banana\")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在一个给定的列表中查找是否存在某个特定元素，并找出其位置。 my_data列表中值为 \"cherry\" 时，对应的 index 的值是多少？",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "\"cherry\"",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入摄氏温度，程序将其转换为华氏温度。转换公式：F=C×9/5+32。 获取用户输入的摄氏温度（一个数值），存入变量 celsius。",
+    "A": "celsius = float(input(\"输入摄氏度: \"))",
+    "B": "celsius = string(input(\"输入摄氏度: \"))",
+    "C": "celsius = read_temp(input(\"输入摄氏度: \"))",
+    "D": "celsius.input(\"输入摄氏度: \")",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "用户输入摄氏温度，程序将其转换为华氏温度。转换公式：F=C×9/5+32。 根据公式 F=C×9/5+32，计算华氏温度 fahrenheit的正确写法是：",
+    "A": "fahrenheit = celsius * (9 / 5) + 32",
+    "B": "fahrenheit = celsius * 9 / 5 + 32",
+    "C": "fahrenheit = (celsius * 9 / 5) + 32",
+    "D": "以上 A 和 C 都可以，B也可能因Python的优先级计算正确",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "用户输入摄氏温度，程序将其转换为华氏温度。转换公式：F=C×9/5+32。 如果 celsius = 0，那么计算出的 fahrenheit 应该是多少？",
+    "A": "0",
+    "B": "32",
+    "C": "212",
+    "D": "-17.78",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "用户输入摄氏温度，程序将其转换为华氏温度。转换公式：F=C×9/5+32。 将计算得到的华氏温度 fahrenheit 输出，可以保留一位小数。",
+    "A": "print(f\"华氏温度是: {fahrenheit:.1f}\")",
+    "B": "print(\"华氏温度是: \", round(fahrenheit))",
+    "C": "print(\"华氏温度是: \" + format(fahrenheit, \".1f\")) (format返回字符串)",
+    "D": "A 和 C 都可以",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "用户输入摄氏温度，程序将其转换为华氏温度。转换公式：F=C×9/5+32。 Python中，表达式 9 / 5 的结果是什么数据类型？",
+    "A": "int (整数)",
+    "B": "float (浮点数)",
+    "C": "str (字符串)",
+    "D": "bool (布尔)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块绘制一个边长为100的正方形。 导入 turtle 模块，并可以给它一个别名，例如 t。",
+    "A": "import turtle as t",
+    "B": "turtle = import(t)",
+    "C": "load turtle use t",
+    "D": "using turtle is t",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块绘制一个边长为100的正方形。 绘制正方形的一条边，需要向前移动100个单位。",
+    "A": "t.move_forward(100)",
+    "B": "t.fd(100) (fd是forward的简写)",
+    "C": "t.go_straight(100)",
+    "D": "t.line(100)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块绘制一个边长为100的正方形。 画完一条边后，需要向左转多少度才能开始画下一条垂直的边？",
+    "A": "45度",
+    "B": "90度",
+    "C": "180度",
+    "D": "360度",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块绘制一个边长为100的正方形。 这个\"前进-左转\"的动作需要重复几次才能完成一个正方形？",
+    "A": "2次",
+    "B": "3次",
+    "C": "4次",
+    "D": "5次",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "使用 turtle 模块绘制一个边长为100的正方形。 使用 for 循环来重复绘制过程。 缺失的转向代码是？",
+    "A": "t.left(90)",
+    "B": "t.turn(\"left\", 90)",
+    "C": "t.rotate_left(90)",
+    "D": "t.set_direction(\"left\", 90)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "给定一个列表，修改其中特定位置的元素。 有一个列表 colors = [\"red\", \"green\", \"blue\"]，下列说法正确的是",
+    "A": "这是一个包含三个字符串元素的列表。",
+    "B": "这是一个包含三个字符的字符串。",
+    "C": "这是一个元组。",
+    "D": "这是一个集合。",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "给定一个列表，修改其中特定位置的元素。 我们想将列表中索引为1的元素（当前是 \"green\"）修改为 \"yellow\"。正确的操作是？",
+    "A": "colors.update(1, \"yellow\")",
+    "B": "colors.set(1, \"yellow\")",
+    "C": "colors[1] = \"yellow\"",
+    "D": "colors.modify(1, \"yellow\")",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "给定一个列表，修改其中特定位置的元素。 修改后，colors 列表的内容变为？",
+    "A": "[\"\"\",\"red\"\",null,\" \",\"\"\",\"green\"\",null,\" \",\"\"\",\"blue\"\",null,\" \",\"\"\",\"yellow\"\"]",
+    "B": "[\"\"\",\"red\"\",null,\" \",\"\"\",\"yellow\"\",null,\" \",\"\"\",\"blue\"\"]",
+    "C": "[\"\"\",\"yellow\"\",null,\" \",\"\"\",\"green\"\",null,\" \",\"\"\",\"blue\"\"]",
+    "D": "[\"\"\",\"red\"\",null,\" \",\"\"\",\"green\"\",null,\" \",\"\"\",\"yellow\"\"]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "给定一个列表，修改其中特定位置的元素。 如果尝试访问一个超出列表范围的索引，例如 colors[3] (假设列表只有3个元素，索引0,1,2)，会发生什么？",
+    "A": "返回 None",
+    "B": "返回列表的最后一个元素",
+    "C": "产生错误",
+    "D": "返回 0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "给定一个列表，修改其中特定位置的元素。 列表的索引是从几开始的？",
+    "A": "1",
+    "B": "0",
+    "C": "-1",
+    "D": "用户自定义",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "开发一个用户注册系统，需要对用户输入的信息进行一些基本验证。 用户需要输入用户名。使用哪个函数来获取用户从键盘输入的用户名？",
+    "A": "username = print(\"请输入用户名:\")",
+    "B": "username = input(\"请输入用户名:\")",
+    "C": "username = read(\"请输入用户名:\")",
+    "D": "username = get(\"请输入用户名:\")",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "开发一个用户注册系统，需要对用户输入的信息进行一些基本验证。 假设规定用户名长度必须至少为6位。如果获取到的用户名为 username，以下哪个表达式可以判断其长度是否符合要求？",
+    "A": "len(username) >= 6",
+    "B": "length(username) >= 6",
+    "C": "username.length() >= 6",
+    "D": "size(username) >= 6",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "开发一个用户注册系统，需要对用户输入的信息进行一些基本验证。 用户输入的密码存储在变量 password 中。为了安全，系统要求密码不能与用户名相同。以下哪个条件判断密码和用户名是否相同？",
+    "A": "password is username",
+    "B": "password == username",
+    "C": "password = username",
+    "D": "password != username",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "开发一个用户注册系统，需要对用户输入的信息进行一些基本验证。 系统需要用户输入两次密码以确认。第一次输入的密码是 pwd1，第二次是 pwd2。如何判断两次输入的密码是否一致？",
+    "A": "if pwd1 = pwd2: print(\"密码一致\")",
+    "B": "if pwd1 == pwd2: print(\"密码一致\")",
+    "C": "if pwd1 is pwd2: print(\"密码一致\")",
+    "D": "if str(pwd1) == str(pwd2): print(\"密码一致\")",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "开发一个用户注册系统，需要对用户输入的信息进行一些基本验证。 如果用户名 username 和密码 password 都符合要求（用户名长度至少6位，密码与用户名不同，两次输入密码一致），程序应打印 \"注册成功\"。以下哪个嵌套判断结构能大致实现这个逻辑？（假设 len_ok, name_pwd_diff, pwd_match 分别是这些条件的布尔结果）",
+    "A": "if len_ok: if name_pwd_diff: if pwd_match: print(\"注册成功\")",
+    "B": "if len_ok and name_pwd_diff and pwd_match: print(\"注册成功\")",
+    "C": "if len_ok or name_pwd_diff or pwd_match: print(\"注册成功\")",
+    "D": "A 和 B 都可以",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "模拟一个简易计算器的部分功能，执行基本的算术运算。 用户输入两个数字，希望进行加法运算。num1_str = input(\"输入第一个数: \") 和 num2_str = input(\"输入第二个数: \")。在进行加法前，需要将这两个字符串转换为数值类型。如果希望结果可以是小数，应转换为？",
+    "A": "int",
+    "B": "float",
+    "C": "bool",
+    "D": "不需要转换，直接 num1_str + num2_str",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "模拟一个简易计算器的部分功能，执行基本的算术运算。 如果 a = 10，b = 3。执行 result = a // b，result 的值是多少？",
+    "A": "3.333...",
+    "B": "3",
+    "C": "1",
+    "D": "0",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "模拟一个简易计算器的部分功能，执行基本的算术运算。 计算 2 的 10 次方。以下哪个运算符可以实现？",
+    "A": "2 ^ 10",
+    "B": "2 ** 10",
+    "C": "2 * 10",
+    "D": "2 // 10",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "模拟一个简易计算器的部分功能，执行基本的算术运算。 用户选择运算类型，例如输入 \"+\" 代表加法，\"-\" 代表减法。如果用户输入的操作符存储在变量 operator 中，两个操作数是 num1 和 num2。以下哪个 if-elif 结构能正确处理加法和减法？",
+    "A": "if operator == \"+\": result = num1 + num2 elif operator == \"-\": result = num1 - num2",
+    "B": "if operator is \"+\": result = num1 + num2 elif operator is \"-\": result = num1 - num2",
+    "C": "if operator == \"+\" result = num1 + num2 elif operator == \"-\" result = num1 - num2",
+    "D": "if operator == \"+\": result = num1 + num2 else operator == \"-\": result = num1 - num2",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "模拟一个简易计算器的部分功能，执行基本的算术运算。 在除法运算中，如果除数 b 为0，程序会产生错误。为了避免程序崩溃，可以使用异常处理。以下哪个是基本的异常处理结构？",
+    "A": "try: result = a / b except: print(\"除数不能为零\")",
+    "B": "check: result = a / b error: print(\"除数不能为零\")",
+    "C": "attempt: result = a / b handle: print(\"除数不能为零\")",
+    "D": "if b == 0: print(\"除数不能为零\") else: result = a / b",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "创建一个简单的购物清单应用，可以添加商品、查看清单、移除商品。 购物清单最初是空的。用什么方式初始化一个空的列表 shopping_list 最合适？",
+    "A": "shopping_list = ()",
+    "B": "shopping_list = {}",
+    "C": "shopping_list = []",
+    "D": "shopping_list = \"empty\"",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个简单的购物清单应用，可以添加商品、查看清单、移除商品。 向 shopping_list 中添加商品 \"牛奶\"。应使用哪个列表方法？",
+    "A": "shopping_list.insert(0, \"牛奶\")",
+    "B": "shopping_list.add(\"牛奶\")",
+    "C": "shopping_list.append(\"牛奶\")",
+    "D": "A 和 C 都可以，但 C 更常用于在末尾添加`",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个简单的购物清单应用，可以添加商品、查看清单、移除商品。 当前购物清单 shopping_list = [\"苹果\", \"香蕉\", \"牛奶\"]。想要移除 \"香蕉\"。如果知道元素的值，用哪个方法？",
+    "A": "shopping_list.pop(\"香蕉\")",
+    "B": "shopping_list.remove(\"香蕉\")",
+    "C": "del shopping_list[\"香蕉\"]",
+    "D": "shopping_list.clear(\"香蕉\")",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "创建一个简单的购物清单应用，可以添加商品、查看清单、移除商品。 查看购物清单中有多少项商品。如果 shopping_list = [\"苹果\", \"牛奶\", \"面包\"]，用什么函数可以得到数量？",
+    "A": "count(shopping_list)",
+    "B": "shopping_list.size()",
+    "C": "len(shopping_list)",
+    "D": "shopping_list.length",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "创建一个简单的购物清单应用，可以添加商品、查看清单、移除商品。 想按字母顺序对购物清单 shopping_list = [\"香蕉\", \"苹果\", \"橘子\"] 进行排序。哪个方法会直接修改原列表并排序？",
+    "A": "sorted_list = shopping_list.sorted()",
+    "B": "shopping_list.sort()",
+    "C": "shopping_list.order()",
+    "D": "new_list = sort(shopping_list)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对一个包含数字的列表进行操作，如求和、求平均值、筛选等。 给定一个数字列表 numbers = [10, 25, 8, 42, 15]。要计算列表中所有数字的总和，可以使用哪个内置函数？",
+    "A": "total(numbers)",
+    "B": "sum(numbers)",
+    "C": "add(numbers)",
+    "D": "calc_sum(numbers)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对一个包含数字的列表进行操作，如求和、求平均值、筛选等。 计算列表 numbers 的平均值。如果已经求得总和 total_sum 和列表长度 count，平均值的表达式是？",
+    "A": "average = total_sum // count",
+    "B": "average = total_sum / count",
+    "C": "average = total_sum % count",
+    "D": "average = count / total_sum",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对一个包含数字的列表进行操作，如求和、求平均值、筛选等。 从列表 numbers = [10, 25, 8, 42, 15] 中找出最大值。可以使用哪个内置函数？",
+    "A": "maximum(numbers)",
+    "B": "large(numbers)",
+    "C": "max(numbers)",
+    "D": "peak(numbers)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个包含数字的列表进行操作，如求和、求平均值、筛选等。 想筛选出列表 numbers 中所有大于20的数字，并存入新列表 large_numbers。 缺失代码处应填入什么代码？",
+    "A": "large_numbers.add(num)",
+    "B": "large_numbers.insert(num)",
+    "C": "large_numbers.append(num)",
+    "D": "large_numbers = num",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个包含数字的列表进行操作，如求和、求平均值、筛选等。 检查数字 15 是否在列表 numbers = [10, 25, 8, 42, 15] 中。应使用哪个成员运算符？",
+    "A": "15 is in numbers",
+    "B": "15 check numbers",
+    "C": "15 in numbers",
+    "D": "numbers contains 15",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个已有的列表进行元素的修改、插入、删除和查询操作。 给定列表 my_list = [10, 20, 30, 40, 50]。想将索引为2的元素（值为30）修改为35。正确的操作是？",
+    "A": "my_list.update(2, 35)",
+    "B": "my_list[2] = 35",
+    "C": "my_list.set(2, 35)",
+    "D": "my_list.modify(2, 35)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对一个已有的列表进行元素的修改、插入、删除和查询操作。 在列表 my_list = [10, 20, 30] 的索引1位置插入元素15，使得列表变为 [10, 15, 20, 30]。应使用哪个方法？",
+    "A": "my_list.add(1, 15)",
+    "B": "my_list.append(1, 15)",
+    "C": "my_list.insert(1, 15)",
+    "D": "my_list.put(1, 15)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个已有的列表进行元素的修改、插入、删除和查询操作。 从列表 my_list = [10, 20, 30, 20, 40] 中删除第一个出现的元素 20。",
+    "A": "my_list.pop(20)",
+    "B": "del my_list[20]",
+    "C": "my_list.remove(20)",
+    "D": "my_list.delete(20)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个已有的列表进行元素的修改、插入、删除和查询操作。 查找元素 30 在列表 my_list = [10, 20, 30, 40] 中的索引。",
+    "A": "my_list.find(30) (字符串方法)",
+    "B": "my_list.search(30)",
+    "C": "my_list.index(30)",
+    "D": "pos(my_list, 30)",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "对一个已有的列表进行元素的修改、插入、删除和查询操作。 如果尝试用 my_list.index(60) 查找一个不存在于列表 my_list = [10, 20, 30] 中的元素，会发生什么？",
+    "A": "返回 -1",
+    "B": "返回 None",
+    "C": "程序产生错误",
+    "D": "返回 0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "编写一个简单的程序，用于在米和英尺之间转换长度。 (1米 ≈ 3.28084英尺) 程序首先询问用户要转换的长度值（一个数字）。获取用户输入并尝试将其转换为浮点数，存入变量 length_value。",
+    "A": "length_value = float(input(\"输入长度值: \"))",
+    "B": "length_value = int(input(\"输入长度值: \"))",
+    "C": "length_value = input(float(\"输入长度值: \"))",
+    "D": "length_value = str(input(\"输入长度值: \"))",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "编写一个简单的程序，用于在米和英尺之间转换长度。 (1米 ≈ 3.28084英尺) 用户还需要选择转换方向：从米到英尺，或从英尺到米。假设用户输入 \"m_to_ft\" 或 \"ft_to_m\"。程序需要根据用户的选择执行不同的计算。这种场景最适合用哪种控制结构？",
+    "A": "for 循环",
+    "B": "while 循环",
+    "C": "if-elif-else 语句",
+    "D": "try-except 语句",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "编写一个简单的程序，用于在米和英尺之间转换长度。 (1米 ≈ 3.28084英尺) 如果用户选择从米转换为英尺，转换公式是 feet = meters * 3.28084。如果 length_value 是用户输入的米数，正确的计算语句是？",
+    "A": "converted_length = length_value / 3.28084",
+    "B": "converted_length = length_value * 3.28084",
+    "C": "converted_length = length_value + 3.28084",
+    "D": "converted_length = 3.28084 / length_value",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "编写一个简单的程序，用于在米和英尺之间转换长度。 (1米 ≈ 3.28084英尺) 如果用户选择从英尺转换为米，转换公式是 meters = feet / 3.28084。如果 length_value 是用户输入的英尺数，正确的计算语句是？",
+    "A": "converted_length = length_value / 3.28084",
+    "B": "converted_length = length_value * 3.28084",
+    "C": "converted_length = length_value - 3.28084",
+    "D": "converted_length = 3.28084 * length_value",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "编写一个简单的程序，用于在米和英尺之间转换长度。 (1米 ≈ 3.28084英尺) 程序最后需要将转换结果输出，并保留两位小数。如果 result = 10.12345，以下哪种方式可以输出 \"结果: 10.12\"？",
+    "A": "print(f\"结果: {result:.2f}\")",
+    "B": "print(\"结果: \" + result)",
+    "C": "print(\"结果: %.2f\" % result)",
+    "D": "A 和 C 都可以",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "给定一个数字列表，筛选出其中的偶数或奇数。 有一个数字列表 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]。要判断一个数 num 是否为偶数，可以使用哪个条件？",
+    "A": "num % 2 == 0",
+    "B": "num / 2 == 0",
+    "C": "num // 2 == 1",
+    "D": "is_even(num)",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "给定一个数字列表，筛选出其中的偶数或奇数。 创建一个新列表 even_numbers，用于存放 numbers 列表中的所有偶数。 缺失的代码应该是？",
+    "A": "even_numbers.add(num)",
+    "B": "even_numbers.insert(num)",
+    "C": "even_numbers.append(num)",
+    "D": "even_numbers = even_numbers + num",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "给定一个数字列表，筛选出其中的偶数或奇数。 如果想统计原列表 numbers 中有多少个奇数。 缺失的代码应该是？",
+    "A": "odd_count.increment()",
+    "B": "odd_count += 1",
+    "C": "odd_count = odd_count + num",
+    "D": "append.odd_count(1)",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "给定一个数字列表，筛选出其中的偶数或奇数。 Python中，range(5) 生成的序列是什么？",
+    "A": "[1,\" \",2,\" \",3,\" \",4,\" \",5]",
+    "B": "[0,\" \",1,\" \",2,\" \",3,\" \",4]",
+    "C": "[0,\" \",1,\" \",2,\" \",3,\" \",4,\" \",5]",
+    "D": "[1,\" \",2,\" \",3,\" \",4]",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "给定一个数字列表，筛选出其中的偶数或奇数。 如果列表 numbers 为空，即numbers = []，执行以下代码会发生？",
+    "A": "报错",
+    "B": "打印 None",
+    "C": "循环体不执行，程序正常结束",
+    "D": "进入无限循环",
+    "answer": "C",
+    "select": ""
+  }
+]
