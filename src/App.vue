@@ -16,7 +16,7 @@ import {
   NSelect,
 } from "naive-ui"
 import type { UploadCustomRequestOptions, DataTableColumn } from "naive-ui"
-import { onMounted, ref, h, computed, watch } from "vue"
+import { onMounted, ref, reactive, h, computed, watch } from "vue"
 import shuffle from "lodash/shuffle"
 import Option from "./Option.vue"
 
@@ -29,7 +29,7 @@ interface Exam {
   C?: string
   D?: string
   answer: Option
-  select: Option
+  select: Option | ""
 }
 
 interface WrongAnswer {
@@ -49,46 +49,10 @@ const TEST_STATUS = "test_status"
 const RANDOM_COUNT = "random_count"
 const optionLabels: Option[] = ["A", "B", "C", "D"]
 
-const columns = computed<DataTableColumn<Exam>[]>(() => {
-  const options: DataTableColumn<Exam>[] = optionLabels.map((op) => {
-    return {
-      title: "选项" + op,
-      key: op,
-      render: (row, index) =>
-        h(Option, {
-          correct: row.answer === op,
-          option: String(row[op as Option] ?? ""),
-          radio: status.value === TestStatus.IS_TESTING,
-          checked: row.select === op,
-          updateChecked: () => {
-            row.select = op as Option
-            const tests = data.value.map((item, i) => {
-              if (index === i) {
-                item.select = op as Option
-              }
-              return item
-            })
-            window.localStorage.setItem(TEST, JSON.stringify(tests))
-          },
-        }),
-    }
-  })
-  return [
-    {
-      title: "序号",
-      key: "id",
-      render: (_, index) => index + 1,
-      width: 60,
-    },
-    {
-      title: "题目",
-      key: "title",
-    },
-    ...options,
-  ]
-})
 const keyword = ref("")
-const data = ref<Exam[]>([])
+// source 是完整的工作集（考试中为整份试卷，否则为整个题库），
+// data 只是它按关键词过滤后的视图，作答始终写回 source。
+const source = ref<Exam[]>([])
 const status = ref(TestStatus.NO_TESTING)
 const wrongAnswers = ref<WrongAnswer[]>([])
 const showWrongAnswer = ref(false)
@@ -101,88 +65,152 @@ const randomOptions = [
   { label: "50 题", value: 50 },
 ]
 
+const isTesting = computed(() => status.value === TestStatus.IS_TESTING)
+
+const pagination = reactive({
+  page: 1,
+  pageSize: 200,
+  showSizePicker: true,
+  pageSizes: [50, 100, 200, 500],
+  onUpdatePage: (page: number) => {
+    pagination.page = page
+  },
+  onUpdatePageSize: (size: number) => {
+    pagination.pageSize = size
+    pagination.page = 1
+  },
+})
+
+// 序号取自 source 中的固定位置，不跟随分页/搜索变化，
+// 也与交卷时错题的编号口径一致。
+const indexMap = computed(
+  () => new Map(source.value.map((item, index) => [item, index + 1])),
+)
+
+const data = computed(() => {
+  const kw = keyword.value.trim().toLowerCase()
+  if (!kw) return source.value
+  return source.value.filter((item) => item.title.toLowerCase().includes(kw))
+})
+
+const columns = computed<DataTableColumn<Exam>[]>(() => {
+  const options: DataTableColumn<Exam>[] = optionLabels.map((op) => ({
+    title: "选项" + op,
+    key: op,
+    render: (row) =>
+      h(Option, {
+        correct: row.answer === op,
+        option: String(row[op] ?? ""),
+        radio: isTesting.value,
+        checked: row.select === op,
+        updateChecked: () => {
+          row.select = op
+          persistTest()
+        },
+      }),
+  }))
+  return [
+    {
+      title: "序号",
+      key: "id",
+      render: (row) => indexMap.value.get(row) ?? "",
+      width: 60,
+    },
+    {
+      title: "题目",
+      key: "title",
+    },
+    ...options,
+  ]
+})
+
+function loadExams(): Exam[] {
+  const raw = window.localStorage.getItem(EXAM)
+  if (!raw) return []
+  try {
+    return JSON.parse(raw)
+  } catch {
+    return []
+  }
+}
+
+// 考试中才需要落盘，非考试状态下 tests 不应存在。
+function persistTest() {
+  if (!isTesting.value) return
+  window.localStorage.setItem(TEST, JSON.stringify(source.value))
+}
+
 function upload({ file }: UploadCustomRequestOptions) {
   const reader = new FileReader()
   reader.readAsText(file.file!)
   reader.onload = (event) => {
     const str = (event.target?.result as string) ?? ""
-    data.value = JSON.parse(str)
+    let parsed: unknown
+    try {
+      parsed = JSON.parse(str)
+    } catch {
+      window.alert("文件不是合法的 JSON")
+      return
+    }
+    if (!Array.isArray(parsed) || parsed.some((item) => !item?.title)) {
+      window.alert("题库格式不对，应为包含 title / answer 的对象数组")
+      return
+    }
+    // 换题库意味着旧答卷作废
     window.localStorage.setItem(EXAM, str)
+    window.localStorage.removeItem(TEST)
+    window.localStorage.setItem(TEST_STATUS, TestStatus.NO_TESTING)
+    status.value = TestStatus.NO_TESTING
+    keyword.value = ""
+    pagination.page = 1
+    source.value = parsed as Exam[]
   }
 }
 
 function init() {
-  if (!!window.localStorage.getItem(TEST)) {
-    data.value = JSON.parse(window.localStorage.getItem(TEST)!)
-  } else {
-    const strings = window.localStorage.getItem(EXAM)
-    if (!strings) return
-    data.value = JSON.parse(strings)
-  }
-}
-
-function search() {
-  if (!keyword.value) {
-    init()
-    return
-  }
-  const reg = new RegExp(keyword.value, "gi")
-  const arr = []
-  for (let i = 0; i < data.value.length; i++) {
-    if (reg.test(data.value[i].title)) {
-      arr.push(data.value[i])
+  const test = window.localStorage.getItem(TEST)
+  if (test) {
+    try {
+      source.value = JSON.parse(test)
+      return
+    } catch {
+      window.localStorage.removeItem(TEST)
     }
   }
-  data.value = arr
+  source.value = loadExams()
 }
 
 function showAll() {
-  data.value = JSON.parse(window.localStorage.getItem(EXAM)!)
-  if (status.value === TestStatus.IS_TESTING) {
-    window.localStorage.setItem(TEST, window.localStorage.getItem(EXAM)!)
-  }
+  source.value = loadExams()
+  pagination.page = 1
+  persistTest()
 }
 
 function getRandom(n: number) {
-  data.value = []
-  const cached = JSON.parse(window.localStorage.getItem(EXAM)!)
-  if (n === 1) {
-    const index = Math.floor(Math.random() * cached.length)
-    data.value = [cached[index]]
-  } else {
-    const result = []
-    const rand = shuffle(cached)
-    for (let i = 0; i < n; i++) {
-      result.push(rand[i])
-    }
-    data.value = result
-  }
-  if (status.value === TestStatus.IS_TESTING) {
-    window.localStorage.setItem(TEST, JSON.stringify(data.value))
-  }
+  source.value = shuffle(loadExams()).slice(0, n)
+  pagination.page = 1
+  persistTest()
 }
 
 function start() {
-  getRandom(randomCount.value)
-  window.localStorage.setItem(TEST_STATUS, TestStatus.IS_TESTING)
-  window.localStorage.setItem(TEST, JSON.stringify(data.value))
   status.value = TestStatus.IS_TESTING
+  window.localStorage.setItem(TEST_STATUS, TestStatus.IS_TESTING)
+  getRandom(randomCount.value)
 }
 
 function check() {
-  wrongAnswers.value = data.value
-    .map((item, index) => {
-      if (item.answer !== item.select) {
-        return {
-          id: index + 1,
-          title: item.title,
-          option: `${item.answer} ${item[item.answer]}`,
-        }
-      }
-      return { id: 0, title: "", option: "" }
-    })
-    .filter((a) => a.id && a.title && a.option)
-  score.value = data.value.length - wrongAnswers.value.length
+  wrongAnswers.value = source.value.flatMap((item, index) =>
+    item.answer === item.select
+      ? []
+      : [
+          {
+            id: index + 1,
+            title: item.title,
+            option: `${item.answer} ${item[item.answer]}`,
+          },
+        ],
+  )
+  score.value = source.value.length - wrongAnswers.value.length
   showWrongAnswer.value = true
 }
 
@@ -196,7 +224,7 @@ function finish() {
 
 function clear() {
   window.localStorage.clear()
-  data.value = []
+  source.value = []
   keyword.value = ""
   status.value = TestStatus.NO_TESTING
   showWrongAnswer.value = false
@@ -205,20 +233,21 @@ function clear() {
 }
 
 onMounted(() => {
-  init()
-  if (!!window.localStorage.getItem(TEST_STATUS)) {
-    status.value = window.localStorage.getItem(TEST_STATUS) as TestStatus
-  } else {
-    status.value = TestStatus.NO_TESTING
-  }
+  const storedStatus = window.localStorage.getItem(TEST_STATUS)
+  status.value =
+    storedStatus === TestStatus.IS_TESTING
+      ? TestStatus.IS_TESTING
+      : TestStatus.NO_TESTING
   window.localStorage.setItem(TEST_STATUS, status.value)
-  const storedRandomCount = window.localStorage.getItem(RANDOM_COUNT)
-  if (storedRandomCount) {
-    const parsed = Number(storedRandomCount)
-    if (!Number.isNaN(parsed)) {
-      randomCount.value = parsed
-    }
+  init()
+  const parsed = Number(window.localStorage.getItem(RANDOM_COUNT))
+  if (parsed) {
+    randomCount.value = parsed
   }
+})
+
+watch(keyword, () => {
+  pagination.page = 1
 })
 
 watch(randomCount, (val) => {
@@ -243,9 +272,9 @@ watch(randomCount, (val) => {
             >
               <n-button>上传文件</n-button>
             </n-upload>
-            <n-button @click="clear" :disabled="!data.length">清除</n-button>
+            <n-button @click="clear" :disabled="!source.length">清除</n-button>
             <n-divider vertical />
-            <n-button @click="getRandom(1)" :disabled="!data.length">
+            <n-button @click="getRandom(1)" :disabled="!source.length">
               随机 1 题
             </n-button>
             <n-space align="center">
@@ -254,43 +283,39 @@ watch(randomCount, (val) => {
                 :options="randomOptions"
                 style="width: 100px"
               />
-              <n-button
-                @click="getRandom(randomCount)"
-                :disabled="!data.length"
-              >
+              <n-button @click="getRandom(randomCount)" :disabled="!source.length">
                 随机抽题
               </n-button>
             </n-space>
-            <n-button @click="showAll" :disabled="!data.length">
+            <n-button @click="showAll" :disabled="!source.length">
               显示所有题
             </n-button>
             <n-divider vertical />
             <n-button
               @click="start"
               type="primary"
-              :disabled="status === TestStatus.IS_TESTING || !data.length"
+              :disabled="isTesting || !source.length"
             >
               做题
             </n-button>
-            <n-button
-              @click="check"
-              :disabled="status === TestStatus.NO_TESTING"
-            >
-              交卷
-            </n-button>
+            <n-button @click="check" :disabled="!isTesting">交卷</n-button>
           </n-space>
           <n-space>
             <n-input
-            style="width: 200px;"
+              style="width: 200px"
               v-model:value="keyword"
-              @update:value="search"
               placeholder="通过关键词搜索"
             />
           </n-space>
         </n-space>
       </n-layout-header>
       <n-layout-content>
-        <n-data-table :data="data" :columns="columns" striped />
+        <n-data-table
+          :data="data"
+          :columns="columns"
+          :pagination="pagination"
+          striped
+        />
       </n-layout-content>
       <n-modal
         style="width: 800px"
