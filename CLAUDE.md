@@ -33,9 +33,9 @@ npm run preview  # 预览构建产物 dist/
 
 由此带来的约束：任何替换 `source` 的逻辑都必须经 `loadExams()` 从 `exams` 重新读取（而不是在当前 `source` 上做减法），并在末尾调用 `persistTest()`，否则考试中已作答的记录会丢失/错位。`clear()` 会清空整个 localStorage。
 
-**表格渲染。** Naive UI `n-data-table` 的 columns 是一个 `computed`，选项列用 `h()` 渲染函数而不是模板来构建，因为每个单元格都需要拿到该行的 `answer` 和当前的 `TestStatus`，才能决定渲染成复选框（考试模式）还是纯文本、并把正确答案标蓝（复习模式）。`updateChecked` 直接改行对象本身——它与 `source` 里的元素是同一个引用——然后 `persistTest()` 落盘整个 `source`。
+**表格渲染。** Naive UI `n-data-table` 的 columns 是一个 `computed`，选项列用 `h()` 渲染函数而不是模板来构建，因为每个单元格都需要拿到该行的 `answer` 和当前的 `TestStatus`，才能决定渲染成复选框（考试模式）还是纯文本、并给正确答案加绿色 ✓ 角标（复习模式）。`updateChecked` 直接改行对象本身——它与 `source` 里的元素是同一个引用——然后 `persistTest()` 落盘整个 `source`。
 
-表格默认每页 200 行（`pagination` 是个 `reactive` 对象，翻页和改每页条数都要自己写回它）。**序号列不要用 naive-ui 传给 `render` 的 index**：那是页内下标，分页后每页都会从 1 重新数。现在走 `indexMap`（行对象 → 它在 `source` 中的位置），跨页连续，也和交卷时错题的编号口径一致。
+表格默认每页 20 行（`pagination` 是个 `reactive` 对象，翻页和改每页条数都要自己写回它）。**序号列不要用 naive-ui 传给 `render` 的 index**：那是页内下标，分页后每页都会从 1 重新数。现在走 `indexMap`（行对象 → 它在 `source` 中的位置），跨页连续，也和交卷时错题的编号口径一致。
 
 **考试生命周期：** `start()`（随机抽题、翻转状态、持久化）→ 点击选项（修改并持久化 `tests`）→ `check()`（比对 `answer` 与 `select`，在弹窗里列出错题）→ `finish()`（清除 `tests`、状态翻回、`init()` 重新加载完整题库）。
 

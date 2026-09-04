@@ -15,7 +15,11 @@ import {
   NDivider,
   NSelect,
 } from "naive-ui"
-import type { UploadCustomRequestOptions, DataTableColumn } from "naive-ui"
+import type {
+  UploadCustomRequestOptions,
+  DataTableColumn,
+  GlobalThemeOverrides,
+} from "naive-ui"
 import { onMounted, ref, reactive, h, computed, watch } from "vue"
 import shuffle from "lodash/shuffle"
 import Option from "./Option.vue"
@@ -69,11 +73,25 @@ const randomOptions = [
 
 const isTesting = computed(() => status.value === TestStatus.IS_TESTING)
 
+// 学生反馈"眼花"：字太小、行太挤、一页 200 行。这里统一放大字号、
+// 撑开单元格留白，把网格线压淡，让视线能一行行走下去。
+const themeOverrides: GlobalThemeOverrides = {
+  common: { fontSize: "15px", fontSizeMedium: "15px" },
+  DataTable: {
+    fontSizeMedium: "15px",
+    thPaddingMedium: "14px 16px",
+    tdPaddingMedium: "16px 16px",
+    thFontWeight: "600",
+    borderColor: "#eceef1",
+    thColor: "#fafbfc",
+  },
+}
+
 const pagination = reactive({
   page: 1,
-  pageSize: 200,
+  pageSize: 20,
   showSizePicker: true,
-  pageSizes: [50, 100, 200, 500],
+  pageSizes: [20, 50, 100, 200],
   onUpdatePage: (page: number) => {
     pagination.page = page
   },
@@ -102,7 +120,7 @@ const optionLabels = computed(() => {
 })
 
 // 选项多了列会被挤扁，给个横向最小宽度让表格自己出滚动条。
-const scrollX = computed(() => 300 + optionLabels.value.length * 140)
+const scrollX = computed(() => 450 + optionLabels.value.length * 160)
 
 const data = computed(() => {
   const kw = keyword.value.trim().toLowerCase()
@@ -114,7 +132,7 @@ const columns = computed<DataTableColumn<Exam>[]>(() => {
   const options: DataTableColumn<Exam>[] = optionLabels.value.map((op) => ({
     title: "选项" + op,
     key: op,
-    minWidth: 140,
+    minWidth: 160,
     render: (row) =>
       h(Option, {
         correct: row.answer === op,
@@ -132,12 +150,13 @@ const columns = computed<DataTableColumn<Exam>[]>(() => {
       title: "序号",
       key: "id",
       render: (row) => indexMap.value.get(row) ?? "",
-      width: 60,
+      width: 70,
+      align: "center",
     },
     {
       title: "题目",
       key: "title",
-      minWidth: 240,
+      minWidth: 380,
     },
     ...options,
   ]
@@ -279,6 +298,7 @@ watch(randomCount, (val) => {
     inline-theme-disabled
     :locale="zhCN"
     :date-locale="dateZhCN"
+    :theme-overrides="themeOverrides"
   >
     <n-layout content-style="padding: 0 20px 20px">
       <n-layout-header style="padding: 20px 0">
@@ -289,11 +309,13 @@ watch(randomCount, (val) => {
               accept="application/json"
               :custom-request="upload"
             >
-              <n-button>上传文件</n-button>
+              <n-button tertiary>上传文件</n-button>
             </n-upload>
-            <n-button @click="clear" :disabled="!source.length">清除</n-button>
+            <n-button quaternary @click="clear" :disabled="!source.length">
+              清除
+            </n-button>
             <n-divider vertical />
-            <n-button @click="getRandom(1)" :disabled="!source.length">
+            <n-button tertiary @click="getRandom(1)" :disabled="!source.length">
               随机 1 题
             </n-button>
             <n-space align="center">
@@ -302,11 +324,15 @@ watch(randomCount, (val) => {
                 :options="randomOptions"
                 style="width: 100px"
               />
-              <n-button @click="getRandom(randomCount)" :disabled="!source.length">
+              <n-button
+                tertiary
+                @click="getRandom(randomCount)"
+                :disabled="!source.length"
+              >
                 随机抽题
               </n-button>
             </n-space>
-            <n-button @click="showAll" :disabled="!source.length">
+            <n-button tertiary @click="showAll" :disabled="!source.length">
               显示所有题
             </n-button>
             <n-divider vertical />
@@ -317,7 +343,14 @@ watch(randomCount, (val) => {
             >
               做题
             </n-button>
-            <n-button @click="check" :disabled="!isTesting">交卷</n-button>
+            <n-button
+              type="primary"
+              secondary
+              @click="check"
+              :disabled="!isTesting"
+            >
+              交卷
+            </n-button>
           </n-space>
           <n-space>
             <n-input
@@ -334,7 +367,8 @@ watch(randomCount, (val) => {
           :columns="columns"
           :pagination="pagination"
           :scroll-x="scrollX"
-          striped
+          :single-line="false"
+          :bordered="false"
         />
       </n-layout-content>
       <n-modal
@@ -346,7 +380,7 @@ watch(randomCount, (val) => {
           得分：{{ score }} 分
           <span v-if="wrongAnswers.length !== 0">，以下是答错的题</span>
         </template>
-        <p v-for="item in wrongAnswers" :key="item.id">
+        <p class="wrong-item" v-for="item in wrongAnswers" :key="item.id">
           <span>{{ item.id }} . {{ item.title }}</span>
           <span class="correct"> 答案：{{ item.option }}</span>
         </p>
@@ -360,8 +394,17 @@ watch(randomCount, (val) => {
 </template>
 
 <style>
+body {
+  background-color: #f6f7f9;
+}
+
 .correct {
-  color: blue;
-  font-weight: bold;
+  color: #18a058;
+  font-weight: 600;
+}
+
+.wrong-item {
+  line-height: 1.7;
+  margin: 0 0 14px;
 }
 </style>
