@@ -400,7 +400,7 @@ body {
 
 .correct {
   color: #18a058;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .wrong-item {
