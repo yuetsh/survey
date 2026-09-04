@@ -5,12 +5,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 命令
 
 ```bash
-npm run dev      # 启动 Vite 开发服务器
-npm run build    # 先跑 vue-tsc 类型检查，再 vite build 输出到 dist/
-npm run preview  # 预览构建产物 dist/
+bun install      # 安装依赖
+bun run dev      # 启动 Vite 开发服务器
+bun run build    # 先跑 vue-tsc 类型检查，再 vite build 输出到 dist/
+bun run preview  # 预览构建产物 dist/
 ```
 
-类型检查只在 `npm run build` 里通过 `vue-tsc` 执行。项目没有 linter，也没有测试。
+包管理器是 **Bun**（锁文件 `bun.lock`，已提交）。不要再用 npm/yarn 装依赖，混装会同时留下两份锁文件。Bun 在这里只做包管理和脚本运行器——`.vue` 单文件组件仍由 Vite + `@vitejs/plugin-vue` 编译，Bun 自带的打包器没有官方 Vue 插件，别把 `vite build` 换成 `bun build`。
+
+类型检查只在 `bun run build` 里通过 `vue-tsc` 执行。项目没有 linter，也没有测试。
+
+`core-js` 的 postinstall 被 Bun 拦下了（它只是打印一条募捐信息），不用 `bun pm trust`。
 
 ## 这是什么
 
