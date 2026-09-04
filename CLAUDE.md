@@ -22,7 +22,7 @@ npm run preview  # 预览构建产物 dist/
 
 **核心的两层数据结构：`source` 与 `data`。** `source` 是完整的工作集——考试中是整份试卷，否则是整个题库；`data` 是它按 `keyword` 过滤后的 `computed` 视图，只用于表格渲染。搜索永远只改视图，作答永远写回 `source`。改动这块时不要退回到"直接过滤 `data`"的写法：过滤会丢引用，导致退格无法恢复、以及考试中搜索一旦作答就把未显示的题连同答案一起写没。
 
-**题库格式**（见 `data/*.json`、`public/demo.json`）：一个对象数组，字段为 `title`、`A`、`B`、可选的 `C`/`D`、`answer`（正确选项字母）、`select`（用户所选，未作答时为 `""`）。`data/` 放的是真实题库（C#、Python）；`public/demo.json` 是 5 题的示例。
+**题库格式**（见 `data/*.json`、`public/demo.json`）：一个对象数组，字段为 `title`、`A`、`B`、可选的 `C` 及之后的字母、`answer`（正确选项字母）、`select`（用户所选，未作答时为 `""`）。选项个数不写死：`optionLabels` 这个 `computed` 扫描当前 `source`，把 `title`/`answer`/`select` 之外、有内容的单个大写字母键（`OPTION_KEY`）收集起来按字母序出列，A~Z 都支持，四选项题库也不会多出空列。`data/` 放的是真实题库（C#、Python）；`public/demo.json` 是 5 题的示例。
 
 **localStorage 是唯一数据源。** 四个 key，全部直接用 `window.localStorage` 读写：
 
@@ -43,5 +43,5 @@ npm run preview  # 预览构建产物 dist/
 
 - Prettier 配置 `semi: false`——不写分号。
 - typescript 必须留在 `^6`。升到 `^7` 会让 `vue-tsc` 3.3.11 崩在 `ERR_PACKAGE_PATH_NOT_EXPORTED: './lib/tsc'`（TS 7 的 exports map 不再暴露该路径），`npm run build` 直接挂；`vite build` 仍能出包，但那条路径不做类型检查。
-- `App.vue` 里 `Option` 类型别名（`"A" | "B" | "C" | "D"`）和导入的 `Option.vue` 组件同名；导入在值空间遮蔽了类型，所以 `op as Option` 这类断言指的是类型。
+- `App.vue` 里 `Option` 类型别名（现在就是 `string`，因为选项字母由题库决定）和导入的 `Option.vue` 组件同名；导入在值空间遮蔽了类型，所以 `op as Option` 这类断言指的是类型。
 - `vite-plugin-singlefile` 和 `@vitejs/plugin-legacy` 已安装，但在 `vite.config.ts` 中当前是注释掉/未启用的状态——单文件构建原本是为了把 `dist/index.html` 单独分发。

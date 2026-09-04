@@ -20,16 +20,15 @@ import { onMounted, ref, reactive, h, computed, watch } from "vue"
 import shuffle from "lodash/shuffle"
 import Option from "./Option.vue"
 
-type Option = "A" | "B" | "C" | "D"
+// 选项字母不写死：题库有几个选项就是几个，A~Z 都行。
+type Option = string
 
 interface Exam {
   title: string
-  A: string
-  B: string
-  C?: string
-  D?: string
   answer: Option
   select: Option | ""
+  // A、B、C…… 每个单大写字母键是一个选项
+  [key: string]: string | undefined
 }
 
 interface WrongAnswer {
@@ -47,7 +46,8 @@ const EXAM = "exams"
 const TEST = "tests"
 const TEST_STATUS = "test_status"
 const RANDOM_COUNT = "random_count"
-const optionLabels: Option[] = ["A", "B", "C", "D"]
+// title / answer / select 之外的单个大写字母键才算选项列
+const OPTION_KEY = /^[A-Z]$/
 
 const keyword = ref("")
 // source 是完整的工作集（考试中为整份试卷，否则为整个题库），
@@ -63,6 +63,8 @@ const randomOptions = [
   { label: "20 题", value: 20 },
   { label: "30 题", value: 30 },
   { label: "50 题", value: 50 },
+  { label: "100 题", value: 100 },
+  { label: "200 题", value: 200 },
 ]
 
 const isTesting = computed(() => status.value === TestStatus.IS_TESTING)
@@ -87,6 +89,21 @@ const indexMap = computed(
   () => new Map(source.value.map((item, index) => [item, index + 1])),
 )
 
+// 选项列由题库自己决定：扫一遍 source 收集真正有内容的选项键，按字母序出列。
+// 两选项的题库不会多出空列，七个八个选项的题库也照样能全部显示。
+const optionLabels = computed(() => {
+  const labels = new Set<string>()
+  for (const item of source.value) {
+    for (const key of Object.keys(item)) {
+      if (OPTION_KEY.test(key) && item[key]) labels.add(key)
+    }
+  }
+  return [...labels].sort()
+})
+
+// 选项多了列会被挤扁，给个横向最小宽度让表格自己出滚动条。
+const scrollX = computed(() => 300 + optionLabels.value.length * 140)
+
 const data = computed(() => {
   const kw = keyword.value.trim().toLowerCase()
   if (!kw) return source.value
@@ -94,9 +111,10 @@ const data = computed(() => {
 })
 
 const columns = computed<DataTableColumn<Exam>[]>(() => {
-  const options: DataTableColumn<Exam>[] = optionLabels.map((op) => ({
+  const options: DataTableColumn<Exam>[] = optionLabels.value.map((op) => ({
     title: "选项" + op,
     key: op,
+    minWidth: 140,
     render: (row) =>
       h(Option, {
         correct: row.answer === op,
@@ -119,6 +137,7 @@ const columns = computed<DataTableColumn<Exam>[]>(() => {
     {
       title: "题目",
       key: "title",
+      minWidth: 240,
     },
     ...options,
   ]
@@ -314,6 +333,7 @@ watch(randomCount, (val) => {
           :data="data"
           :columns="columns"
           :pagination="pagination"
+          :scroll-x="scrollX"
           striped
         />
       </n-layout-content>
