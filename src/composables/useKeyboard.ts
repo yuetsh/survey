@@ -11,6 +11,8 @@ import {
 } from "../store"
 import { OPTION_KEY } from "../types"
 
+const DIGIT_KEY = /^[1-9]$/
+
 export interface Shortcut {
   keys: string[]
   desc: string
@@ -22,6 +24,11 @@ export const SHORTCUTS: Shortcut[] = [
   { keys: ["←", "→"], desc: "上一页 / 下一页" },
   { keys: ["↑", "↓"], desc: "选中上一题 / 下一题", testingOnly: true },
   { keys: ["A", "B", "C", "…"], desc: "给选中的题作答", testingOnly: true },
+  {
+    keys: ["1", "2", "3", "…"],
+    desc: "同上，1 就是第一个选项",
+    testingOnly: true,
+  },
 ]
 
 // 这几种情况不接管按键：光标在输入框/可编辑区里、n-select 展开着、
@@ -55,6 +62,16 @@ function onKeydown(event: KeyboardEvent) {
   if (event.key === "ArrowUp" || event.key === "ArrowDown") {
     event.preventDefault()
     moveCursor(event.key === "ArrowUp" ? -1 : 1)
+    return
+  }
+
+  // 数字键按位置对应选项：1 是第一列选项，不管它的字母是 A 还是别的。
+  // 只到 9，再多的选项用字母键。
+  if (DIGIT_KEY.test(event.key)) {
+    const letter = optionLabels.value[Number(event.key) - 1]
+    if (!letter) return
+    event.preventDefault()
+    answerCursor(letter)
     return
   }
 
