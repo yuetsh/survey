@@ -4152,15 +4152,6 @@
     "select": ""
   },
   {
-    "title": "在如图所示的 TCP连接的拆除过程中，ACK中的X部分应该填入。______",
-    "A": "p",
-    "B": "q",
-    "C": "p+1",
-    "D": "q+1",
-    "answer": "C",
-    "select": ""
-  },
-  {
     "title": "HTTP协议工作于TCP/IP协议栈的______。",
     "A": "数据链路层",
     "B": "网络层",
@@ -5092,9 +5083,9 @@
   {
     "title": "TopApp产品策略定义中，优先级设置的范围是______",
     "A": "0-5",
-    "B": "44936",
+    "B": "1-10",
     "C": "0-7",
-    "D": "44934",
+    "D": "1-8",
     "answer": "A",
     "select": ""
   },
@@ -5306,15 +5297,6 @@
     "select": ""
   },
   {
-    "title": "网络环境如图所示，______是正确的EASY IP 配置。",
-    "A": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\nnat address-group 1 1.1.1.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1",
-    "B": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\nnat address-group 1 1.1.1.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1 no-pat",
-    "C": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1 no-pat",
-    "D": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\ninterface Ethernet 0/1\nnat outbound 2000",
-    "answer": "D",
-    "select": ""
-  },
-  {
     "title": "IP数据报中数据部分的长度是固定的。",
     "A": "正确",
     "B": "错误",
@@ -5523,10 +5505,10 @@
   },
   {
     "title": "《中华人民共和国著作权法》于______在全国人大获得通过。",
-    "A": "33123",
-    "B": "33390",
-    "C": "33512",
-    "D": "33239",
+    "A": "1990年9月7日",
+    "B": "1991年6月1日",
+    "C": "1991年10月1日",
+    "D": "1991年1月1日",
     "answer": "A",
     "select": ""
   },
@@ -6864,15 +6846,6 @@
     "select": ""
   },
   {
-    "title": "XYZ公司网络如图所示。其中  Router上没有配置任何逻辑接口；所有的主机之间均可以正常通信。则此网络中有___个广播域。",
-    "A": "1",
-    "B": "2",
-    "C": "3",
-    "D": "4",
-    "answer": "B",
-    "select": ""
-  },
-  {
     "title": "IP地址172.15.1.1对应的自然分类网段包含的可用主机地址数是65534。",
     "A": "正确",
     "B": "错误",
@@ -6994,7 +6967,7 @@
     "A": "ACL设置不正确",
     "B": "NAT的地址池只有一个地址",
     "C": "NAT设备性能不足",
-    "D": "E.  NAT配置没有生效",
+    "D": "NAT配置没有生效",
     "answer": "A",
     "select": ""
   },
@@ -7203,15 +7176,6 @@
     "C": "",
     "D": "",
     "answer": "B",
-    "select": ""
-  },
-  {
-    "title": "在图中方框处应使用的设备是______。",
-    "A": "路由器",
-    "B": "CSU/DSU",
-    "C": "广域网交换机",
-    "D": "调制解调器",
-    "answer": "A",
     "select": ""
   },
   {
@@ -7799,15 +7763,6 @@
     "C": "nat net pool",
     "D": "nat pool",
     "answer": "A",
-    "select": ""
-  },
-  {
-    "title": "网络环境如图所示，______是正确的Basic NAPT 配置。",
-    "A": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\nnat address-group 1 1.1.1.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1",
-    "B": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\nnat address-group 1 1.1.1.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1 no-pat",
-    "C": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1",
-    "D": "acl number 2000\nrule 0 permit source 192.168.0.2 0.0.0.255\ninterface Ethernet 0/1\nnat outbound 2000",
-    "answer": "B",
     "select": ""
   },
   {
@@ -9229,15 +9184,6 @@
     "select": ""
   },
   {
-    "title": "如图所示，S3610 交换机SWA 使用端口E1/0/1 和E1/0/2 连接到另外一台交换机SWB。为了增加带宽，需要在交换机上配置静态链路聚合。下列哪个配置是正确的？______",
-    "A": "[SWA] interface bridge-aggregation 1\n[SWA-Ethernet1/0/1] port link-aggregation group 1",
-    "B": "[SWA-Ethernet1/0/1] interface bridge-aggregation 1",
-    "C": "[SWA-Ethernet1/0/2] interface bridge-aggregation 1",
-    "D": "[SWA] interface bridge-aggregation 1 port Ethernet1/0/1 Ethernet1/0/2",
-    "answer": "A",
-    "select": ""
-  },
-  {
     "title": "交换机上的以太帧交换依靠MAC 地址映射表，这个表可以通过____来建立。",
     "A": "手动配置",
     "B": "手工添加映射表项",
@@ -9253,15 +9199,6 @@
     "C": "6.4Gbps",
     "D": "14Gbps",
     "answer": "C",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP协议。SWA被选为了根桥。根据图中的信息来看，______端口不应该被置为Forwarding状态。",
-    "A": "SWA的P1",
-    "B": "SWA的P2",
-    "C": "SWC的P1",
-    "D": "SWC的P2",
-    "answer": "D",
     "select": ""
   },
   {
@@ -9428,15 +9365,6 @@
     "select": ""
   },
   {
-    "title": "两台空配置的MSR路由器通过图示的方式连接，通过配置IP地址，两台路由器的GE0/0接口可以互通。如今分别在两台路由器上增加如下配置：\nRTA：\n[RTA]ospf\n[RTA-ospf-1]area0\n[RTA-ospf-1-area-0.0.0.0]network192.168.1.10.0.0.3\n[RTA-GigabitEthernet0/0]ospfdr-priority0\nRTB：\n[RTB]ospf\n[RTB-ospf-1]area0\n[RTB-ospf-1-area-0.0.0.0]network192.168.1.10.0.0.3\n[RTB-GigabitEthernet0/0]ospfdr-priority0\n那么在OSPF邻居状态稳定后，______。（选择一项或多项）",
-    "A": "OSPF 接口优先级相同，在 192.168.1.0/30网段上不进行 OSPF DR选举",
-    "B": "两台路由器中，一台为DR，一台为 BDR",
-    "C": "两台路由器中，一台为 DR，一台为DRother",
-    "D": "两台路由器的邻居状态分别为 FULL、2-Way",
-    "answer": "A",
-    "select": ""
-  },
-  {
     "title": "网络中各个节点之间的直接借口，只能是物理层。",
     "A": "正确",
     "B": "错误",
@@ -9545,15 +9473,6 @@
     "select": ""
   },
   {
-    "title": "如图所示，四台 MSR 路由器分别通过以太网、串行接口相连，同时网络中运行 OSPF，区域划分如图。已知所有互连链路的 OSPF Cost值都是一样的，除了 RTB与 RTC 之间的连接链路是PPP之外，其它互连链路都是以太网。那么______。",
-    "A": "如果 RTD 与 RTC 之间的链路出现故障，那么 RTD、RTC 会立即向 RTA、RTB 发送 LSA 摘要信息，而不会等待固定的 LSA更新周期",
-    "B": "状态稳定后，四台路由器有同样的 LSDB",
-    "C": "网络中至少有四个DR",
-    "D": "网络中至少有四个 BDR",
-    "answer": "A",
-    "select": ""
-  },
-  {
     "title": "一台空配置的 MSR路由器通过多个接口接入同一个   OSPF网络，所有这些接口都启\n动了 OSPF，配置完成后，该路由器已经成功学习到了网络中的  OSPF路由。如今在\n该路由器的一个 OSPF接口上运行如下命令：\n[MSR-GigabitEthernet0/0]ospf cost 256\n在保持其他配置不变的情况下，关于该配置的理解正确的是_____。",
     "A": "该配置可能影响数据包的转发路径",
     "B": "该配置不会影响数据包的转发路径",
@@ -9653,15 +9572,6 @@
     "select": ""
   },
   {
-    "title": "如果要达到全网互通，图示 4种划分 OSPF 区域的方式，哪种是不合理的？",
-    "A": "图 1",
-    "B": "图 2",
-    "C": "图 3",
-    "D": "图 4",
-    "answer": "D",
-    "select": ""
-  },
-  {
     "title": "如下关于 OSPF 信息显示与调试命令的说法正确的是_____。 （选择一项或多项）",
     "A": "通过 display ospf peer 命令可以查看路由器的 OSPF邻居关系",
     "B": "通过 display ospf lsdb命令可以查看路由器的链路状态数据库， 网络中所有 OSPF路由器的链路状态数据库应该都是一样的",
@@ -9678,15 +9588,6 @@
     "D": "修改接口GE0/0的Cost不影响OSPF邻接关系的建立",
     "E": "修改接口GE0/0的Cost不影响OSPF邻接关系的建立",
     "answer": "D",
-    "select": ""
-  },
-  {
-    "title": "某网络连接如图所示。其中四台路由器的所有接口都配置了OSPF，并且都运行在OSPF区域23中。所有网段都可以互相连通。各路由器之间互连链路的OSPFCost如图所示。那么下列描述正确的是______。（选择一项或多项）",
-    "A": "RTD 具有与RTA 同样的 LSDB",
-    "B": "RTC 根据SPF 算法算出到达 192.168.2.0/24 网段的最佳路径为 C->B",
-    "C": "经过 SPF 计算， RTC到达 192.168.4.0/24与到达 192.168.2.0/24 的路径Cost值相同， 因此在 RTC上将形成等价路由",
-    "D": "RTC将有两个 OSPF邻居",
-    "answer": "A",
     "select": ""
   },
   {
@@ -9934,15 +9835,6 @@
     "select": ""
   },
   {
-    "title": "如图所示，路由器RTA 连接有PCA 和PCB。如果需要在RTA 上启用ARP 代理以使RTA 能够在PC之间转发ARP 报文，则下列哪项配置是正确的？______",
-    "A": "[RTA] proxy-arp enable",
-    "B": "[RTA-GigabitEthernet0/0] proxy-arp",
-    "C": "[RTA-GigabitEthernet0/1] proxy-arp enable",
-    "D": "[RTA] proxy-arp enable port G1/0/1",
-    "answer": "C",
-    "select": ""
-  },
-  {
     "title": "只要知道对方的邮编和家庭地址，就可以在计算机网络上通信。",
     "A": "正确",
     "B": "错误",
@@ -9988,15 +9880,6 @@
     "select": ""
   },
   {
-    "title": "两台空配置的 MSR 路由器通过图示的方式连接， 通过配置 IP 地址， 两台路由器的 GE0/0 接口可以互通。\n如今分别在两台路由器上增加如下配置：\nRTA：\n[RTA]ospf\n[RTA-ospf-1]area 0 [RTA-ospf-1-area-0.0.0.0]network\n192.168.1.1 0.0.0.3 [RTA-GigabitEthernet0/0]ospf dr-priority 2\nRTB：\n[RTB]ospf\n[RTB-ospf-1]area 0 [RTB-ospf-1-area-0.0.0.0]network 192.168.1.1 0.0.0.3\n[RTB-GigabitEthernet0/0]ospf dr-priority\n那么在 OSPF 邻居状态稳定后，______。",
-    "A": "OSPF接口优先级相同，在192.168.1.0/30网段上不进行OSPF DR选举",
-    "B": "两台路由器中，一台为DR，一台为BDR",
-    "C": "两台路由器中，一台为DR，一台为DRother",
-    "D": "两台路由器的邻居状态分别为FULL、 2-Way",
-    "answer": "B",
-    "select": ""
-  },
-  {
     "title": "客户的网络连接形如：\nHostA----GE0/0--MSR-1--S1/0-----WAN-----S1/0--MSR-2--GE0/0----HostB\n两台MSR 路由器通过广域网实现互连，目前物理连接已经正常。MSR-1 的接口S1/0 地址为3.3.3.1/30，\nMSR-2 的接口S1/0 地址为3.3.3.2/30，现在在MSR-1 上配置了如下三条静态路由：\nip route-static 192.168.1.0 255.255.255.0 3.3.3.2\nip route-static 192.168.2.0 255.255.255.0 3.3.3.2\nip route-static 192.168.0.0 255.255.255.0 3.3.3.2\n其中192.168.0.0/22 子网是主机HostB 所在的局域网段。那么如下描述哪些是正确的？",
     "A": "这三条路由都会被写入MSR-1 的路由表",
     "B": "只有第三条路由会被写入MSR-1 的路由表",
@@ -10039,15 +9922,6 @@
     "C": "dir /all",
     "D": "dir all-file",
     "answer": "C",
-    "select": ""
-  },
-  {
-    "title": "两台 MSR 路由器通过图示方式连接。 目前在两台路由器之间运行了 OSPF。 如今要在 RTA上配置ACL来阻止 RTA与RTB之间建立 OSPF 邻居关系， 那么在RTA的 GE0/0接口 outbound方向应用如下哪些ACL是可行的？",
-    "A": "acl number 3000   rule 0 deny ip destination 224.0.0.6 0   rule 5 permit ip",
-    "B": "acl number 3000  rule 0 deny ip destination 224.0.0.5 0 eq 89   rule 5 permit ip",
-    "C": "acl number 3000  rule 0 deny udp destination-port eq 89  rule 5 permit ip",
-    "D": "acl number 3000  rule 0 deny ospf   rule 5 permit ip",
-    "answer": "D",
     "select": ""
   },
   {
@@ -10111,15 +9985,6 @@
     "C": "display reboot-type",
     "D": "display start-configuration",
     "answer": "C",
-    "select": ""
-  },
-  {
-    "title": "三台 MSR 路由器连接在同一个 LAN 网络中，如图所示。在三台路由器的 LAN 互连网段运行 OSPF，RTA、RTB、RTC 的 DR 优先级分别为 2、2、3。由于 RTC 的 LAN 链路故障，目前只有 RTA 和 RTB 在正常工作，且 RTA 与RTB之间的 OSPF邻居状态稳定。那么_____。",
-    "A": "RTC 的链路恢复后，网络中将重新选择 DR，RTC 将会成为新的DR",
-    "B": "RTC 的链路恢复后，网络中将建立 3个 OSPF 邻接关系",
-    "C": "RTC的链路恢复后，网络中将建立 2个 OSPF 邻接关系",
-    "D": "RTC的链路恢复后，RTC和 RTB 的 OSPF邻接状态是2-way",
-    "answer": "B",
     "select": ""
   },
   {
@@ -10448,15 +10313,6 @@
     "select": ""
   },
   {
-    "title": "某网络连接如图所示。其中四台路由器的所有接口都配置了 OSPF，并且都运行在 OSPF区域 23 中。所有网段都可以互相连通。各路由器之间互连链路的 OSPF Cost如图所示。那么下列描述正确的是______。",
-    "A": "RTD 与RTA的 LSDB不一样",
-    "B": "RTC 根据SPF 算法算出到达 192.168.2.0/24 网段的最佳路径为 C->A->B",
-    "C": "经过 SPF 计算， RTC到达 192.168.4.0/24与到达 192.168.2.0/24 的路径Cost值相同， 因此在 RTC上将形成等价路由",
-    "D": "RTC将有两个 OSPF邻居",
-    "answer": "B",
-    "select": ""
-  },
-  {
     "title": "将一台空配置的 MSR 路由器分别通过 GigabitEthernet0/0、GigabitEthernet0/1、Serial1/0 接入网络，分别配置这三个接口的 IP地址为10.1.1.1/30、12.12.12.224/30、192.168.10.1/24。配置后，这三个接口可以与其直连的对端设备接口互通，然后在该路由器上又增加如下配置：\n[MSR]rip\n[MSR-rip-1]network 10.0.0.0\n[MSR-rip-1]network 192.168.10.0\n那么关于此命令的作用以及意图描述不正确的是______。",
     "A": "该路由器上的 Serial1/0 和 GigabitEthernet0/0接口能收发RIP报文",
     "B": "该路由器上的 GigabitEthernet0/1接口不发送 RIP 报文",
@@ -10529,15 +10385,6 @@
     "select": ""
   },
   {
-    "title": "如图，三台MSR路由器之间分别运行OSPF以及RIP。如今RTA与RTB之间的OSPF邻居状态稳定，RTB与RTC之间的RIPv2也工作正常，那么此刻起40分钟之内，______。",
-    "A": "网络中一定有组播地址为 224.0.0.13的报文",
-    "B": "网络中一定有组播地址为 224.0.0.5 的报文",
-    "C": "RTB 向RTC发送了至少 10次自己的全部路由表信息",
-    "D": "RTB 向RTA 发送了至少 3次自己的LSA 摘要信息",
-    "answer": "B",
-    "select": ""
-  },
-  {
     "title": "在cisco2950的交换机上启用VTP修剪，以下哪个VLAN不可以被修剪掉？______",
     "A": "VLAN0",
     "B": "VLAN1",
@@ -10598,15 +10445,6 @@
     "C": "PathPing",
     "D": "Netstat",
     "answer": "B",
-    "select": ""
-  },
-  {
-    "title": "三台MSR路由器通过图示的方式连接。 三台路由器都属于OSPF Area 0， 同时在Area 0里通过network命令发布了三台路由器的互连网段。 在 RTC 上， 网段 NET-1 也通过network 命令在 OSPF Area 0 中发布了。三台路由器之间的 OSPF Cost如图所示。目前三台路由器的邻居状态稳定，那么______。",
-    "A": "在 RTA的路由表只有一条到达NET-1网段的 OSPF 路由",
-    "B": "在 RTB 的路由表只有一条去往目的网段 NET-1 的OSPF 路由",
-    "C": "对 RTB而言，到达目的网段 NET-1 会优先选择RTB--->RTC 路径",
-    "D": "网络状态稳定后，在接下来的 45分钟之内，网络上 OSPF邻居之间只有 Hello 报文传递",
-    "answer": "A",
     "select": ""
   },
   {
@@ -10826,17 +10664,6 @@
     "select": ""
   },
   {
-    "title": "某二层交换机上的MAC地址表如图所示。当交换机从E1/0/2接口收到一个目的MAC地址为00-13-72-8E-4B-C1的帧时，交换机会将该帧______。",
-    "A": "从E1/0/1接口发送出去",
-    "B": "从E1/0/2接口发送出去",
-    "C": "从E1/0/3接口发送出去",
-    "D": "直接丢弃",
-    "E": "从交换机上的所有接口发送出去",
-    "F": "直接丢弃",
-    "answer": "D",
-    "select": ""
-  },
-  {
     "title": "交换机 SWA的端口Ethernet1/0/24已经配置成为Trunk端口类型。如果要使此端口允许VLAN2和VLAN3通过，则需要使用下列哪个命令？",
     "A": "[SWA]port trunk permit vlan 2 3",
     "B": "[SWA-Ethernet1/0/24]port trunk permit vlan 2 3",
@@ -10941,15 +10768,6 @@
     "B": "错误",
     "C": "",
     "D": "",
-    "answer": "A",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP协议。根据图中的信息来看，哪台交换机会被选为根桥？",
-    "A": "SWA",
-    "B": "SWB",
-    "C": "SWC",
-    "D": "信息不足，无法判断",
     "answer": "A",
     "select": ""
   },
@@ -11160,25 +10978,6 @@
     "C": "如果到同一目的网段的路由有多个来源，那么只把Preference (优先级)值最大的路由写入路由表",
     "D": "如果到同一目的网段的路由有多个来源，那么只把Metric (度量)值最大的路由写入路由表",
     "answer": "A",
-    "select": ""
-  },
-  {
-    "title": "三台MSR路由器通过图示的方式连接，192.168.1.0/30为RTA和RTB之间的互连网段，10.10.10.0/30是RTB和RTC之间的互连网段。在三台路由器的互连接口上都运行了OSPF而且都属于Area0，同时在Area0里都只发布了三台路由器互连接口网段。假设OSPF运行正常，OSPF邻居建立成功，那么下列描述错误的是______。",
-    "A": "如果三台路由器之间的链路都是以太网，那么网络中至少有两个 DR",
-    "B": "如果三台路由器之间的链路都是以太网，那么网络中可能只有一个DR",
-    "C": "三台路由器的 OSPF邻居状态稳定后，三台路由器有同样的 LSDB",
-    "D": "RTB 的路由表中没有 OSPF 路由",
-    "answer": "B",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP 协议。SWA 被选为了根桥。根据图中的信息来看，_____ 端口应该被置为Blocking 状态。",
-    "A": "SWC 的P1",
-    "B": "SWC 的P1",
-    "C": "SWD 的P1",
-    "D": "SWD 的P2",
-    "E": "信息不足，无法判断",
-    "answer": "D",
     "select": ""
   },
   {
@@ -11914,16 +11713,6 @@
     "select": ""
   },
   {
-    "title": "在如图所示的交换网络中，所有交换机都启用了 STP协议。SWA被选为了根桥。根据图中的信息来看，______端口应该被置为 Blocking状态",
-    "A": "SWB的   P1",
-    "B": "SWB的   P2",
-    "C": "SWC的   P1",
-    "D": "SWC的   P2",
-    "E": "信息不足，无法判断",
-    "answer": "D",
-    "select": ""
-  },
-  {
     "title": "在交换机SWA上执行display stp命令后，交换机输出如下：\n[SWA]display stp\n-------[CIST Global Info][Mode MSTP]-------\nCIST Bridge :32768.000f-e23e-f9b0\nBridge Times :Hello 2s MaxAge 20s FwDly 15s MaxHop 20\n从以上输出可以判断______。",
     "A": "当前交换机工作在RSTP模式下",
     "B": "当前交换机工作在MSTP模式下",
@@ -11933,30 +11722,11 @@
     "select": ""
   },
   {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP协议。根据图中的信息来看，哪台交换机会被选为根桥？",
-    "A": "SWA",
-    "B": "SWB",
-    "C": "SWC",
-    "D": "信息不足， 无法判断",
-    "answer": "B",
-    "select": ""
-  },
-  {
     "title": "路由器 MSR-1的GE0/0接口地址为192.168.100.1/24，该接口连接了一台三层交换机，而此三层交换机为客户办公网络的多个网段的默认网关所在。MSR-1通过串口S1/0连接到Internet。全网已经正常互通，办公网用户可以访问Internet。出于安全性考虑，需要禁止客户主机ping MSR-1的GE0/0接口，于是在该路由器上配置了如下ACL：  \nacl number 3008\nrule 0 deny icmp source 192.168.1.0 0.0.0.255\n同时该ACL被应用在GE0/0的inbound方向。发现局域网内192.168.0.0/24网段的用户依然可以ping通GE0/0接口地址。根据如上信息可以推测_______。",
     "A": "该ACL没有生效",
     "B": "该ACL应用的方向错误",
     "C": "防火墙默认规则是允许",
     "D": "对接口GE0/0执行shutdown和undo shutdown命令后，才会实现192.168.0.0/24网段ping不通MSR-1以太网接口地址",
-    "answer": "C",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP协议。根据图中的信息来看，哪台交换机会被选为根桥？",
-    "A": "SWA",
-    "B": "SWB",
-    "C": "SWC",
-    "D": "SWD",
-    "E": "信息不足，无法判断",
     "answer": "C",
     "select": ""
   },
@@ -12053,17 +11823,6 @@
     "select": ""
   },
   {
-    "title": "某二层交换机上的 MAC地址表如图所示。当交换机从E1/0/2接口收到一个目的MAC地址为00-13-72-8E-4B-C1的帧时，交换机会将该帧______。",
-    "A": "直接丢弃",
-    "B": "从   E1/0/2接口发送出去",
-    "C": "从   E1/0/3接口发送出去",
-    "D": "从   E1/0/4接口发送出去",
-    "E": "从交换机上的所有接口发送出去",
-    "F": "直接丢弃",
-    "answer": "A",
-    "select": ""
-  },
-  {
     "title": "IEEE组织制定了______标准，规范了跨交换机实现VLAN的方法。",
     "A": "VLT",
     "B": "802.1q",
@@ -12109,31 +11868,11 @@
     "select": ""
   },
   {
-    "title": "某二层交换机上的MAC 地址表如图所示。当交换机从E1/0/1 接口收到一个广播帧时，会将该帧______。",
-    "A": "从E1/0/1 接口发送出去",
-    "B": "不能从E1/0/2接口发送出去",
-    "C": "从E1/0/3 接口发送出去",
-    "D": "不能从E1/0/4 接口发送出去",
-    "E": "从交换机上的所有接口发送出去",
-    "F": "直接丢弃",
-    "answer": "C",
-    "select": ""
-  },
-  {
     "title": "在以太网交换机中哪种转发方法延迟较小______。",
     "A": "半双工",
     "B": "store- n -forw r",
     "C": "全双工",
     "D": "Cut –through",
-    "answer": "D",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了STP 协议。SWA 被选为了根桥。根据图中的信息来看，____端口应该被置为Blocking 状态。",
-    "A": "SWA 的P1",
-    "B": "SWA 的P2",
-    "C": "SWC 的P1",
-    "D": "SWC 的P2",
     "answer": "D",
     "select": ""
   },
@@ -12369,15 +12108,6 @@
     "C": "当前交换机的桥优先级是32769",
     "D": "当前交换机是根桥",
     "answer": "B",
-    "select": ""
-  },
-  {
-    "title": "在如图所示的交换网络中，所有交换机都启用了 STP协议。根据图中的信息来看，哪台交换机会被选为根桥？",
-    "A": "SWA",
-    "B": "SWB",
-    "C": "SWC",
-    "D": "信息不足，无法判断",
-    "answer": "A",
     "select": ""
   },
   {

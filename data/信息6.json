@@ -1,0 +1,1802 @@
+[
+  {
+    "title": "资源共享不仅可以共享硬件，还可以共享软件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "网络层的目的是在任意两台主机之间的报文包可靠传输。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "交换机上的以太帧交换依靠MAC 地址映射表，这个表可以通过____来建立。",
+    "A": "手动配置",
+    "B": "手工添加映射表项",
+    "C": "交换机之间相互交换目的地的位置信息",
+    "D": "生成树协议交互学习",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "一台交换机具有12个10/100Mbps电端口和2个1000Mbps光端口，如果所有端口都工作在全双工状态，那么交换机总带宽应为（　　）。",
+    "A": "3.2Gbps",
+    "B": "4.8Gbps",
+    "C": "6.4Gbps",
+    "D": "14Gbps",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "客户使用SMTP协议既能发送邮件又能接受邮件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "TELNET在客户机和远程登录服务器之间建立一个TCP连接。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，如果想查看NAT转换的报文数量，应该使用______命令。",
+    "A": "display nat counter",
+    "B": "display nat",
+    "C": "display acl",
+    "D": "display nat session",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "XYZ 公司深圳分公司的路由器的Serial 0/0 和Serial 0/1 接口通过两条广域网线路分别连接两个不同的ISP，通过这两个ISP 都可以访问北京总公司的网站202.102.100.2。在深圳分公司的路由器上配置了如下的静态路由：\nip route-static 202.102.100.2 24 Serial 0/0\nip route-static 202.102.100.2 24 Serial 0/1\n那么关于这两条路由的描述哪些是正确的？______",
+    "A": "去往北京的流量不能通过这两条路由可以实现负载分担",
+    "B": "去往北京的这两条路由可以互为备份",
+    "C": "在该路由器的路由表中只会写入第二条路由",
+    "D": "在该路由器的路由表中只会写入第一条路由",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "两台 MSR 路由器 MSR-1、MSR-2通过各自的 S1/0 接口背靠背互连，各自的 GigabitEthernet0/0 接口分别连接客户端主机 HostA 和HostB：\nHostA----GE0/0--MSR-1--S1/0---------S1/0--MSR-2--GE0/0----HostB\n通过配置 IP 地址和路由目前网络中 HostA 可以和 HostB 实现互通，如今在路由器 MSR-1 上增加如下 ACL配置：\nfirewall enable\nacl number 3000\nrule 0 deny icmp icmp-type echo\ninterface GigabitEthernet0/0\nip address 192.168.0.1 255.255.255.0\nfirewall packet-filter 3000 inbound\n那么如下说法哪些是正确的？",
+    "A": "在 HostA上将能ping 通自己的网关地址，即 MSR-1 上的 GE0/0 的接口地址",
+    "B": "在 HostA上 能ping通HostB",
+    "C": "在 HostB上不能ping通HostA",
+    "D": "在 MSR-1上能ping通 HostB",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "如果数据包在MSR路由器的路由表中匹配多条路由项，那么关于路由优选的顺序描述正确的是______。",
+    "A": "Preference值越小的路由越优选",
+    "B": "Cost值越小的路由越优选",
+    "C": "掩码越短的路由越优先",
+    "D": "掩码越长的路由越优先",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "客户路由器的接口 GigabitEthernet0/0 下连接了局域网主机 HostA，其 IP 地址为192.168.0.2/24；接口Serial6/0 接口连接远端，目前运行正常。现增加ACL 配置如下：\nfirewall enable\nfirewall default permit\nacl number 3003\nrule 0 permit tcp\nrule 5 permit icmp\nacl number 2003\nrule 0 deny source 192.168.0.0 0.0.0.255\nnterface GigabitEthernet0/0\nfirewall packet-filter 3003 inbound\nfirewall packet-filter 2003 outbound\nip address 192.168.0.1 255.255.255.0\nnterface Serial6/0\nlink-protocol ppp\nip address 6.6.6.2 255.255.255.0\n假设其他相关配置都正确，那么______。",
+    "A": "HostA 不能 ping 通该路由器上的两个接口地址",
+    "B": "HostA 不能 ping 通6.6.6.2，但是可以 ping 通192.168.0.1",
+    "C": "HostA能 ping 通192.168.0.1，但是可以ping通 6.6.6.2",
+    "D": "HostA可以 Telnet到该路由器上",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，可以使用clearnat命令清除NAT会话表项。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，使用natpool命令配置NAT地址池。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上使用“iproute-static”命令配置静态路由。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，使用nataddress-group命令配置NAT地址池。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "防火墙系统不能防止从内部网络对系统进行破坏。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "网络系统是按层或级的方式来组织的，每一层的目的都是向它的上一层提供一定的服务。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "客户的路由器 MSR-1 的 GE0/0接口下连接了一台三层交换机，而此三层交换机是其所连接的客户办公网络的多个网段的默认网关所在。MSR-1通过串口S1/0连接到 Internet。全网已经正常互通，办公网用户可以访问 Internet。在该路由器上添加如下ACL 配置：\nfirewall enable\nacl number 3004\nrule 0 deny ip source 192.168.1.0 0.0.0.255\nrule 5 permit tcp source 192.168.0.0 0.0.255.255\nrule 10 permit icmp\n同时将 ACL 3004 应用在GE0/0的 inbound方向，那么______。 （选择一项或多项）",
+    "A": "该路由器拒绝 192.168.2.0/24 网段的用户对 Internet发出的FTP 数据流通过",
+    "B": "该路由器允许所有用户的 ICMP 报文通过",
+    "C": "该路由器禁止 192.168.1.0/24 网段用户对 Internet的所有 IP 流量通过",
+    "D": "该路由器允许 192.168.1.0/24 网段用户对 Internet的WWW 业务流量通过",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上， 如果已经设置某一个文件为启动文件， 可使用______命令检查设置是否正确。",
+    "A": "display boot",
+    "B": "display begin",
+    "C": "display startup",
+    "D": "display start-configuration",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "RIP 路由协议有一个定时器，该定时器定义了一条路由从度量值变为 16 开始，直到它从路由表里被删除所经过的时间，那么______。",
+    "A": "该定时器为Timeout定时器",
+    "B": "该定时器为 Garbage-Collect定时器",
+    "C": "该定时器在 MSR 路由器上默认为 30s",
+    "D": "该定时器在 MSR 路由器上默认为 180s",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "两台空配置的MSR路由器MSR-1、 MSR-2通过各自的S1/0接口背靠背互连， 各自的GigabitEthernet0/0接口分别连接客户端主机HostA 和HostB：\nHostA----GE0/0--MSR-1--S1/0---------S1/0--MSR-2--GE0/0----HostB\n然后在两台路由器上分别做了如下的配置：\nMSR-1 上的配置：\n[MSR-1]interface GigabitEthernet 0/0\n[MSR-1-GigabitEthernet0/0]ip add 192.168.1.1 24\n[MSR-1]interface Serial 1/0\n[MSR-1-Serial1/0]ip address 30.3.3.1 30\n[MSR-1]rip\n[MSR-1-rip-1]network 0.0.0.0\nMSR-2 上的配置：\n[MSR-2]interface GigabitEthernet 0/0\n[MSR-2-GigabitEthernet0/0] ip address 10.10.10.1 24\n[MSR-2]interface Serial 1/0\n[MSR-2-Serial1/0]ip address 30.3.3.2 30\n[MSR-2]rip\n[MSR-2-rip-1]network 10.10.10.0\n[MSR-2-rip-1]network 30.3.3.1\n根据以上配置后， 两台路由器之间的广域网接口可以互通， 网络中其它物理链路良好， 两台主机HostA、 HostB都可以 ping通各自的网关GigabitEthernet0/0的地址，那么下列说法正确的是_____。",
+    "A": "MSR-1 上的命令 network 0.0.0.0配置错误，应该配置具体网段",
+    "B": "MSR-2 的路由表中没有 RIP 路由",
+    "C": "MSR-2上的命令 network 30.3.3.1 配置错误，应该为 network 30.3.3.2",
+    "D": "以上三项都错，两路由器可以学习到RIP路由",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "网络中各个节点之间的直接借口，只能是物理层。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "同一节点中的每一层能够同相邻层通信，但是不能跨层通信。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "两台路由器MSR-1、MSR-2之间的广域网链路采用PPP协议，两端通过配置RIP互相学习到彼此的路由，目前路由学习正常，现在在MSR-1的RIP配置中增加如下命令：[MSR-1-rip-1]silent-interfaceall那么______。",
+    "A": "此命令使 MSR-1 的所有接口只接收路由更新而不发送路由更新",
+    "B": "此命令使 MSR-1 的所有接口只发送路由更新而不接受路由更新",
+    "C": "配置此命令后，MSR-2 路由表中的RIP路由立即消失",
+    "D": "配置此命令后，MSR-1 路由表中的RIP路由立即消失",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "RIP 从某个接口学到路由后，将该路由的度量值设置为无穷大（16） ，并从原接口发回邻居路由器，这种避免环路的方法为______。",
+    "A": "Split Horizon",
+    "B": "Poison Reverse",
+    "C": "Route Poisoning",
+    "D": "Triggered Update",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "一台 MSR 路由器要通过RIP来学习路由信息，在路由器上做了如下的配置：\nrip 1\nnetwork 0.0.0.0   \n那么关于此配置的正确解释是______。",
+    "A": "RIP将发布 0.0.0.0的默认路由",
+    "B": "本路由器上所有接口使能 RIP",
+    "C": "当于没有在本路由器上使能RIP",
+    "D": "此配置是错误配置",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "路由器MSR-1的两个广域网接口S1/0、S1/1分别连接路由器MSR-2、MSR-3。同时MSR-1的以太网口连接MSR-4，所有四台路由器都运行了RIP协议。在MSR-1上的网络192.168.0.0发生故障后，MSR-1立刻将此路由不可达的更新消息发送给其它三台路由器，假如不考虑抑制时间，那么下列描述错误的是______。",
+    "A": "在 MSR-1上使用了RIP 的快速收敛机制",
+    "B": "在 MSR-1上使用了RIP 的触发更新机制",
+    "C": "如果 MSR-1 关于此路由的更新信息还没有来得及发送，就接收到相邻路由器的周期性路由更新信息，那么 MSR-1上就会更新错误的路由信息",
+    "D": "这种立即发送更新报文的方式单独使用并不能完全避免路由环路",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "路由器 MSR-1 分别与 MSR-2、MSR-3 互连，其中在 MSR-1 的路由表中有一条从MSR-2 学到的去往目的网段 120.10.12.0/24 的 RIP 路由，其 Cost 为 3；此时 MSR-1 从 MSR-3 上也接受到一条依然是去往目的网段 120.10.12.0/24 的RIP路由，其Cost 为 15，那么______。",
+    "A": "MSR-1 的路由表不做更新，依然保留从 MSR-2学习到的该网段路由",
+    "B": "MSR-1 的路由表会更新为从 MSR-3 上学到 Cost 为 15的路由",
+    "C": "MSR-1的路由表会更新，因为 Cost 为 15 的RIP 路由意味着网络可能有环路",
+    "D": "MSR-1的路由表不会更新，因为Cost 为 15 的RIP 路由意味着不可靠路由，RIP 不会将其写入自己的路由表",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "TCP/IP协议中只有两个协议。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "每一块网卡都有自己的地址。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列关于网络中 OSPF的区域(Area)说法正确的是？（选择一项或多项）",
+    "A": "网络中的一台路由器可能属于多个不同的区域，但是必须有其中一个区域是骨干区域",
+    "B": "网络中的一台路由器可能属于多个不同的区域，但是这些区域可能都不是骨干区域",
+    "C": "不论在哪一个区域的 OSPF 路由器都能建立邻居和邻接关系",
+    "D": "在同一个 AS内多个 OSPF 区域的路由器共享相同的 LSDB",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在一台运行 OSPF的 MSR路由器的 GE0/0接口上做了如下配置：\n[MSR-GigabitEthernet0/0]ospf cost 2\n那么关于此配置命令描述正确的是______。 （选择一项或多项）",
+    "A": "该命令将接口 GE0/0的OSPF Cost 值修改为 2",
+    "B": "该命令只对从此接口接收的数据的路径没有影响",
+    "C": "该命令只对从此接口发出的数据的路径没有影响",
+    "D": "默认情况下，MSR路由器的接口Cost与接口带宽成正比关系",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在一台运行 OSPF的MSR路由器的GE0/0接口上做了如下配置：\n[MSR-GigabitEthernet0/0]ospf cost 2\n那么关于此配置命令描述正确的是______。",
+    "A": "该命令将接口GE0/0的OSPF Cost值修改为2",
+    "B": "该命令只对从此接口接收的数据的路径有影响",
+    "C": "该命令对从此接口接收和发出的数据的路径有影响",
+    "D": "默认情况下，MSR路由器的接口Cost与接口带宽成正比关系",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "一台空配置的 MSR路由器通过多个接口接入同一个   OSPF网络，所有这些接口都启\n动了 OSPF，配置完成后，该路由器已经成功学习到了网络中的  OSPF路由。如今在\n该路由器的一个 OSPF接口上运行如下命令：\n[MSR-GigabitEthernet0/0]ospf cost 256\n在保持其他配置不变的情况下，关于该配置的理解正确的是_____。",
+    "A": "该配置可能影响数据包的转发路径",
+    "B": "该配置不会影响数据包的转发路径",
+    "C": "该配置命令无效，因为命令输入错误",
+    "D": "该配置命令无效，因为Cost的最大值为 255",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "局域网的数据传输速率比广域网高。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "目前局域网的传输介质是5类或超5类双绞线。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "客户的两台路由器 MSR-1、MSR-2 的广域网接口 S0/0 采用 PPP 协议，路由器通过配置 RIP 来互相学习对端的路由，其中在 MSR-1 上有如下配置：\nrip 1\nnetwork 0.0.0.0\nimport-route static\n#\nip route-static 0.0.0.0 0.0.0.0 Serial0/0\n若该静态路由下一跳可达，那么关于这个配置的正确的解释是______。",
+    "A": "RIP引入静态配置的默认路由并发布给 MSR-2",
+    "B": "配置中的 RIP1 意味着配置的 RIP 版本是V1 版本",
+    "C": "通过如上配置 MSR-1不会通过RIP动态发布默认路由给对端",
+    "D": "通过如上配置 MSR-1可以通过RIP动态发布默认路由给对端",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "对于RIPv1和RIPv2在MSR路由器上运行，如下哪些说法是正确的？",
+    "A": "RIPv1 路由器上学习到的路由目的网段一定是自然分类网段",
+    "B": "RIPv2 路由器上学习到的路由目的网段一定是变长掩码的子网地址",
+    "C": "RIPv1和 RIPv2 都不可以学习到自然分类网段的路由",
+    "D": "RIPv1和 RIPv2 都可以学习到非自然分类网段的路由，比如目的网段为 10.10.200.0/22 的路由",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "路由器 MSR-1 的两个广域网接口 S1/0、S1/1 分别连接路由器 MSR-2、MSR-3。同时 MSR-1 的以太网口连接 MSR-4， 所有四台路由器都运行了RIP协议。 在 MSR-1 上的网络 192.168.0.0发生故障后， MSR-1立刻将此路由不可达的更新消息发送给其它三台路由器，假如不考虑抑制时间，那么下列描述错误的是______。",
+    "A": "在 MSR-1上使用了RIP 的快速收敛机制",
+    "B": "在 MSR-1上使用了RIP 的触发更新机制",
+    "C": "如果 MSR-1 关于此路由的更新信息还没有来得及发送，就接收到相邻路由器的周期性路由更新信息，那么 MSR-1上就会更新错误的路由信息",
+    "D": "这种立即发送更新报文的方式单独使用并不能完全避免路由环路",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "MSR路由器通过RIPv2 和外界交换路由信息，在路由表里有 10.1.1.0/24、10.1.2.0/24、10.1.3.0/24 三条路由，那么该路由器上增加如下RIP的配置：\n[MSR-rip-1] summary\n那么该路由器将会对外发送如下哪个网段的路由？",
+    "A": "10.1.0.0/16",
+    "B": "10.1.2.0/22",
+    "C": "10.0.0.0/8",
+    "D": "10.1.0.0/22",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在路由器上执行如下配置命令：\n[Router]dhcpenable\n[Router]serverforbidden-ip192.168.1.10\n[Router]serverforbidden-ip192.168.1.254\n[Router]dhcpserverip-pool0\n[Router-dhcp-pool-0]network192.168.1.0mask\n255.255.255.0[Router-dhcp-pool-0]gateway-list\n192.168.1.254[Router-dhcp-pool-0]dns-list192.168.1.10\n[Router-dhcp-pool-0]expiredday5\n完成以上配置后，如下哪些说法是不正确的？",
+    "A": "路由器具有 DHCP 中继功能",
+    "B": "路由器可以分配给主机的地址有 252 个",
+    "C": "路由器具有 DHCP 服务器功能",
+    "D": "主机通过 DHCP 服务能够从路由器获得 DNS 服务器地址 192.168.1.10",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "将一所学校内的所有计算机联网，可以实现信息资源的共享。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "要在INTERNET上向朋友发送电子邮件，必须知道对方的真实姓名和家庭住址。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如下关于OSPF信息显示与调试命令的说法正确的是_____。",
+    "A": "通过display ospf peer命令可以查看路由器的OSPF邻居关系",
+    "B": "通过display ospf lsdb命令可以查看路由器的链路状态数据库，网络中所有OSPF路由器的链路状态数据库应该都是一样的",
+    "C": "通过display ospf routing命令可以查看路由器的OSPF路由情况，所有的OSPF路由都会被加入全局路由表",
+    "D": "通过display ospf fault来查看OSPF出错的信息",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如下关于 OSPF 信息显示与调试命令的说法正确的是_____。 （选择一项或多项）",
+    "A": "通过 display ospf peer 命令可以查看路由器的 OSPF邻居关系",
+    "B": "通过 display ospf lsdb命令可以查看路由器的链路状态数据库， 网络中所有 OSPF路由器的链路状态数据库应该都是一样的",
+    "C": "通过 display ospf routing 命令可以查看路由器的OSPF 路由情况，所有的 OSPF路由都会被加入全局路由表",
+    "D": "通过 display ospf fault 来查看 OSPF出错的信息",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "信息不具有可传性和共享性。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在因特网上可以获得信息和交流信息，不能发布信息。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "客户的路由器 MSR-1 的 GigabitEthernet0/0 接口下连接了一台三层交换机，而此三层交换机为客户办公网络的多个网段的默认网关所在。同时该路由器的广域网接口连接到 Internet，而 Internet上有 DNS 服务器为客户局域网内的主机提供服务，客户的办公网络可以正常访问 Internet，如今在 MSR-1 的GigabitEthernet0/0的inbound方向应用了如下ACL：\nfirewall enable\nacl number 3006\nrule 0 deny tcp source 192.168.1.0 0.0.0.255\nrule 5 permit ip\n那么下列描述错误的是",
+    "A": "192.168.1.0/24网段的客户可以通过 Outlook 等邮件客户端正常收发外部邮件",
+    "B": "192.168.1.0/24网段的客户不能通过WWW 方式打开外部网页",
+    "C": "192.168.0.0/24网段的客户可以通过FTP 方式从Internet上下载数据",
+    "D": "192.168.1.0/24网段的客户不能够通过 Outlook 等邮件客户端收发外部邮件",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在路由器上开启 DHCP服务的正确配置命令是______。",
+    "A": "[Router] dhcp",
+    "B": "[Router-dhcp-pool-0] dhcp",
+    "C": "[Router] dhcp enable",
+    "D": "[Router-dhcp-pool-0] dhcp enable",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上， 如果要彻底删除回收站中的某个废弃文件， 可以执行______命令。",
+    "A": "clear trash",
+    "B": "reset recycle-bin",
+    "C": "clear all",
+    "D": "reset trash-bin",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在 MSR路由器上，ping命令的-m参数指定发送ICMP Echo Request报文的时间间隔，取值范围为1~65535，单位为毫秒，它的默认值为______毫秒。",
+    "A": "1000",
+    "B": "100",
+    "C": "200",
+    "D": "2000",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "两台 MSR 路由器之间通过各自的广域网接口 S1/0 互连，同时在两台路由器上运行 RIPv2 来动态完成彼此远端的路由，如今出于安全考虑，要在RIP上加入验证，那么如下哪些是正确的RIP配置？",
+    "A": "[MSR-serial1/0]rip authentication-mode simple 123  //在接口上开启验证",
+    "B": "[MSR]rip authentication-mode simple 123",
+    "C": "[MSR-rip-1] rip authentication-mode simple 123",
+    "D": "[MSR-rip-2]rip authentication-mode simple 123",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "计算机网络可以实现数据通信、资源共享和协同工作。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "E-mail只能发送和接受文本文件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "客户的两台路由器通过V.35 电缆背靠背连接在一起，并在V.35 接口上运行了PPP 协议，在其中一台路由器上有如下接口信息：\n[MSR-Serial0/0] display interface Serial 0/0\nSerial6/0 current state: UP\nLine protocol current state: DOWN\n从如上信息可以推测_______。",
+    "A": "两路由器之间的物理连接正常，但PPP 协议协商没有成功",
+    "B": "PPP 的LCP 协商通过了",
+    "C": "PPP 验证成功了",
+    "D": "两路由器V.24 接口的IP 地址有可能不在同一网段",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在一台运行 RIP 的MSR 路由器上看到如下信息：\n<MSR>display rip\nPublic VPN-instance name :\nRIP process : 1\nRIP version : 2\nPreference : 100\nCheckzero : Enabled\nDefault-cost : 0\nSummary : Enabled\nHostroutes : Enabled\nMaximum number of balanced paths : 8\n那么从显示信息不可以分析出______。",
+    "A": "该路由器运行的是 RIPv2",
+    "B": "RIP 的自动聚合功能是开启的",
+    "C": "本路由器发送或者接收的 RIP 路由的Cost都是 0",
+    "D": "支持 8条路由实现负载分担",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "两台路由器 MSR-1、MSR-2 之间的广域网链路采用 PPP 协议，两路由器上配置了 RIP 以互相发布路由信息。目前在 MSR-1上能看到 MSR-2发布的RIP 路由，但是在 MSR-2的路由表里看不到任何 RIP路由，则不可能的原因是______。 （选择一项或多项）",
+    "A": "MSR-1 只在广域网接口启动了 RIP，没有在其它接口启动RIP",
+    "B": "两路由器的RIP版本不一致",
+    "C": "MSR-1的 RIP 配置了 silent-interface all",
+    "D": "MSR-2的 RIP 配置了 silent-interface all",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上使用 ping 命令时，可以用______参数来设定所发送的 ICMP 报文长度大小。",
+    "A": "– n",
+    "B": "–c",
+    "C": "– b",
+    "D": "–s",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "执行路由器的ip route命令必须进入的工作模式是（　　）。",
+    "A": "用户模式",
+    "B": "特权模式",
+    "C": "路由协议配置模式",
+    "D": "全局配置模式",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "IP地址具有层次特点，将号码分割成网络号和主机号两个部分，这样便能唯一地指定每一台主机。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在因特网上可以获取信息、交流信息、发布信息。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如果用户指定的配置文件不存在，则路由器用_____进行初始化。",
+    "A": "默认配置",
+    "B": "最后保存的配置",
+    "C": "使用最多的配置",
+    "D": "使用最少的配置",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "要在路由器上配置一条静态路由。已知目的地址为192.168.1.0，掩码是20位，出接口为GigabitEthernet0/0，出接口IP地址为10.10.202.1，那么下列配置中哪些是正确的？______",
+    "A": "ip route-static 192.168.1.0 255.255.240.0 GigabitEthernet0/0",
+    "B": "ip route-static 192.168.1.0 255.255.248.0 10.10.202.1",
+    "C": "ip route-static 192.168.1.0 255.255.240.0 10.10.202.1",
+    "D": "ip route-static 192.168.1.0 255.255.248.0 GigabitEthernet0/0",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "两台空配置的 MSR路由器通过各自的广域网Serial1/0 接口背靠背直连，其互连网段为 192.0.0.0/24。同时两台路由器的通过各自的 GigabitEthernet0/0连接各自的局域网段用户：HostA----GE0/0--MSR-1--S1/0---------S1/0--MSR-2--GE0/0----HostB在两台路由器上配置 RIPv1。现在两台路由器上都学习到了对端局域网段的 RIP 路由。那么如下哪些说法是错误的？",
+    "A": "如果其中一台路由器的局域网段为 10.0.0.0/24， 那么在另外一台路由器的路由表将学习到 10.0.0.0/8 的路由",
+    "B": "两台路由器之间交互RIP 报文的方式是广播方式",
+    "C": "两台路由器之间的RIP报文依然是基于 UDP 传输",
+    "D": "可以在两台路由器的广域网接口上配置 RIP RADIUS 验证增强网络安全性",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在路由器 MSR-1 上看到如下信息：\n[MSR-1]display acl 3000\nAdvanced ACL 3000, named -none-, 2 rules,\nACL's step is 5\nrule 0 permit ip source 192.168.1.0 0.0.0.255\nrule 10 deny ip (19 times matched)\n该 ACL 3000 已被应用在正确的接口以及方向上。以描述错误的是_______。",
+    "A": "这是一个基本 ACL",
+    "B": "有数据包流匹配了规则rule 10",
+    "C": "至查看该信息时，还没有来自 192.168.1.0/24 网段的数据包匹配该ACL",
+    "D": "匹配规则 rule 10的数据包可能是去往目的网段192.168.1.0/24的",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "计算机网络可以实现资源共享、数据通信，但不能协同工作。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "执行浏览器IE6.0中“文件”菜单的“另存为”命令，可以将正在浏览的网页保存在文件里。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列关于路由器特点的描述，正确的是_______。",
+    "A": "交换机是网络层设备",
+    "B": "路由器根据链路层信息进行路由转发",
+    "C": "路由器提供丰富的接口类型",
+    "D": "路由器可以支持多种路由协议",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "某路由器通过 Serial1/0 接口连接运营商网络，要在此路由器上配置默认路由从而实现访问 Internet 的目的，如下哪些配置一定是正确而且有效的？",
+    "A": "ip route-static 0.0.0.0 0 Serial1/0",
+    "B": "ip route-static 0.0.0.0 0.0.0.0 Serial1/0",
+    "C": "ip route-static 255.255.255.255 0.0.0.0 Serial1/0",
+    "D": "以上配置都不正确",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "两台 MSR 路由器通过广域网连接并通过 RIPv2 动态完成了远端路由学习，此时路由表已经达到稳定状态，那么此刻起在 45 秒之内，两台路由器广域网之间一定会有如下哪些报文传递？",
+    "A": "RIP Request message",
+    "B": "RIP Response message",
+    "C": "RIP Hello time message",
+    "D": "RIP Update message",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，可以使用______命令清除NAT会话表项。",
+    "A": "clear nat",
+    "B": "clear nat session",
+    "C": "reset nat session",
+    "D": "reset nat table",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "只要知道对方的邮编和家庭地址，就可以在计算机网络上通信。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "网络当中的一台主机只能有一个IP地址，即使其装有多个网卡也一样。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上， 一旦时区信息不准确了， 可使用______命令对本地时区信息进行设置。",
+    "A": "clock timezone",
+    "B": "clock",
+    "C": "clock datetime",
+    "D": "set datetime",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下关于路由器和交换机的说法中，错误的是_______。",
+    "A": "为了解决广播风暴，出现了交换机",
+    "B": "三层交换机采用硬件实现报文转发，比路由器速度快",
+    "C": "交换机实现网段内帧的交换，路由器实现网段之间报文转发",
+    "D": "交换机工作在数据链路层，路由器工作在网络层",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下面哪条命令用于在路由器上添加进入telnet的登陆口令？______",
+    "A": "Router(config)#line  vty  0  4",
+    "B": "Router#password kkk",
+    "C": "Router(config)#login  password  kkk",
+    "D": "router#line   vty   0  4",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "客户的网络连接形如：\nHostA----GE0/0--MSR-1--S1/0-----WAN-----S1/0--MSR-2--GE0/0----HostB\n两台MSR 路由器通过广域网实现互连，目前物理连接已经正常。MSR-1 的接口S1/0 地址为3.3.3.1/30，\nMSR-2 的接口S1/0 地址为3.3.3.2/30，现在在MSR-1 上配置了如下三条静态路由：\nip route-static 192.168.1.0 255.255.255.0 3.3.3.2\nip route-static 192.168.2.0 255.255.255.0 3.3.3.2\nip route-static 192.168.0.0 255.255.255.0 3.3.3.2\n其中192.168.0.0/22 子网是主机HostB 所在的局域网段。那么如下描述哪些是正确的？",
+    "A": "这三条路由都会被写入MSR-1 的路由表",
+    "B": "只有第三条路由会被写入MSR-1 的路由表",
+    "C": "这三条路由可被一条路由ip route-static 192.168.1.0 255.255.252.0 3.3.3.2 代替",
+    "D": "只有第一条路由会被写入MSR-1 的路由表",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在网络上只能收取他人发来的邮件，不能给他人发送邮件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "E-mail只能发送文本文件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "客户的网络连接形如：\nHostA----GE0/0--MSR-1--S1/0-----WAN----S1/0--MSR-2--GE0/0----HostB\n两台MSR路由器通过广域网实现互连，目前物理连接已经正常。MSR-1的接口S1/0地址为3.3.3.1/30，MSR-2的接口S1/0地址为3.3.3.2/30，现在在MSR-1上配置了如下4条静态路由：\nip route-static 192.168.1.0 255.255.255.0 3.3.3.2\nip route-static 192.168.2.0 255.255.255.0 3.3.3.2\nip route-static 192.168.3.0 255.255.255.0 3.3.3.2\nip route-static 192.168.4.0 255.255.255.0 3.3.3.2\n其中192.168.0.0/22子网是MSR-2的局域网用户网段。那么如下描述哪些是正确的？",
+    "A": "这四条路由都会被写入MSR-1的路由表",
+    "B": "只有第四条路由会被写入MSR-1的路由表",
+    "C": "这四条路由可以被一条路由ip route-static 192.168.1.0 255.255.252.0 3.3.3.2代替",
+    "D": "只有第一条路由会被写入MSR-1的路由表",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在 MSR路由器上，如果想查看回收站里的文件，可以使用______命令。",
+    "A": "dir recycle-bin",
+    "B": "dir trash",
+    "C": "dir /all",
+    "D": "dir all-file",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "XYZ公司深圳分公司的路由器的  Serial 0/0和  Serial 0/1接口通过两条广域网线路分别连接两个不同的ISP，通过这两个ISP都可以访问北京总公司的网站 202.102.100.2，在深圳分公司的路由器上配置了如下的静态路由：\nip route-static 202.102.100.2 24 Serial 0/0 preference 10\nip route-static 202.102.100.2 24 Serial 0/1 preference 100\n那么关于这两条路由的描述哪些是不正确的？",
+    "A": "两条路由的优先级不一样，路由器会把优先级高的第一条路由写入路由表",
+    "B": "两条路由的优先级不一样，路由器会把优先级高的第二条路由写入路由表",
+    "C": "两条路由的   Cost值是一样的",
+    "D": "两条路由目的地址一样，可以实现主备，其中第一条路由为主",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "______可以查看获取的网络数据、所经过的路径并指明那个路由器所花费的时间。",
+    "A": "Netstat",
+    "B": "Ipconfig",
+    "C": "Tracert",
+    "D": "Ping",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "用Outlook Express收发电子邮件时需要同时打开浏览器。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "网络操作系统具有开放性、一致性和透明性的特征。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上，ping 令的-tos参数指定 ICMP Echo Request 报文中的ToS (Type of Service，服务类型) 字段值，取值范围为0~255 ，默认值为______。",
+    "A": "46",
+    "B": "0",
+    "C": "63",
+    "D": "2",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下不属于路由器配置有误而造成路由器产生故障的是________。",
+    "A": "线路两端路由器的参数不匹配",
+    "B": "路由信息配置错误",
+    "C": "路由器端口的P地址配置错误",
+    "D": "路由器无法正常加电",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在 MSR 路由器上， 如果要查询设备系统的启动方式， 可使用______命令检查。",
+    "A": "display boot",
+    "B": "display begin",
+    "C": "display reboot-type",
+    "D": "display start-configuration",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "假设一台MSR路由器获得两条去往目的网段 100.120.10.0/24 的路由，这两条路由的Cost分别是120和10，优先级分别是10和150。那么去往此目的地址的数据包将______ 。",
+    "A": "优先匹配Cost为120的路由",
+    "B": "优先匹配Cost为10的路由",
+    "C": "优先匹配优先级为10的路由",
+    "D": "优先匹配优先级为150的路由",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "让一台IP地址是10.0.0.1的主机访问Internet的必要技术是静态路由。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "没有手动配置RouterID的两台路由器之间不能建立稳定的OSPF邻接关系。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "运行RIPv2路由表里有10.1.1.0/24、10.1.2.0/24、10.1.3.0/24三条路由，那么该路由器上增加如下RIP的配置：[MSR-rip-1]summary。那么聚合后的网段是10.1.0.0/22。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "一台MSR路由器要通过RIP来学习路由信息，在路由器上做了如下的配置：rip1network0.0.0.0那么关于此配置的正确解释是本路由器上所有接口使能RIP。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "所谓网络的一致性就是指网络向用户、低层向高层提供一个一致性的服务接口。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "计算机网络主要是由通信子网和用户资源子网组成。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在路由器配置中，通过ping命令，不能检测到osi模型下列哪层是否工作正常?______",
+    "A": "物理层",
+    "B": "数据链路层",
+    "C": "网络层",
+    "D": "传输层",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在一台MSR 路由器的路由表中，不包括来源的路由？______",
+    "A": "直连网段的路由",
+    "B": "网络层协议发现的路由",
+    "C": "动态路由协议发现的路由",
+    "D": "由网络管理员手工配置的静态路由",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，使用______命令查看路由器的NAT老化时间。",
+    "A": "display nat time",
+    "B": "display nat expire",
+    "C": "display nat aging-time",
+    "D": "display nat time-out",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "为了确定网络层所经过的路由器数目，应使用什么命令______",
+    "A": "ping",
+    "B": "a",
+    "C": "test",
+    "D": "tracert",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "两台空配置的 MSR路由器通过各自的   GE0/0接口背靠背互连，其互连网段为192.168.1.0/30，正确配置   IP地址后，两台路由器的 GE0/0接口可以互通。如今分别在两台路由器上增加如下OSPF配置：\nospf 1\narea 0.0.0.1\nnetwork 192.168.1.0 0.0.0.3\n那么下列哪些说法是正确的？",
+    "A": "没有配置Router ID，两台路由器之间不能建立稳定的OSPF邻接关系",
+    "B": "没有配置Area 0，两台路由器之间不能建立稳定的OSPF邻接关系",
+    "C": "RTA的路由表中会出现一条OSPF路由",
+    "D": "两台路由器之间可以建立稳定的OSPF邻接关系，但是RTA和RTB的路由表中都没有OSPF路由",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "广域网的英文缩写为WAN。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "调制为数字信号转换为模拟信号，发生在计算机接受（发送)信号的阶段。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在运行了RIP的 MSR 路由器上看到如下路由信息：\n<MSR>display ip routing-table 6.6.6.6\nRouting Table : Public\nSummary Count : 2\nDestination/Mask Proto Pre Cost NextHop Interface\n6.6.6.0/24 RIP 100 1 100.1.1.1 GE0/0\n6.0.0.0/8 Static 60 0 100.1.1.1 GE0/0\n此时路由器收到一个目的地址为 6.6.6.6的数据包，那么______。",
+    "A": "该数据包将优先匹配路由表中的RIP路由，因为其掩码最长",
+    "B": "该数据包将优先匹配路由表中 RIP 路由，因为其优先级高",
+    "C": "该数据包将优先匹配路由表中的静态路由，因为其花费 Cost小",
+    "D": "该数据包将优先匹配路由表中的静态路由，因为其掩码最短",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在路由器上配置好Telnet 服务的相关配置后，从PC 能够ping 通路由器，但是Telnet 路由器失败，PC一直显示正在连接到x.x.x.x，可能的原因是______。",
+    "A": "中间网络路由配置不对",
+    "B": "Telnet 密码设置不正确",
+    "C": "路由器启动了Telnet 服务",
+    "D": "中间网络阻止了PC对路由器的TCP端口23发起连接",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "XYZ 公司深圳分公司的路由器MSR1 的Serial0/0 接口通过广域网线路直接连接到ISP 路由器MSR2 的Serial0/0 接口，MSR2 的Serial0/0 接口地址为100.126.12.1。XYZ 公司通过这个ISP 可以访问北京总公司的网站202.102.100.2。在MSR1 上没有运行路由协议，仅配置了如下一条静态路由：ip route-static 202.102.100.2 24 100.126.12.1那么关于这条路由以及MSR1 路由表的描述哪些是不正确的？______",
+    "A": "如果100.126.12.1 所在网段地址不可达，那么该路由不会被写入路由表",
+    "B": "如果该路由所对应的出接口断掉，那么该路由一定会被从路由表中删除",
+    "C": "只要该路由对应的出接口物理状态up，该路由就会被写入路由表",
+    "D": "这是一条优先级为60、Cost 为0 的静态路由",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "客户的路由器 MSR-1 的 GE0/0接口下连接了一台三层交换机，而此三层交换机是其所连接的客户办公网络的多个网段的默认网关所在。MSR-1通过串口S1/0连接到 Internet。全网已经正常互通，办公网用户可以访问 Internet。在该路由器上添加如下ACL 配置：\nfirewall enable\nacl number 3004\nrule 0 deny ip source 192.168.1.0 0.0.0.255\nrule 5 permit tcp source 192.168.0.0 0.0.255.255\nrule 10 permit icmp\n同时将 ACL 3004 应用在GE0/0的 inbound方向，那么______。",
+    "A": "该路由器允许 192.168.2.0/24 网段的用户对 Internet发出的FTP 数据流通过",
+    "B": "该路由器允许所有用户的 ICMP 报文通过",
+    "C": "该路由器允许 192.168.1.0/24 网段用户对 Internet的所有 IP 流量通过",
+    "D": "该路由器允许 192.168.1.0/24 网段用户对 Internet的WWW 业务流量通过",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在路由器RTA 上启用DHCP 后，需要设定地址池的地址范围为192.168.1.0/24，给主机分配的默认网关地址是192.168.1.254。下列哪些配置不能满足这些要求？______",
+    "A": "[Router] dhcp server ip-pool 0",
+    "B": "[Router-dhcp-pool-0] network 192.168.1.0 mask 255.255.255.0",
+    "C": "[Router-dhcp-pool-0] gateway-list 192.168.1.254",
+    "D": "[Router-dhcp-pool-0] dns-list 192.168.1.10",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "OSI将计算机网络由低到高分为物理层、数据链路层、网络层、会话层、表示层、传输层、应用层。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "集线器的英文缩写是HUB，以树型结构（总线型结构)使用双绞线连接网络中的计算机。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "下列哪些消息是在IPv6 地址解析中被使用的？______",
+    "A": "邻居建立消息",
+    "B": "邻居通告消息",
+    "C": "路由器请求消息",
+    "D": "路由器通告消息",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "IPv6采用______表示法来表示地址。",
+    "A": "冒号十六进制",
+    "B": "点分十进制",
+    "C": "冒号十进制",
+    "D": "点分十六进制",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "下列哪些消息是在IPv6 地址解析中被使用的？______",
+    "A": "邻居建立消息",
+    "B": "邻居通告消息",
+    "C": "路由器请求消息",
+    "D": "路由器通告消息",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "关于 IPv6 地址 2001:0410:0000:0001:0000:0001:0000:45FF 的压缩表达方式，下列哪些是正确的？",
+    "A": "2001:410:0:1:0:1:0:45FF",
+    "B": "2001:41:0:1 :0:1:0:45FF",
+    "C": "2001:410:0:1::45FF",
+    "D": "2001:410::1::45FF",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "当互相连接的网络使用相同的操作系统时可以使用网桥。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "中继器只能用来连接具有相同物理层协议的MAM。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "下面关于Easy IP 的说法中，不正确的是______ 。",
+    "A": "Easy IP是NAPT的一种特例",
+    "B": "配置Easy IP时不需要配置ACL来匹配需要被NAT转换的报文",
+    "C": "配置Easy IP时不需要配置NAT地址池",
+    "D": "Easy IP适合用于NAT设备拨号或动态获得公网IP地址的场合",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "DHCP客户端收到DHCP ACK报文后如果发现自己即将使用的IP地址已经存在于网络中，那么它将向DHCP服务器发送什么报文？",
+    "A": "DHCP Request",
+    "B": "DHCP Release",
+    "C": "DHCP Inform",
+    "D": "DHCP Decline",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "IPv6站点本地地址属于______地址类型。",
+    "A": "单播",
+    "B": "组播",
+    "C": "广播",
+    "D": "任播",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "与10.110.12.29 mask 255.255.255.224 属于同一网段的主机IP 地址是______。",
+    "A": "10.110.12.0",
+    "B": "10.110.12.30",
+    "C": "10.110.12.31",
+    "D": "10.110.12.32",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "IP 地址 132.119.100.200 的子网掩码是 255.255.255.240 ， 那么它所在的 IP 子网地址是______。",
+    "A": "132.119.100.0",
+    "B": "132.119.100.193",
+    "C": "132.119.100.192",
+    "D": "132.119.100.128",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "中继器不能连接任何网络，它只起放大信号的作用。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "中继器能用来连接具有相同物理层协议的LAN。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在运行了RIP的 MSR 路由器上看到如下路由信息：\n<MSR>display ip routing-table 6.6.6.6\nRouting Table : Public\nSummary Count : 2\nDestination/Mask Proto Pre Cost NextHop Interface\n6.0.0.0/8 RIP 100 1 100.1.1.1 GE0/0\n6.6.6.0/24 Static 60 0 100.1.1.1 GE0/0\n此时路由器收到一个目的地址为 6.6.6.6的数据包，那么______。",
+    "A": "该数据包将优先匹配路由表中的RIP路由，因为其掩码最短",
+    "B": "该数据包将优先匹配路由表中静态路由，因为其优先级高",
+    "C": "该数据包将优先匹配路由表中的静态路由，因为其度量值最小",
+    "D": "该数据包将优先匹配路由表中的静态路由，因为其掩码最长",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "将一台空配置的 MSR 路由器分别通过 GigabitEthernet0/0、GigabitEthernet0/1、Serial1/0 接入网络，分别配置这三个接口的 IP地址为10.1.1.1/30、12.12.12.224/30、192.168.10.1/24。配置后，这三个接口可以与其直连的对端设备接口互通，然后在该路由器上又增加如下配置：\n[MSR]rip\n[MSR-rip-1]network 10.0.0.0\n[MSR-rip-1]network 192.168.10.0\n那么关于此命令的作用以及意图描述不正确的是______。",
+    "A": "该路由器上的 Serial1/0 和 GigabitEthernet0/0接口能收发RIP报文",
+    "B": "该路由器上的 GigabitEthernet0/1接口不发送 RIP 报文",
+    "C": "如果该路由器的 Serial1/0 接口在 90 秒内没有收到 RIP 的 Hello 报文，那么就将该 RIP 邻居状态设置为初始化状态",
+    "D": "RIP也会将直连网段 192.168.10.0/24 的路由信息通过该路由器的 GigabitEthernet0/0接口发布",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上，ping 命令的-t 参数指定 ICMP Echo Reply报文的超时时间，取值范围为 1~ 65535 ，单为毫秒，它的默认值为______毫秒。",
+    "A": "200",
+    "B": "100",
+    "C": "2000",
+    "D": "1000",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "某公司的MSR 路由器的广域网主链路为同异步串口，通过一根V.35 电缆接入运营商网络；该路由器同时以一个ISDN BRI 接口做备份链路。那么关于线路带宽，如下哪些说法是正确的？_______",
+    "A": "备份线路的带宽可能是54Kbps",
+    "B": "备份线路的带宽可能是128Kbps",
+    "C": "备份线路的带宽可能是144Kbps",
+    "D": "主链路的带宽可能是10Mbps",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "可以通过路由器实现不同协议、不同体系结构网络的互联能力。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "对网络体系结构差异较大的两个子网可以用网关进行网络互连，但只可能针对某一特定应用而言，不可能有通用网关。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "客户的网络由两台MSR路由器互连构成，两台MSR之间运行RIPv1协议，目前已经完成了动态路由学习而且学到远端的路由，如今客户将把RIPv1修改为RIPv2，那么将会发生如下哪些不可能的变化？",
+    "A": "路由器上学习到的远端路由的掩码长度可能会变化",
+    "B": "路由器发送RIP报文的方式可能发生变化",
+    "C": "路由器上发送RIP更新报文的时间间隔会发生变化",
+    "D": "路由器上路由表的路由项可能会发生变化",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "路由器的数据连路层收到报文的MTU大于该路由器将要发出接口的最大MTU时，采取的策略是______",
+    "A": "丢掉该分组",
+    "B": "将该分组分片",
+    "C": "向源路由器发出请求，减小其分组大小",
+    "D": "直接转发该分组",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在一台 MSR路由器上执行了如下命令：\n[MSR]display ip routing-table 100.1.1.1\n那么对此命令的描述正确的是______。",
+    "A": "可以查看匹配目标地址为100.1.1.1的路由项",
+    "B": "可以查看匹配下一跳地址为100.1.1.1的路由项",
+    "C": "不可能此命令的输出结果是两条默认路由",
+    "D": "此命令不正确，因为没有包含掩码信息",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在cisco2950的交换机上启用VTP修剪，以下哪个VLAN不可以被修剪掉？______",
+    "A": "VLAN0",
+    "B": "VLAN1",
+    "C": "VLAN1000",
+    "D": "VLAN1001",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "因特网上为每个网络和每台主机都分配了唯一的地址，该地址由纯数字并用小数点分隔开，称为TCP地址（IP地址）。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "计算机在工作时各部件之间的信息交换是通过总线进行的。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "使用 Ping命令时,出现下列______信息，表明本地系统没有到达远程系统的路由。",
+    "A": "“unknown host”",
+    "B": "“ destination host unreachable”",
+    "C": "“no answer”",
+    "D": "“ timed out”",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果数据包在MSR路由器的路由表中匹配多条路由项，那么关于路由优选的顺序描述正确的是______。",
+    "A": "Preference 值越小的路由越优选",
+    "B": "Cost 值越小的路由越优选",
+    "C": "掩码越短的路由越优先",
+    "D": "掩码越长的路由越优先",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在路由器上执行display ip routing-table，那么路由表中显示的下一跳接口不可能是______。",
+    "A": "InLoop0",
+    "B": "Null0",
+    "C": "Serial 6/0/1",
+    "D": "Vlan500",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在 Windows 2000 中，______命令用于追踪网络数据包从源主机到目标主机的路由路径。",
+    "A": "Ping",
+    "B": "Tracert",
+    "C": "PathPing",
+    "D": "Netstat",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在使用搜索引擎的过程中，如果搜索的关键字与搜索的类型搭配不当，将达不到搜索的结果。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "调制解调器的作用是对信号进行整形和放大。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "下面的哪一个是一个合法的IP主机地址______",
+    "A": "1.255.255.2",
+    "B": "127.2.3.5",
+    "C": "225.23.200.9",
+    "D": "192.240.150.255",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在计算机命令窗口中执行ipconfig命令后显示如下信息：IP Address: 192.168.0.2；Subnet Mask:255.255.255.0；Gateway: 192.168.0.1；",
+    "A": "IP地址、掩码、网关",
+    "B": "掩码、IP地址、网关",
+    "C": "IP地址、网关、掩码",
+    "D": "掩码、网关、IP地址",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "IP 地址中，网络部分全0表示______",
+    "A": "主机地址",
+    "B": "网络地址",
+    "C": "所有主机",
+    "D": "所有网络",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "在交换机SWA 上执行display vlan 2 命令后，交换机输出如下：\n<SWA> display vlan 2\nVLAN ID: 2\nVLAN Type: static\nRoute interface: not configured\nDescription: VLAN 0002\nTagged Ports: none\nUntagged Ports:\nEthernet1/0/1 Ethernet1/0/3 Ethernet1/0/4\n从以上输出可以判断_______。",
+    "A": "端口Ethernet1/0/1 是一个Trunk 端口",
+    "B": "VLAN2 中包含了端口Ethernet1/0/1、Ethernet1/0/3",
+    "C": "带有VLAN2 标签的数据帧离开端口Ethernet1/0/3 时需要剥离标签",
+    "D": "当前交换机存在的VLAN 只有VLAN2",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "数据交换技术包括线路交换、报文交换和______",
+    "A": "数据交换",
+    "B": "信元交换",
+    "C": "分组交换",
+    "D": "虚电路交换",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "网络适配器是逻辑上将计算机与网络连接起来的器件。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "调制解调器都是内置的，也就是都装在网卡上，要和电脑一起购买。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "两台 MSR 路由器通过 Serial1/0背靠背直连，其中在一台 MSR路由器上看到如下配置：\ninterface Serial1/0\nip address 8.8.8.2 255.255.255.0\n#\ninterface GigabitEthernet0/0\nport link-mode route\nip address 100.1.1.2 255.255.255.0\n#\nrip 1\nversion 2\nnetwork 0.0.0.0\n#\nip route-static 0.0.0.0 0.0.0.0 8.8.8.1\n假设两台路由器都正确配置了RIP，且所有接口都UP，那么关于此配置如下哪些分析是正确的",
+    "A": "将从出接口Serial1/0发送一条RIP默认路由到对端邻居",
+    "B": "对端邻居路由器可以收到两条 RIP 路由",
+    "C": "对端邻居路由器并不能从此路由器学习到RIP产生的默认路由",
+    "D": "RIP路由的更新报文只能从该路由器的 Serial1/0接口发送或者接收",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "在路由器 MSR-1上看到如下提示信息：\n[MSR-1]display firewall-statistics all\nFirewall is enable, default filtering method is\n'permit'. Interface: GigabitEthernet0/0\nIn-bound Policy: acl 3000\nFragments matched normally\nFrom 2008-11-08 2:25:13 to 2008-11-08\n2:25:46 0 packets, 0 bytes, 0% permitted,\n4 packets, 240 bytes, 37% denied,\n7 packets, 847 bytes, 63% permitted default,\n0 packets, 0 bytes, 0% denied default, Totally\n7 packets, 847 bytes, 63% permitted, Totally 4\npackets, 240 bytes, 37% denie\n据此不可以推测______。",
+    "A": "由上述信息中的37%denied可以看出已经有数据匹配ACL3000中的规则",
+    "B": "有一部分数据包没有匹配ACL3000中的规则，而是匹配了默认的permit规则",
+    "C": "ACL3000被应用在GigabitEthernet0/0的inbound方向",
+    "D": "上述信息中的0% denied default意味着该ACL的默认匹配规则是deny",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "某私网设备A的IP地址是192.168.1.1/24，其对应的公网IP地址是2.2.2.1；公网设备B的IP地址是2.2.2.5。若希望B能ping通A，可以在NAT设备上使用下列哪项配置？",
+    "A": "acl number 2000\nrule 0 permit source 192.168.1.1\n0.0.0.255 nat address-group 1 2.2.2.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1",
+    "B": "acl number 2000\nrule 0 permit source 192.168.1.1 0.0.0.255 nat address-group 1 2.2.2.1\ninterface Ethernet 0/1\nnat outbound 2000 address-group 1 no-pat",
+    "C": "nat server protocol icmp global 2.2.2.1 inside 192.168.1.1",
+    "D": "nat server protocol icmp global 192.168.1.1 inside 2.2.2.1",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "二层以太网交换机在MAC地址表中查找与帧目的MAC地址匹配的表项，从而将帧从相应接口转发出去，如果查找失败，交换机将______。",
+    "A": "把帧丢弃",
+    "B": "把帧由除入端口以外的所有其他端口发送出去",
+    "C": "查找快速转发表",
+    "D": "查找路由表",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "小L是一名资深IP网络专家，立志要开发一种新的动态路由协议。而一个路由协议的工作过程应该不包括如下哪些？（选择一项或多项）",
+    "A": "查找路由表并转发数据包",
+    "B": "交换路由信息",
+    "C": "计算路由",
+    "D": "维护、更新路由",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "局域网的主要传输介质是光纤。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "局域网中常用的拓扑结构是星型、环型、分布型。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "客户在路由器上要配置两条去往同一目的地址的静态路由，实现互为备份的目的。那么关于这两条路由的配置的说法正确的是______。",
+    "A": "需要为两条路由配置不同的 Preference",
+    "B": "需要为两条路由配置不同的 Priority",
+    "C": "需要为两条路由配置不同的 Cost",
+    "D": "需要为两条路由配置不同的 MED",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在一台MSR 路由器上看到路由表如下：\nDestination/Mask Proto  Pre Cost NextHop Interface\n6.6.6.0/24       Static 60   0  100.1.1.1 GE0/0\n8.8.8.8/32       Direct 0    0  127.0.0.1 InLoop0\n20.1.1.0/24      Static 60   0  100.1.1.1 GE0/0\n30.0.0.0/8       RIP    100  1  100.1.1.1 GE0/0\n那么对此路由表的分析正确的是______ 。",
+    "A": "该路由器上接口GE0/0 的IP 地址为100.1.1.1",
+    "B": "目的网段为8.8.8.8/32 的路由下一跳接口为InLoop0，说明该路由下一跳是类似于Null0 的虚接口，该路由属于黑洞路由",
+    "C": "该路由器运行的是RIPv1，因为目的网段30.0.0.0 的掩码是自然掩码",
+    "D": "该路由表不是该路由器的完整路由表，完整的路由表至少应该有接口GE0/1 的直连网段路由",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "RIP 是如何通过抑制时间和路由毒化结合起来来避免路由环路的？",
+    "A": "从某个接口学到路由后，将该路由的度量值设置为无穷大，并从原接口发回邻居路由器",
+    "B": "从某个接口学到路由后，将该路由的设置抑制时间，并从原接口发回邻居路由器",
+    "C": "主动对故障网段的路由设置抑制时间，将其度量值设置为无穷大，并发送给其它邻居",
+    "D": "从某个接口学到路由后，将该路由的度量值设置为无穷大，并设置抑制时间，然后从原接口发回给邻居路由器",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "客户的两台路由器通过V.35 电缆背靠背连接在一起，其中一台路由器上有如下接口信息：\n[MSR-Serial0/0] display interface Serial 0/0\nSerial0/0 current state: UP\nLine protocol current state: UP\nDescription: Serial6/0 Interface\nThe Maximum Transmit Unit is 1500, Hold timer is 10(sec)\nInternet Address is 6.6.6.1/30 Primary\nLink layer protocol is PPP\nLCP opened, IPCP opened\n从上述信息可以得知_________。",
+    "A": "这台路由器已经和远端设备完成了PPP 协商，但并未成功建立了PPP 链路",
+    "B": "这台路由器和远端设备之间成功完成了PPP PAP 或者CHAP 的验证",
+    "C": "在这台路由器上已经可以ping 通对端的地址6.6.6.2 了",
+    "D": "该接口信息提示，在该接口下还可以配置第二个IP 地址",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "MSR路由器上一次ping默认发5个包，如果想指定发送报文的数目，可使用______参数。",
+    "A": "– n",
+    "B": "–d",
+    "C": "–s",
+    "D": "–c",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "计算机网络与计算机通信网络在硬件组成上是相同的，所以两者的根本区别是发展时间不同。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "计算机网络是在电话系统的基础上发展起来的。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "进入交换机全局配置模式的命令是______。",
+    "A": "configure terminal",
+    "B": "config",
+    "C": "show run",
+    "D": "enable",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "交换机 SWA的端口Ethernet1/0/24已经配置成为Trunk端口类型。如果要使此端口允许VLAN2和VLAN3通过，则需要使用下列哪个命令？",
+    "A": "[SWA]port trunk permit vlan 2 3",
+    "B": "[SWA-Ethernet1/0/24]port trunk permit vlan 2 3",
+    "C": "[SWA]undo port trunk permit vlan 1",
+    "D": "[SWA-Ethernet1/0/24]undo port trunk permit vlan 2",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以太网交换机一个端口在接收到数据帧时，如果没有在Mac地址表中查找到目的Mac 地址，通常如何处理？______",
+    "A": "把以太网帧复制到所有端口",
+    "B": "把以太网帧发送到一组特定的端口",
+    "C": "丢弃该帧",
+    "D": "把以太网帧发送到除本端口以外的所有端口",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "_____表示交换机接口处理器或接口卡和数据总线间所能吞吐的最大数据量。",
+    "A": "背板吞吐量",
+    "B": "端口速率",
+    "C": "丢包率",
+    "D": "转发速度",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "网卡只能连接双绞线的卡口。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "在飞机场进行布线时，最好采用双绞线。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以太网交换机中的端口/MAC地址映射表______",
+    "A": "是由交换机的生产厂商建立的",
+    "B": "是交换机在数据转发过程中通过学习动态建立的",
+    "C": "是由网络管理员建立的",
+    "D": "是由网络用户利用特殊的命令建立的。",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "对于分组交换方式的理解，下列说法中正确的是________。",
+    "A": "分组交换是一种基于快速转发（Store-and-Forward switching）的交换方式",
+    "B": "传输的信息被划分为一定长度的数据段，以分组为单位进行转发",
+    "C": "每个分组都载有接收方和发送方的地址标识，分组可以不需要任何操作而直接转发，从而提高了效率",
+    "D": "分组交换包括基于帧的分组交换和基于信元的分组交换",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "常用的数据交换技术不包括______。",
+    "A": "模拟交换",
+    "B": "线路交换",
+    "C": "报文交换",
+    "D": "分组交换",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "以下关于电路交换和分组交换的描述正确的是_______。",
+    "A": "分组交换网络资源利用率低",
+    "B": "分组交换延迟大，传输实时性差",
+    "C": "电路交换网络资源利用率高",
+    "D": "电路交换延迟大，传输实时性强",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "“先从外部的各种指示灯上辨别，然后根据故障指示,再来检查内部的相应部件是否存在问题”是交换机排障步骤中的_____。",
+    "A": "由软到硬",
+    "B": "先易后难",
+    "C": "由外而内",
+    "D": "由远到近",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "一个小型局域网和INTERNET互联时，可以使用交换机。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "TopAnalyer中可以自定义报表。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "根据交换机处理VLAN数据帧的方式不同， H3C以太网交换机的端口类型不包括：______ 。",
+    "A": "access 端口",
+    "B": "trunk 端口",
+    "C": "hybrid 端口",
+    "D": "monitor 端口",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "集线器、交换机、路由器分别工作在OSI的物理层、______、网络层。",
+    "A": "数据链路层",
+    "B": "传输层",
+    "C": "会话层",
+    "D": "表示层",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "以下不属于交换机软件故障的是_____。",
+    "A": "系统错误",
+    "B": "模块故障",
+    "C": "密码丢失",
+    "D": "配置不当",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "如果想在交换机上查看目前存在哪些 VLAN，则需要用到如下哪一个命令？",
+    "A": "[SWA]display vlan all",
+    "B": "[SWA]display vlan",
+    "C": "[SWA]display vlan 1",
+    "D": "[SWA]display vlan 2",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "入侵检测系统一般由收集器、检测器、控制器构成。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "防火墙中的URL过滤流程为：查URL黑名单->查URL白名单->查Cache(10万条)->查自定义分类->查热点库(10万条)->查远程分类库",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "PC连接在交换机SWA的端口E1/0/2，IP地址为10.1.1.1，MAC地址为00-01-02-01-21-23。为了保证网络安全，需要在端口E1/0/2上配置MAC+IP+端口绑定。则下列哪个命令是正确的？",
+    "A": "[SWA] user-bind ip-address 10.1.1.1",
+    "B": "[SWA-Ethernet1/0/2]user-bind ip-address 10.1.1.1",
+    "C": "[SWA] user-bind ip-address 10.1.1.1 mac-address 0001-0201-2123",
+    "D": "[SWA-Ethernet1/0/2]user-bind ip-address 10.1.1.1 mac-address 0001-0201-2123",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "客户路由器MSR-1的以太网口Ethernet1/0配置如下：\ninterface Ethernet0/0\nip address 192.168.0.1 255.255.255.0\n该接口连接了一台三层交换机，而此三层交换机为客户办公网络的网段192.168.7.0/24 ~192.168.83.0/24 的默认网关所在。现在客户要求在MSR-1上配置ACL来禁止办公网络所有用户向MSR-1的地址192.168.0.1发起Telnet，那么下面哪项配置是正确的？",
+    "A": "acl number 3000\n  rule 0 deny 0.0.0.0 255.255.255.255 destination 192.168.0.1 0 destination-port\n  eq telnet interface Ethernet0/0\n  ip address 192.168.0.1\n  255.255.255.0 firewall packetfilter 3000 inbound",
+    "B": "acl number 3000\n  rule 0 deny 0.0.0.0 255.255.255.255 destination 192.168.0.1 0 destination-port\n  eq telnet interface Ethernet0/0\n  ip address 192.168.0.1\n  255.255.255.0 firewall packetfilter 3000 outbound",
+    "C": "acl number 3000\n  rule 0 deny 255.255.255.255 0 destination 192. 168.0.1 0 destination-port\n  eq telnet interface Ethernet0/0\n  ip address 192.168.0.1\n  255.255.255.0 firewall packetfilter 3000 inbound",
+    "D": "acl number 3000\n  rule 0 deny 255.255.255.255 0 destination 192. 168.0.1 0 destination-port\n  eq telnet interface Ethernet0/0\nip   address   192.168.0.1 255.255.255.0\nfirewall   packet-filter 3000 outbound",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "PCA、PCB 分别与S3610 交换机SWA 的端口Ethernet1/0/2、Ethernet1/0/3 相连，服务器与端口Ethernet1/0/1 相连。如果使用端口隔离技术使PC 间互相隔离，但PC 都能够访问服务器，则需要在交换机上不包含的配置哪些命令？______",
+    "A": "[SWA] port-isolate enable",
+    "B": "[SWA-Ethernet1/0/2] port-isolate enable",
+    "C": "[SWA-Ethernet1/0/3] port-isolate enable",
+    "D": "[SWA-Ethernet1/0/1] port-isolate uplink-port",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在 S3610交换机上创建包含有端口   Ethernet1/0/1，ID为    2的聚合端口，其正确命令是______。",
+    "A": "[SWA] interface bridge-aggregation 2",
+    "B": "[SWA] interface bridge-aggregation 2 port Ethernet1/0/1",
+    "C": "[SWA-Ethernet1/0/1] interface bridge-aggregation 2",
+    "D": "[SWA-Ethernet1/0/1] interface bridge-aggregation 2 mode static",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "USG5500支持千兆光口Bypass，以及千兆电口Bypass，不支持万兆光口Bypass。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "防火墙中的邮件内容过滤功能，当为Webmail方式时，当前只支持163和yahoo邮。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "要清楚的知道网络中每条信息来自哪里，发往何处，每条信息在传输过程中路由了哪些节点，哪些节点影响传输效率，可以通过下列______设备查看。",
+    "A": "性能监视器",
+    "B": "Internet服务管理器",
+    "C": "网络监视器",
+    "D": "事件查看器",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "一个路由器的路由表通常包含______",
+    "A": "目的网络和到达该目的网络的完整路径",
+    "B": "所有目的主机到达和到达该目的的主机的完整路径",
+    "C": "目的网络和到达该目的的网络路径上的下一个路由器的IP地址",
+    "D": "互联网中能有路由器的IP地址",
+    "answer": "C",
+    "select": ""
+  },
+  {
+    "title": "无类路由协议路由表表目为三维组，其中不包括______",
+    "A": "子网掩码",
+    "B": "源网络地址",
+    "C": "目的网络地址",
+    "D": "下一跳地址",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "以下哪些路由表项要由网络管理员手动配置的？______",
+    "A": "静态路由",
+    "B": "动态路由",
+    "C": "其他三项说法都不正确",
+    "D": "直接路由",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在MSR路由器上配置了如下ACL：\nacl number 3999\nrule permit tcp source 10.10.10.1 255.255.255.255 destination 20.20.20.1 0.0.0.0 time-range lucky\n那么对于该 ACL的理解错误的是_______。",
+    "A": "该rule只在lucky时间段内生效",
+    "B": "该rule只匹配来源于10.10.10.1的数据包",
+    "C": "该rule只匹配去往20.20.20.1的数据包",
+    "D": "该rule可以匹配来自于任意源网段的TCP数据包",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "安全隔离网闸不支持交互式访问。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "支持反向代理的安全隔离网闸很安全。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "B",
+    "select": ""
+  },
+  {
+    "title": "BGP是在______之间传递路由的协议。",
+    "A": "自治系统（AS）",
+    "B": "子网",
+    "C": "主机",
+    "D": "区域（area）",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "客户的网络连接形如：  HostA------MSR-1------MSR-2--------MSR-3------HostB\n已经在所有设备上完成了IP地址的配置。要实现HostA可以访问HostB，那么关于路由的配置，如下哪些说法是正确的？",
+    "A": "在MSR-1上至少需要配置一条静态路由",
+    "B": "在MSR-2上至少需要配置一条静态路由",
+    "C": "在MSR-2上至少需要配置两条静态路由",
+    "D": "在MSR-3上至少需要配置一条静态路由",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "如下关于 MSR路由表的描述，哪些是正确的？",
+    "A": "如果到同一目的网段的路由有多个来源，那么只把Preference (优先级)值最小的路由写入路由表",
+    "B": "如果到同一目的网段的路由有多个来源，那么只把Metric (度量)值最小的路由写入路由表",
+    "C": "如果到同一目的网段的路由有多个来源，那么只把Preference (优先级)值最大的路由写入路由表",
+    "D": "如果到同一目的网段的路由有多个来源，那么只把Metric (度量)值最大的路由写入路由表",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "目前只有X86平台的防火墙和VPN网关支持SSLVPN接入功能。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "网络卫士网络管理系统支持外发审计日志。",
+    "A": "正确",
+    "B": "错误",
+    "C": "",
+    "D": "",
+    "answer": "A",
+    "select": ""
+  },
+  {
+    "title": "在 MSR路由器上，各个功能模块都有其对应的信息显示命令，一般情况下，要查看各个功能模块的运行信息，需要逐条运行相应的 display命令。为便于一次性收集更多信息，方便日常维护或问题定位，可以在任意视图下执行______命令，显示系统当前各个主要功能模块运行的统计信息。",
+    "A": "display all",
+    "B": "display ip interface",
+    "C": "display system-information",
+    "D": "display diagnostic-information",
+    "answer": "D",
+    "select": ""
+  },
+  {
+    "title": "通常情况下，路由器会对长度大于接口 MTU的报文分片。为了检测线路MTU，可以带______参数 ping目的地址。",
+    "A": "–a",
+    "B": "–d",
+    "C": "–f",
+    "D": "–c",
+    "answer": "C",
+    "select": ""
+  }
+]
