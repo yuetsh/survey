@@ -15,6 +15,13 @@ export interface WrongAnswer {
   option: string
 }
 
+// 倒计时落盘的形状：运行中记截止时刻，暂停时 endAt 为 0、剩余时间记在 remaining
+export interface TimerState {
+  duration: number
+  remaining: number
+  endAt: number
+}
+
 export enum TestStatus {
   IS_TESTING = "1",
   NO_TESTING = "-1",

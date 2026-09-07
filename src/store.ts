@@ -1,8 +1,14 @@
 // 应用只有一份状态，直接放模块作用域当作简易 store：
 // 组件从这里取值和调动作，不再层层传 props。
 import { computed, nextTick, reactive, ref, watch } from "vue"
+import sample from "lodash/sample"
 import shuffle from "lodash/shuffle"
 import * as storage from "./storage"
+// 名单是 import 进来的（而不是运行时 fetch public/*.json）：
+// 这个应用会被 vite-plugin-singlefile 打成一份 index.html 单独分发，
+// 那种形态下页面旁边没有 public 目录可取。
+import class241 from "../public/class/241.json"
+import class242 from "../public/class/242.json"
 import { OPTION_KEY, TestStatus } from "./types"
 import type { Exam, WrongAnswer } from "./types"
 
@@ -17,6 +23,131 @@ export const showWrongAnswer = ref(false)
 export const score = ref(0)
 
 export const isTesting = computed(() => status.value === TestStatus.IS_TESTING)
+
+// 点名：和题库完全无关的一条支线，选个班级随机抽一个人。
+const rosters: Record<string, string[]> = { "241": class241, "242": class242 }
+
+export const classOptions = [
+  { label: "24计算机1", value: "241" },
+  { label: "24计算机2", value: "242" },
+]
+
+export const classId = ref("241")
+export const pickedStudent = ref("")
+export const showPickedStudent = ref(false)
+
+export function pickStudent() {
+  const roster = rosters[classId.value] ?? []
+  if (!roster.length) return
+  // 连着抽到同一个人看起来像没抽，先把上一个剔掉再抽
+  const pool = roster.filter((name) => name !== pickedStudent.value)
+  pickedStudent.value = sample(pool.length ? pool : roster)!
+  showPickedStudent.value = true
+}
+
+// 课堂倒计时：又一条和题库无关的支线。状态落在 localStorage 的 timer 里，
+// 刷新（或误关页面）之后接着走——正在走的按截止时刻续上，暂停的还停在原处。
+export const timerOptions = [3, 5, 10].map((min) => ({
+  label: `${min} 分钟`,
+  value: min * 60,
+}))
+
+export const timerDuration = ref(5 * 60)
+export const timerRemaining = ref(5 * 60)
+export const timerRunning = ref(false)
+export const timerDone = ref(false)
+
+export const timerText = computed(() => {
+  const min = Math.floor(timerRemaining.value / 60)
+  const sec = timerRemaining.value % 60
+  return `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
+})
+
+let timerHandle = 0
+let timerEndAt = 0
+
+// 只在状态变化时落盘（开始/暂停/重置/改时长/归零），tick 每秒都写就太浪费了：
+// 运行中的剩余时间本来就能从 endAt 反推出来。
+function persistTimer() {
+  storage.saveTimer({
+    duration: timerDuration.value,
+    remaining: timerRemaining.value,
+    endAt: timerRunning.value ? timerEndAt : 0,
+  })
+}
+
+function stopTimer() {
+  window.clearInterval(timerHandle)
+  timerHandle = 0
+  timerRunning.value = false
+}
+
+// 剩余时间由截止时刻反推，而不是每次减一：
+// 这样 setInterval 的漂移、标签页被浏览器挂起，都不会把时间越走越偏。
+function tick() {
+  timerRemaining.value = Math.max(
+    0,
+    Math.round((timerEndAt - Date.now()) / 1000),
+  )
+  if (timerRemaining.value === 0) {
+    stopTimer()
+    timerDone.value = true
+    persistTimer()
+  }
+}
+
+export function toggleTimer() {
+  if (timerRunning.value) {
+    stopTimer()
+    persistTimer()
+    return
+  }
+  // 归零后再按开始，当作重新计一轮
+  if (!timerRemaining.value) timerRemaining.value = timerDuration.value
+  timerDone.value = false
+  timerEndAt = Date.now() + timerRemaining.value * 1000
+  timerRunning.value = true
+  timerHandle = window.setInterval(tick, 250)
+  persistTimer()
+}
+
+// 改时长等于重新设一轮，正在走的也停下。走动作而不是 watch(timerDuration)，
+// 是为了让还原旧状态时的赋值不被当成用户改了时长。
+export function setTimerDuration(seconds: number) {
+  timerDuration.value = seconds
+  resetTimer()
+}
+
+export function resetTimer() {
+  stopTimer()
+  timerDone.value = false
+  timerRemaining.value = timerDuration.value
+  persistTimer()
+}
+
+// 刷新后接着上一轮：运行中的按截止时刻重新算剩余，
+// 页面关着的这段时间照样在走，回来发现已经过点就直接归零。
+function restoreTimer() {
+  const saved = storage.loadTimer()
+  if (!saved) return
+  timerDuration.value = saved.duration
+  if (!saved.endAt) {
+    timerRemaining.value = saved.remaining
+    return
+  }
+  timerEndAt = saved.endAt
+  timerRemaining.value = Math.max(
+    0,
+    Math.round((timerEndAt - Date.now()) / 1000),
+  )
+  if (!timerRemaining.value) {
+    timerDone.value = true
+    persistTimer()
+    return
+  }
+  timerRunning.value = true
+  timerHandle = window.setInterval(tick, 250)
+}
 
 export const pagination = reactive({
   page: 1,
@@ -212,6 +343,7 @@ export function restore() {
   init()
   const count = storage.loadRandomCount()
   if (count) randomCount.value = count
+  restoreTimer()
 }
 
 watch(keyword, () => {

@@ -33,12 +33,14 @@ src/
   theme.ts                    naive-ui 的 themeOverrides
   composables/useKeyboard.ts  全局快捷键，以及给学生看的 SHORTCUTS 说明
   components/
-    ExamToolbar.vue           顶部工具栏（上传 / 抽题 / 做题 / 交卷 / 搜索）
+    ExamToolbar.vue           顶部工具栏（上传 / 抽题 / 做题 / 交卷 / 抽人 / 倒计时 / 搜索）
     ExamTable.vue             表格与列定义
     OptionCell.vue            单个选项单元格（叶子组件）
     ResultModal.vue           交卷后的得分与错题弹窗
     ShortcutHint.vue          快捷键提示浮层
-  App.vue                     只剩 config-provider + 布局 + 三个组件
+    PickStudentModal.vue      抽到的学生（大字弹窗）
+    CountdownTimer.vue        课堂倒计时（时长下拉 + 开始/暂停/重置）
+  App.vue                     只剩 config-provider + 布局 + 四个组件
 ```
 
 `store.ts` 的状态是**模块作用域的 `ref`**，组件直接 import 取用，不走 props/emits——应用只有一份状态，这样组件都是薄的。要新增状态或动作就加在 `store.ts`，不要在组件里再养一份。
@@ -47,12 +49,13 @@ src/
 
 **题库格式**（见 `data/*.json`、`public/demo.json`）：一个对象数组，字段为 `title`、`A`、`B`、可选的 `C` 及之后的字母、`answer`（正确选项字母）、`select`（用户所选，未作答时为 `""`）。选项个数不写死：`optionLabels` 这个 `computed` 扫描当前 `source`，把 `title`/`answer`/`select` 之外、有内容的单个大写字母键（`OPTION_KEY`）收集起来按字母序出列，A~Z 都支持，四选项题库也不会多出空列。`data/` 放的是真实题库（C#、Python）；`public/demo.json` 是 5 题的示例。
 
-**localStorage 是唯一数据源。** 四个 key，全部直接用 `window.localStorage` 读写：
+**localStorage 是唯一数据源。** 五个 key，全部直接用 `window.localStorage` 读写：
 
 - `exams` —— 上传的题库原始 JSON 字符串。只在上传时写入一次，之后当作不可变的原始数据，`showAll` 和 `getRandom` 都从它重新读取。
 - `tests` —— 当前这场考试的题目，**包含**用户的 `select`。仅在考试中写入（统一走 `persistTest()`，非考试状态直接 return），每次作答都会落盘。`init()` 判断它是否存在，来决定恢复未完成的考试还是加载完整题库。
 - `test_status` —— `"1"`（考试中）/ `"-1"`（非考试中），对应 `TestStatus` 枚举。
 - `random_count` —— 上次选择的抽题数量，挂载时恢复。
+- `timer` —— 课堂倒计时的 `{ duration, remaining, endAt }`。只在状态变化（开始/暂停/重置/改时长/归零）时写，运行中的剩余时间由 `endAt` 反推，所以每秒的 tick 不落盘。
 
 由此带来的约束：任何替换 `source` 的逻辑都必须经 `storage.loadExams()` 从 `exams` 重新读取（而不是在当前 `source` 上做减法），并在末尾调用 `persistTest()`，否则考试中已作答的记录会丢失/错位。`clear()` 会清空整个 localStorage。
 
@@ -62,6 +65,11 @@ src/
 
 **键盘操作**（`composables/useKeyboard.ts`）。`window` 上挂了一个 `keydown` 监听（`onMounted` 注册、`onUnmounted` 摘除）：`←` `→` 翻页始终可用，`↑` `↓` 移动高亮游标、字母键作答只在考试模式下生效。`cursorIndex` 存的是**在 `data`（过滤后的视图）里的下标**而不是行对象，这样才能由它算出该跳到第几页；任何替换 `source` 或改变过滤结果的操作（上传、抽题、显示所有题、改关键词、清除）都要调 `resetCursor()`，否则游标会指到另一道题上。字母键先查 `optionLabels`：`J`/`K` 只有在它们不是本题库的选项字母时才当上下移动用。数字键 `1`~`9` 按**位置**映射到 `optionLabels[n-1]`，和选项字母是什么无关，超过 9 个选项就只能用字母键。给学生看的说明是同文件里的 `SHORTCUTS`，由 `ShortcutHint.vue` 渲染成提示浮层——**改按键行为时顺手改它**，两者放在一个文件就是为了不让它们对不上。
 
+**两条与题库无关的支线。** 都挂在 `store.ts` 里，和 `source`/`data` 那套没有关系：
+
+- **抽人**（`pickStudent()`）。名单是 `public/class/241.json`、`public/class/242.json`，在 store 里用 `import` 引入而不是运行时 `fetch`——`vite-plugin-singlefile` 会把整个应用打成一份 `index.html` 单独分发，那种形态下页面旁边没有 public 目录。加班级就在 `public/class/` 放一份 JSON，再往 `rosters` 和 `classOptions` 各加一行。抽的时候会剔掉上一次抽到的人，免得连着抽到同一个。
+- **倒计时**（`toggleTimer()` / `resetTimer()` / `setTimerDuration()`）。剩余时间一律由截止时刻 `timerEndAt` 反推，不做「每次减一」，这样 setInterval 的漂移、标签页被挂起、以及刷新页面都不会让时间走偏。改时长走 `setTimerDuration()` 这个动作而不是 `watch(timerDuration)`，是为了让 `restoreTimer()` 还原旧状态时的赋值不被当成用户改了时长。
+
 **考试生命周期：** `start()`（随机抽题、翻转状态、持久化）→ 点击选项（修改并持久化 `tests`）→ `check()`（比对 `answer` 与 `select`，在弹窗里列出错题）→ `finish()`（清除 `tests`、状态翻回、`init()` 重新加载完整题库）。
 
 ## 约定
@@ -69,4 +77,4 @@ src/
 - Prettier 配置 `semi: false`——不写分号。
 - typescript 必须留在 `^6`。升到 `^7` 会让 `vue-tsc` 3.3.11 崩在 `ERR_PACKAGE_PATH_NOT_EXPORTED: './lib/tsc'`（TS 7 的 exports map 不再暴露该路径），`npm run build` 直接挂；`vite build` 仍能出包，但那条路径不做类型检查。
 - `types.ts` 里的 `Option` 就是 `string`（选项字母由题库决定）。选项单元格组件叫 `OptionCell.vue` 而不是 `Option.vue`，就是为了不和这个类型重名——原来两者同名时，导入在值空间遮蔽了类型，`op as Option` 到底指哪个得靠猜。
-- `vite-plugin-singlefile` 和 `@vitejs/plugin-legacy` 已安装，但在 `vite.config.ts` 中当前是注释掉/未启用的状态——单文件构建原本是为了把 `dist/index.html` 单独分发。
+- `vite-plugin-singlefile` 已在 `vite.config.ts` 中启用：构建产物是一份自带全部 JS/CSS 的 `dist/index.html`，可以单独拷走分发。因此**运行时不要 `fetch` public 下的文件**（名单就是 `import` 进来的）。`@vitejs/plugin-legacy` 已安装但仍未启用。

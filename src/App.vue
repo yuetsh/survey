@@ -10,6 +10,7 @@ import {
 } from "naive-ui"
 import ExamTable from "./components/ExamTable.vue"
 import ExamToolbar from "./components/ExamToolbar.vue"
+import PickStudentModal from "./components/PickStudentModal.vue"
 import ResultModal from "./components/ResultModal.vue"
 import { useKeyboard } from "./composables/useKeyboard"
 import { restore } from "./store"
@@ -34,6 +35,7 @@ onMounted(restore)
         <exam-table />
       </n-layout-content>
       <result-modal />
+      <pick-student-modal />
     </n-layout>
   </n-config-provider>
 </template>

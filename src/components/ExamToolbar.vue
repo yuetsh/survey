@@ -3,16 +3,20 @@ import { NButton, NDivider, NInput, NSelect, NSpace, NUpload } from "naive-ui"
 import type { UploadCustomRequestOptions } from "naive-ui"
 import {
   check,
+  classId,
+  classOptions,
   clear,
   getRandom,
   importExams,
   isTesting,
   keyword,
+  pickStudent,
   randomCount,
   showAll,
   source,
   start,
 } from "../store"
+import CountdownTimer from "./CountdownTimer.vue"
 import ShortcutHint from "./ShortcutHint.vue"
 
 const randomOptions = [
@@ -70,6 +74,15 @@ function upload({ file }: UploadCustomRequestOptions) {
         显示所有题
       </n-button>
       <n-divider vertical />
+      <n-space align="center">
+        <n-select
+          v-model:value="classId"
+          :options="classOptions"
+          style="width: 120px"
+        />
+        <n-button tertiary @click="pickStudent">抽人</n-button>
+      </n-space>
+      <n-divider vertical />
       <n-button
         @click="start"
         type="primary"
@@ -82,6 +95,8 @@ function upload({ file }: UploadCustomRequestOptions) {
       </n-button>
     </n-space>
     <n-space align="center">
+      <countdown-timer />
+      <n-divider vertical />
       <shortcut-hint />
       <n-input
         style="width: 200px"

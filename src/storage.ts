@@ -1,12 +1,13 @@
 // localStorage 是这个应用唯一的数据源，所有读写都收敛在这里，
 // 别的地方不要再直接碰 window.localStorage。
 import { TestStatus } from "./types"
-import type { Exam } from "./types"
+import type { Exam, TimerState } from "./types"
 
 const EXAM = "exams"
 const TEST = "tests"
 const TEST_STATUS = "test_status"
 const RANDOM_COUNT = "random_count"
+const TIMER = "timer"
 
 function parse(raw: string | null): Exam[] | null {
   if (!raw) return null
@@ -61,6 +62,21 @@ export function loadRandomCount(): number {
 
 export function saveRandomCount(count: number) {
   window.localStorage.setItem(RANDOM_COUNT, String(count))
+}
+
+export function loadTimer(): TimerState | null {
+  const raw = window.localStorage.getItem(TIMER)
+  if (!raw) return null
+  try {
+    const parsed = JSON.parse(raw)
+    return typeof parsed?.duration === "number" ? (parsed as TimerState) : null
+  } catch {
+    return null
+  }
+}
+
+export function saveTimer(state: TimerState) {
+  window.localStorage.setItem(TIMER, JSON.stringify(state))
 }
 
 export function clearAll() {
