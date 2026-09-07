@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { NButton, NDivider, NInput, NSelect, NSpace, NUpload } from "naive-ui"
 import type { UploadCustomRequestOptions } from "naive-ui"
+import { bankOptions, classOptions } from "../content"
 import {
+  bankName,
   check,
   classId,
-  classOptions,
   clear,
   getRandom,
   importExams,
   isTesting,
   keyword,
+  loadBank,
   pickStudent,
   randomCount,
   showAll,
@@ -40,69 +42,89 @@ function upload({ file }: UploadCustomRequestOptions) {
 </script>
 
 <template>
-  <n-space justify="space-between">
-    <n-space align="center">
-      <n-upload
-        :show-file-list="false"
-        accept="application/json"
-        :custom-request="upload"
-      >
-        <n-button tertiary>上传文件</n-button>
-      </n-upload>
-      <n-button quaternary @click="clear" :disabled="!source.length">
-        清除
-      </n-button>
-      <n-divider vertical />
-      <n-button tertiary @click="getRandom(1)" :disabled="!source.length">
-        随机 1 题
-      </n-button>
+  <!-- 两行：第一行是题目本身的操作，第二行是上课用的三样（题库 / 抽人 / 倒计时） -->
+  <n-space vertical :size="12">
+    <n-space justify="space-between">
       <n-space align="center">
-        <n-select
-          v-model:value="randomCount"
-          :options="randomOptions"
-          style="width: 100px"
-        />
-        <n-button
-          tertiary
-          @click="getRandom(randomCount)"
-          :disabled="!source.length"
+        <n-upload
+          :show-file-list="false"
+          accept="application/json"
+          :custom-request="upload"
         >
-          随机抽题
+          <n-button tertiary>上传文件</n-button>
+        </n-upload>
+        <n-button quaternary @click="clear" :disabled="!source.length">
+          清除
+        </n-button>
+        <n-divider vertical />
+        <n-button tertiary @click="getRandom(1)" :disabled="!source.length">
+          随机 1 题
+        </n-button>
+        <n-space align="center">
+          <n-select
+            v-model:value="randomCount"
+            :options="randomOptions"
+            style="width: 100px"
+          />
+          <n-button
+            tertiary
+            @click="getRandom(randomCount)"
+            :disabled="!source.length"
+          >
+            随机抽题
+          </n-button>
+        </n-space>
+        <n-button tertiary @click="showAll" :disabled="!source.length">
+          显示所有题
+        </n-button>
+        <n-divider vertical />
+        <n-button
+          @click="start"
+          type="primary"
+          :disabled="isTesting || !source.length"
+        >
+          做题
+        </n-button>
+        <n-button
+          type="primary"
+          secondary
+          @click="check"
+          :disabled="!isTesting"
+        >
+          交卷
         </n-button>
       </n-space>
-      <n-button tertiary @click="showAll" :disabled="!source.length">
-        显示所有题
-      </n-button>
-      <n-divider vertical />
       <n-space align="center">
-        <n-select
-          v-model:value="classId"
-          :options="classOptions"
-          style="width: 120px"
+        <shortcut-hint />
+        <n-input
+          style="width: 200px"
+          v-model:value="keyword"
+          placeholder="通过关键词搜索"
         />
-        <n-button tertiary @click="pickStudent">抽人</n-button>
       </n-space>
-      <n-divider vertical />
-      <n-button
-        @click="start"
-        type="primary"
-        :disabled="isTesting || !source.length"
-      >
-        做题
-      </n-button>
-      <n-button type="primary" secondary @click="check" :disabled="!isTesting">
-        交卷
-      </n-button>
     </n-space>
     <n-space align="center">
-      <countdown-timer />
-      <n-divider vertical />
-      <shortcut-hint />
-      <n-input
-        style="width: 200px"
-        v-model:value="keyword"
-        placeholder="通过关键词搜索"
+      <n-select
+        :value="bankName"
+        :options="bankOptions"
+        placeholder="选择题库"
+        style="width: 120px"
+        :disabled="!bankOptions.length"
+        @update:value="loadBank"
       />
+      <n-divider vertical />
+      <n-select
+        v-model:value="classId"
+        :options="classOptions"
+        placeholder="选择班级"
+        style="width: 120px"
+        :disabled="!classOptions.length"
+      />
+      <n-button tertiary @click="pickStudent" :disabled="!classOptions.length">
+        抽人
+      </n-button>
+      <n-divider vertical />
+      <countdown-timer />
     </n-space>
   </n-space>
 </template>

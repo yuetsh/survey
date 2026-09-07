@@ -28,6 +28,8 @@ bun run preview  # 预览构建产物 dist/
 ```
 src/
   types.ts                    Exam / WrongAnswer / TestStatus / OPTION_KEY
+  content.ts                  写死的班级名单与内置题库（下拉框的选项都出自这里）
+  class/*.json                一份文件 = 一个班的名单（字符串数组）
   storage.ts                  localStorage 的唯一出入口，别处不要直接碰 window.localStorage
   store.ts                    模块作用域的简易 store：状态 + 派生 + 所有动作
   theme.ts                    naive-ui 的 themeOverrides
@@ -65,9 +67,13 @@ src/
 
 **键盘操作**（`composables/useKeyboard.ts`）。`window` 上挂了一个 `keydown` 监听（`onMounted` 注册、`onUnmounted` 摘除）：`←` `→` 翻页始终可用，`↑` `↓` 移动高亮游标、字母键作答只在考试模式下生效。`cursorIndex` 存的是**在 `data`（过滤后的视图）里的下标**而不是行对象，这样才能由它算出该跳到第几页；任何替换 `source` 或改变过滤结果的操作（上传、抽题、显示所有题、改关键词、清除）都要调 `resetCursor()`，否则游标会指到另一道题上。字母键先查 `optionLabels`：`J`/`K` 只有在它们不是本题库的选项字母时才当上下移动用。数字键 `1`~`9` 按**位置**映射到 `optionLabels[n-1]`，和选项字母是什么无关，超过 9 个选项就只能用字母键。给学生看的说明是同文件里的 `SHORTCUTS`，由 `ShortcutHint.vue` 渲染成提示浮层——**改按键行为时顺手改它**，两者放在一个文件就是为了不让它们对不上。
 
+**内置题库**（`content.ts` + `store.loadBank()`）。`data/*.json` 全部 import 进 `banks`，工具栏的题库下拉选一份就等于把那份 JSON 上传一遍（走同一个 `importExams()`，落盘、清旧答卷、重置视图的规矩一致）；手动上传文件后 `bankName` 会置空，下拉框不再显示上一次选中的名字。换/加题库要重新 `bun run build` 才会进产物。
+
+两条关于路径的坑，都已经踩过：**不要从 JS 里 import `public/` 下的文件**（Vite 直接报 "Assets in public directory cannot be imported from JavaScript"，名单因此放在 `src/class/`）；**数据文件名里不要带 `#`**（`data/C#.json` 在开发服务器下会被浏览器当成锚点截断，实际只请求到 `/data/C`，拿回一份 index.html——文件已改名 `CSharp.json`，下拉里显示的仍是 `C#`）。
+
 **两条与题库无关的支线。** 都挂在 `store.ts` 里，和 `source`/`data` 那套没有关系：
 
-- **抽人**（`pickStudent()`）。名单是 `public/class/241.json`、`public/class/242.json`，在 store 里用 `import` 引入而不是运行时 `fetch`——`vite-plugin-singlefile` 会把整个应用打成一份 `index.html` 单独分发，那种形态下页面旁边没有 public 目录。加班级就在 `public/class/` 放一份 JSON，再往 `rosters` 和 `classOptions` 各加一行。抽的时候会剔掉上一次抽到的人，免得连着抽到同一个。
+- **抽人**（`pickStudent()`）。名单是 `src/class/*.json`，和内置题库一起在 `content.ts` 里**一条条 import 写死**，键就是下拉框里显示的名字。加一个班：往 `src/class/` 放一份 JSON，再在 `content.ts` 加一行 import 和一行表项。抽的时候会剔掉上一次抽到的人，免得连着抽到同一个。
 - **倒计时**（`toggleTimer()` / `resetTimer()` / `setTimerDuration()`）。剩余时间一律由截止时刻 `timerEndAt` 反推，不做「每次减一」，这样 setInterval 的漂移、标签页被挂起、以及刷新页面都不会让时间走偏。改时长走 `setTimerDuration()` 这个动作而不是 `watch(timerDuration)`，是为了让 `restoreTimer()` 还原旧状态时的赋值不被当成用户改了时长。
 
 **考试生命周期：** `start()`（随机抽题、翻转状态、持久化）→ 点击选项（修改并持久化 `tests`）→ `check()`（比对 `answer` 与 `select`，在弹窗里列出错题）→ `finish()`（清除 `tests`、状态翻回、`init()` 重新加载完整题库）。

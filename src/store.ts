@@ -4,11 +4,7 @@ import { computed, nextTick, reactive, ref, watch } from "vue"
 import sample from "lodash/sample"
 import shuffle from "lodash/shuffle"
 import * as storage from "./storage"
-// 名单是 import 进来的（而不是运行时 fetch public/*.json）：
-// 这个应用会被 vite-plugin-singlefile 打成一份 index.html 单独分发，
-// 那种形态下页面旁边没有 public 目录可取。
-import class241 from "../public/class/241.json"
-import class242 from "../public/class/242.json"
+import { banks, isExamList, rosters } from "./content"
 import { OPTION_KEY, TestStatus } from "./types"
 import type { Exam, WrongAnswer } from "./types"
 
@@ -24,15 +20,21 @@ export const score = ref(0)
 
 export const isTesting = computed(() => status.value === TestStatus.IS_TESTING)
 
+// 内置题库（data/ 下的文件）：选一份等于把那份 JSON 上传一遍。
+export const bankName = ref<string | null>(null)
+
+// 走 importExams 而不是直接塞 source：落盘、清答卷、重置视图的规矩都一样，
+// 顺手 stringify 一遍也让题库成了拷贝，作答不会改到 import 进来的模块对象。
+export function loadBank(name: string) {
+  const bank = banks[name]
+  if (!bank) return
+  importExams(JSON.stringify(bank))
+  bankName.value = name
+}
+
 // 点名：和题库完全无关的一条支线，选个班级随机抽一个人。
-const rosters: Record<string, string[]> = { "241": class241, "242": class242 }
-
-export const classOptions = [
-  { label: "24计算机1", value: "241" },
-  { label: "24计算机2", value: "242" },
-]
-
-export const classId = ref("241")
+// 班级来自 public/class/ 下的文件，默认选第一个（目录空着就是空字符串）。
+export const classId = ref(Object.keys(rosters)[0] ?? "")
 export const pickedStudent = ref("")
 export const showPickedStudent = ref(false)
 
@@ -52,8 +54,8 @@ export const timerOptions = [3, 5, 10].map((min) => ({
   value: min * 60,
 }))
 
-export const timerDuration = ref(5 * 60)
-export const timerRemaining = ref(5 * 60)
+export const timerDuration = ref(10 * 60)
+export const timerRemaining = ref(10 * 60)
 export const timerRunning = ref(false)
 export const timerDone = ref(false)
 
@@ -261,7 +263,7 @@ export function importExams(raw: string): string | null {
   } catch {
     return "文件不是合法的 JSON"
   }
-  if (!Array.isArray(parsed) || parsed.some((item) => !item?.title)) {
+  if (!isExamList(parsed)) {
     return "题库格式不对，应为包含 title / answer 的对象数组"
   }
   // 换题库意味着旧答卷作废
@@ -272,7 +274,9 @@ export function importExams(raw: string): string | null {
   keyword.value = ""
   pagination.page = 1
   resetCursor()
-  source.value = parsed as Exam[]
+  source.value = parsed
+  // 上传的题库不是内置的哪一份，下拉框别再显示上一次选中的名字
+  bankName.value = null
   return null
 }
 
@@ -327,6 +331,7 @@ export function finish() {
 
 export function clear() {
   storage.clearAll()
+  bankName.value = null
   resetCursor()
   source.value = []
   keyword.value = ""
