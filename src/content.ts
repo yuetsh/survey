@@ -11,10 +11,6 @@ import class241 from "./class/241.json"
 import class242 from "./class/242.json"
 
 // 文件名不能带 #：开发服务器下 import 出去的 URL 会被浏览器当成锚点截断
-// （/data/C#.json 实际只请求到 /data/C），下拉框里显示的名字仍是 C#。
-import csharp from "../data/CSharp.json"
-import python from "../data/Python.json"
-import info from "../data/信息.json"
 import info1 from "../data/信息1.json"
 import info2 from "../data/信息2.json"
 import info3 from "../data/信息3.json"
@@ -34,9 +30,6 @@ export const rosters: Record<string, string[]> = {
 }
 
 export const banks: Record<string, Exam[]> = {
-  "C#": csharp,
-  Python: python,
-  信息: info,
   信息1: info1,
   信息2: info2,
   信息3: info3,
