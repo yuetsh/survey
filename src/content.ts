@@ -9,10 +9,12 @@ import type { Exam } from "./types"
 
 import class241 from "./class/241.json"
 import class242 from "./class/242.json"
+import class244 from "./class/244.json"
 
 // 文件名不能带 #：开发服务器下 import 出去的 URL 会被浏览器当成锚点截断
 import info1 from "../data/信息1.json"
 import info2 from "../data/信息2.json"
+import clang from "../data/C语言.json"
 
 // 用 type 而不是 interface：naive-ui 的 SelectMixedOption 要求带索引签名，
 // interface 没有隐式索引签名，传进 n-select 会类型不通过。
@@ -22,11 +24,13 @@ export type NameOption = { label: string; value: string }
 export const rosters: Record<string, string[]> = {
   "24计算机1": class241,
   "24计算机2": class242,
+  "24计算机4": class244,
 }
 
 export const banks: Record<string, Exam[]> = {
   信息1: info1,
   信息2: info2,
+  C语言: clang,
 }
 
 function toOptions(dict: Record<string, unknown>): NameOption[] {
