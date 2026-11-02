@@ -13,11 +13,6 @@ import class242 from "./class/242.json"
 // 文件名不能带 #：开发服务器下 import 出去的 URL 会被浏览器当成锚点截断
 import info1 from "../data/信息1.json"
 import info2 from "../data/信息2.json"
-import info3 from "../data/信息3.json"
-import info4 from "../data/信息4.json"
-import info5 from "../data/信息5.json"
-import info6 from "../data/信息6.json"
-import info7 from "../data/信息7.json"
 
 // 用 type 而不是 interface：naive-ui 的 SelectMixedOption 要求带索引签名，
 // interface 没有隐式索引签名，传进 n-select 会类型不通过。
@@ -32,11 +27,6 @@ export const rosters: Record<string, string[]> = {
 export const banks: Record<string, Exam[]> = {
   信息1: info1,
   信息2: info2,
-  信息3: info3,
-  信息4: info4,
-  信息5: info5,
-  信息6: info6,
-  信息7: info7,
 }
 
 function toOptions(dict: Record<string, unknown>): NameOption[] {
